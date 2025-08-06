@@ -1,13 +1,19 @@
-import { useState } from 'react'
-import './App.css'
+import './App.css';
+// import { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home/Home';
 
 function App() {
-
   return (
-    <>
-      <h1>Davis-Tennon Foundation</h1>
-    </>
-  )
+    <div className="App">
+      <Router>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/Home" element={<Home />} />
+        </Routes>
+      </Router>
+    </div>
+  );
 }
 
-export default App
+export default App;

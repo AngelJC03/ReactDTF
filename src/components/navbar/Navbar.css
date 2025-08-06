@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+.navbar-container {
+  font-family: "gill-sans-bold", sans-serif;
+}
+
+.nav-link-with-icon {
+  display: inline-flex; /* or flex */
+  align-items: center;  /* vertically center text and arrow */
+  gap: 4px;             /* space between text and arrow */
+}
+
+/* Optional: make sure the link text and icon don't wrap */
+.nav-link {
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Style the arrow */
+.dropdown-arrow {
+  transition: transform 0.3s ease;
+  font-size: 0.8em; /* smaller arrow */
+}
+
+/* Example rotate class to rotate arrow when active */
+.rotate {
+  transform: rotate(180deg);
+}
+
+.dropdown-link {
+  display: block;
+  padding: 1rem 1rem; /* vertical padding, horizontal padding */
+  color: #333;
+  text-decoration: none;
+  white-space: nowrap;
+  text-align: left; /* left-align text within each item */
+  border-bottom: 1px solid #e0e0e0; /* light gray divider */
+}
