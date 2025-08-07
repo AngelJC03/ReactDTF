@@ -82,6 +82,11 @@
   cursor: pointer;
 }
 
+.sidebar-link:hover {
+  background-color: #feab3e;
+  text-decoration: underline;
+}
+
 .sidebar-subitem:hover {
   background-color: #feab3e;
   text-decoration: underline;
