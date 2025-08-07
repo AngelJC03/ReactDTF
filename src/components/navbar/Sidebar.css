@@ -1,0 +1,127 @@
+/* Sidebar container */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 200px;
+  height: 100vh;
+  background-color: #FFBA5F;
+  overflow-y: auto;
+  transition: left 0.3s ease;
+  z-index: 1000;
+  padding-top: 0; /* remove default spacing */
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar.sidebar-open {
+  left: 0;
+}
+
+/* Center the logo image */
+.sidebar-logo {
+  width: 180px;
+  display: block;
+}
+
+.sidebar-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0; /* vertical spacing */
+  border-bottom: 1px solid #444; /* optional separator line */
+  border-top: 1px solid #444;
+}
+
+.sidebar-content {
+  padding: 0;
+  width: 100%;
+}
+
+/* Sidebar content wrapper */
+.sidebar-content {
+  padding-top: 0px;
+  align-items: center;
+}
+
+/* Sidebar overlay (dark background behind sidebar) */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  z-index: 900; /* less than sidebar */
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-item {
+  border-bottom: 1px solid #444; /* line at the bottom of each item */
+}
+
+.sidebar-item a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: block;
+  padding: 14px 10px;
+  transition: background-color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.sidebar-link {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: block;
+  padding: 14px 10px;
+  transition: background-color 0.3s ease, text-decoration 0.3s ease;
+  cursor: pointer;
+}
+
+.sidebar-subitem:hover {
+  background-color: #feab3e;
+  text-decoration: underline;
+}
+
+.sidebar-arrow {
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 1px;
+}
+
+
+.sidebar-submenu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-subitem {
+  border-bottom: 1px solid #444;
+}
+
+.sidebar-sublink {
+  display: block;
+  color: white;
+  text-decoration: none;
+  margin: 0 0 0 15px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-arrow {
+  transition: transform 0.3s ease;
+}
+
+.sidebar-arrow.rotate {
+  transform: rotate(90deg);
+}
+
+@media (max-width: 1000px) {
+  .sidebar {
+    display: flex;
+  }
+}

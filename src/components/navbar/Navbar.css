@@ -37,3 +37,13 @@
   text-align: left; /* left-align text within each item */
   border-bottom: 1px solid #e0e0e0; /* light gray divider */
 }
+
+.dropdown-link:hover {
+  background-color: #f0f0f0; /* light gray background on hover */
+}
+
+@media (max-width: 1000px) {
+  .nav-menu {
+    display: none;
+  }
+}
