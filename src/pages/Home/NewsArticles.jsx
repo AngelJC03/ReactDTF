@@ -12,7 +12,6 @@ function NewsArticles() {
         const url = 'https://publickeys.netlify.app/.netlify/functions/newsArticles';
 
         const response = await fetch(url);
-        console.log("Response status:", response);
         const data = await response.json();
 
         // Skip header row, get next 3 rows
