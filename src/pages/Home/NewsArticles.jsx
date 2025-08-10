@@ -9,7 +9,7 @@ function NewsArticles() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const configRes = await fetch("backend/netlify/config/config.json");
+        const configRes = await fetch("../../backend/netlify/config/config.json");
         if (!configRes.ok) throw new Error(`HTTP error! status: ${configRes.status}`);
         const config = await configRes.json();
         const url = config.newsArticles[0].tableRows;
