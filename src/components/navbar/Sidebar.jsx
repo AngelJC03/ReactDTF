@@ -57,7 +57,7 @@ function Sidebar({ isOpen, onClose }) {
               </Link>
             </li>
 
-          {mainLinks.map(({ label, path, submenu }, index) => (
+          {mainLinks.map(({ label, submenu }, index) => (
             <li key={index} className="sidebar-item">
                 <div
                   className="sidebar-link"
@@ -82,7 +82,7 @@ function Sidebar({ isOpen, onClose }) {
                     {item.type === 'button' ? (
                       <Link to={item.path} onClick={onClose}>
                         <button
-                          className={`px-3 py-2 ${item.color || 'bg-red-700'} text-white font-semibold shadow rounded`}
+                          className={`px-3 py-2 ${item.color || 'bg-[rgb(195,41,58)]'} text-white font-semibold shadow rounded`}
                         >
                           {item.label}
                         </button>
@@ -106,7 +106,7 @@ function Sidebar({ isOpen, onClose }) {
           </li>
           <li className="sidebar-item">
             <Link to="/Donate" onClick={onClose} className="sidebar-link">
-              <button className="px-3 py-2 bg-red-700 text-white font-semibold shadow rounded">
+              <button className="px-3 py-2 bg-[rgb(195,41,58)] text-white font-semibold shadow rounded">
                 Donate Now
               </button>
             </Link>

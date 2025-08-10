@@ -51,7 +51,7 @@ function Navbar() {
 
   return (
     <div className="navbar-container">
-      <nav className="w-full h-[120px] bg-[rgb(255,186,95)] text-black px-8 py-6 flex items-center justify-between font-gill-sans-bold">
+      <nav className="w-full h-[120px] bg-[#ffcc8a] text-black px-8 py-6 flex items-center justify-between font-gill-sans-bold">
 
         <Hamburger click={click} checkboxRef={checkboxRef} handleToggle={handleToggle} />
 
@@ -110,7 +110,7 @@ function Navbar() {
             </Link>
 
             <Link to="/">
-              <button className="px-3 py-2 bg-red-700 text-white font-semibold shadow rounded">
+              <button className="px-3 py-2 bg-[rgb(195,41,58)] text-white font-semibold shadow rounded">
                 Donate Now
               </button>
             </Link>

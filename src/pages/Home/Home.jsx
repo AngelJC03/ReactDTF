@@ -1,17 +1,19 @@
-// import React from 'react';
+import React from 'react';
 import Navbar from '../../components/navbar/Navbar.jsx';
-// import Footer from '../../components/footer/Footer.jsx';
-// import FadeIn from '../../components/fadeinsection/FadeIn.jsx';
+import Footer from '../../components/footer/Footer.jsx';
+import Hero from './Hero';
+import BelowHero from './BelowHero';
+import HomeBody from './HomeBody';
 
 function Home() {
 
   return (
     <>
       <Navbar />
-      {/* <FadeIn>
-      
-      </FadeIn> */}
-      {/* <Footer /> */}
+      <Hero />
+      <BelowHero />
+      <HomeBody />
+      <Footer />
     </>
   );
 }

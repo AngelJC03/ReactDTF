@@ -1,0 +1,257 @@
+        .footer-container p {
+            margin: 0;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            display: flex; /* Enables flexbox for the footer */
+            justify-content: center; /* Centers content horizontally */
+            align-items: center; /* Centers content vertically */
+            text-align: center; /* Ensures text alignment is centered */
+            flex-wrap: wrap; /* Wraps content on smaller screens */
+            padding: 20px;
+        }
+        
+        .footer-container {
+            display: flex;
+            justify-content: center; /* Centers content horizontally */
+            align-items: center; /* Centers content vertically */
+            flex-wrap: wrap;
+            width: 100%; /* Ensures container spans the footer width */
+        }
+        
+        .footer-section {
+            flex: 1;
+            margin: 10px;
+            text-align: center;
+        }
+        
+        .contact-info {
+            text-align: left;
+        }
+
+        .contact-info a {
+            color: rgb(107, 196, 207);
+        }
+        
+        .logo-nav .footer-logo {
+            max-width: 500px;
+            margin-bottom: 10px;
+        }
+        .logo-nav img {
+            max-width: 150px; /* Set the desired image size */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 10px;
+        }
+        
+        .nav-links,
+        .donate-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center; /* Center links horizontally */
+            gap: 20px; /* Add spacing between links */
+            flex-wrap: nowrap;
+        }
+        
+        .nav-links {
+            text-decoration: underline; /* Removes underline */
+        }
+        
+        .nav-links li a,
+        .donate-links li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            white-space: nowrap;
+        }
+        
+        .nav-links li a:hover,
+        .donate-links li a:hover {
+            background-color: #444;
+        }
+        
+        .donate {
+            margin-top: 20px;
+            text-align: center;
+        }
+        
+        .donate-links .btn {
+            font-size: 1.4rem; /* Adjust the size as needed */
+            font-weight: bold; /* Optional: Makes text bolder */
+            text-decoration: none; /* Removes underline */
+            padding: 15px 30px; /* Ensures button doesn't shrink */
+            background-color: rgb(195, 41, 58);
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Newsletter Subscription Section */
+        .newsletter-container {
+            background-color: rgb(255, 204, 138);
+            padding: 20px;
+            margin: 20px auto 0;
+            width: 70%;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .newsletter-container h4 {
+            color: #000000;
+            font-size: 24px;
+        }
+
+        .newsletter-container p {
+            color: #000000;
+        }
+        
+        /* Newsletter Input */
+        .newsletter-input {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: rgb(255, 224, 183);
+            color: rgb(0, 0, 0);
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        /* Subscribe Button */
+        .subscribe-btn {
+            background-color: rgb(105,169,68);
+            color: white; /* Text color */
+            padding: 15px; /* Button size */
+            font-size: 16px; /* Font size */
+            text-decoration: none; /* Remove underline */
+            border-radius: 5px; /* Rounded corners */
+            border: none;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth hover effects */
+            z-index: 3; /* Ensure the button is above the container */
+            width: 75%; /* Button width */
+        }
+        
+        .subscribe-btn:hover {
+            background-color: rgb(75, 121, 48);
+        }
+
+        .newsletter-container h2 {
+            color: #8e8e8e;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .footer-separator {
+            width: 90%;
+            height: 1px;
+            background-color: #555;
+            margin: 20px auto; /* Center the separator */
+        }
+
+        .footer-text {
+            padding-top: 15px;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #ccc;
+            width: 75%;
+            text-align: left;
+        }
+        
+        /* Responsive Adjustments */
+        @media (max-width: 1285px) {
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+            }
+            .contact-info img {
+                margin: 0 auto;
+            }
+            .nav-links,
+            .donate-links {
+                gap: 10px; /* Reduce spacing for smaller screens */
+            }
+        
+            .nav-links li a,
+            .donate-links li a {
+                font-size: 16px;
+            }
+        
+            .footer-section {
+                text-align: center;
+                margin: 15px 0;
+            }
+            .donate {
+                margin-top: 20px;
+                text-align: center;
+            }
+            .logo-nav .footer-logo {
+                margin-top: -40px; /* Add margin to the top */
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .footer-section.logo-nav img {
+                max-width: 400px;
+            }
+        }   
+
+        @media (max-width: 570px) {
+            .nav-links {
+                display: flex;
+                flex-direction: column; /* Stack links vertically */
+                align-items: center; /* Center the links horizontally */
+            }
+        
+            .nav-links li {
+                list-style: none; /* Remove bullet points */
+                width: auto; /* No need for full width since they are centered */
+            }
+        
+            .nav-links li a {
+                padding: 5px 0; /* Add spacing for better readability */
+            }
+            .footer-section.logo-nav img {
+                max-width: 250px;
+            }
+        }
+        
+        @media (max-width: 450px) {
+            .footer-section.logo-nav img {
+                max-width: 300px;
+            }
+            .newsletter-container h4 {
+                font-size: 20px; /* Adjust font size for smaller screens */
+            }
+            .newsletter-container p {
+                font-size: 14px; /* Adjust font size for smaller screens */
+            }
+            .newsletter-container h2 {
+                font-size: 10px; /* Adjust font size for smaller screens */
+            }
+        }
+        
+        @media (max-width: 340px) {
+            .footer-section.logo-nav img {
+                max-width: 280px; /* Further reduce image size for very small screens */
+            }
+            .newsletter-container h4 {
+                font-size: 18px; /* Adjust font size for smaller screens */
+            }
+            .newsletter-container p {
+                font-size: 12px; /* Adjust font size for smaller screens */
+            }
+            .newsletter-container h2 {
+                font-size: 8px; /* Adjust font size for smaller screens */
+            }
+        }

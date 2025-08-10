@@ -1,0 +1,31 @@
+functionsDirectory = "/Users/angeljc/Desktop/Davis-tennon-foundation/backend/netlify/functions"
+functionsDirectoryOrigin = "config"
+plugins = []
+headers = []
+redirects = []
+
+[build]
+publish = "/Users/angeljc/Desktop/Davis-tennon-foundation/backend"
+publishOrigin = "default"
+commandOrigin = "ui"
+base = "/Users/angeljc/Desktop/Davis-tennon-foundation/backend"
+command = "# no build command"
+functions = "/Users/angeljc/Desktop/Davis-tennon-foundation/backend/netlify/functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
+
+[functions]
+
+[functions."*"]

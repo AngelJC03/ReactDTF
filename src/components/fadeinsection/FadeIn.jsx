@@ -13,7 +13,7 @@ export default function FadeInSection({ children }) {
           observer.unobserve(ref.current); // animate once
         }
       },
-      { threshold: 0.05 }
+      { threshold: 0.05 } 
     );
 
     if (ref.current) {

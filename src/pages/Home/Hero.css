@@ -1,0 +1,49 @@
+.hero-image {
+  position: relative;
+  width: 100%;
+  height: 110vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.hero-logo {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* perfectly centered */
+  width: 60%; /* or whatever size fits best */
+  max-width: 90%;
+  z-index: 2;
+}
+
+.hero-image::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0.6) 100%
+  );
+}
+
+.hero-text {
+    background-size: cover;
+    background-position: center;
+    height: auto;
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .hero-image {
+        height: 70vh; /* Adjust height for smaller screens */
+    }
+}
