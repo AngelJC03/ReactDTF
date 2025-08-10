@@ -5,6 +5,7 @@ import HomeWWF from "./HomeWWF";
 import GivebutterWidget from "./GivebutterWidget";
 import { Fade } from "react-bootstrap";
 import NewsArticles from "./NewsArticles.jsx";
+import HomeAFF from "./HomeAFF.jsx";
 
 function HomeBody() {
   return (
@@ -19,7 +20,7 @@ function HomeBody() {
             </div>
         <FadeIn>
             <div className="apply-for-funding-section">
-                put apply for funding info here
+                <HomeAFF />
             </div>
         </FadeIn>
         <FadeIn>
