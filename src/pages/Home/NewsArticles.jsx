@@ -9,11 +9,7 @@ function NewsArticles() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const configRes = await fetch("../../backend/netlify/config/config.json");
-        console.log("Config response status:", configRes);
-        if (!configRes.ok) throw new Error(`HTTP error! status: ${configRes.status}`);
-        const config = await configRes.json();
-        const url = config.newsArticles[0].tableRows;
+        const url = 'https://publickeys.netlify.app/.netlify/functions/newsArticles';
 
         const response = await fetch(url);
         console.log("Response status:", response);
