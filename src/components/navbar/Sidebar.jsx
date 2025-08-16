@@ -17,24 +17,20 @@ function Sidebar({ isOpen, onClose }) {
       label: 'About Us',
       path: '',
       submenu: [
-        { label: 'What We Fund', path: '/' },
-        { label: 'In The News', path: '/' },
-        { label: 'Funding Recipients', path: '/' },
-        { 
-          label: 'Apply For Funding', 
-          path: '/', 
-          type: 'button', 
-          color: 'bg-[rgb(109,169,68)]' 
-        },
+        { label: 'What We Fund', path: '/WhatWeFund' },
+        { label: "What We Don't Fund", path: '/WhatWeDontFund' },
+        { label: 'Funding Opportunities', path: '/FundingOpportunities' },
+        { label: 'Funding Recipients', path: '/FundingRecipients' },
+        { label: 'In The News', path: '/InTheNews' },
       ],
     },
     {
       label: 'Our Team',
       path: '',
       submenu: [
-        { label: 'About Viola and Julius', path: '/' },
-        { label: 'Foundation Staff', path: '/' },
-        { label: 'Become a Board Member', path: '/' },
+        { label: 'About Viola and Julius', path: '/AboutViolaAndJulius' },
+        { label: 'Foundation Staff', path: '/FoundationStaff' },
+        { label: 'Become a Board Member', path: '/BecomeBoardMember' },
       ],
     },
   ];
@@ -100,12 +96,21 @@ function Sidebar({ isOpen, onClose }) {
           ))}
 
           <li className="sidebar-item">
-            <Link to="/PartnersResources" onClick={onClose} className="sidebar-link">
+            <Link to="/PartnersAndResources" onClick={onClose} className="sidebar-link">
               <span>Partners/Resources</span>
             </Link>
           </li>
+          
           <li className="sidebar-item">
-            <Link to="/Donate" onClick={onClose} className="sidebar-link">
+            <Link to="https://docs.google.com/forms/d/e/1FAIpQLSeyf2L9swDTLg0CM6kyN8VamFCxlJ4w-BgiWQihqsM--hBiWA/viewform" target="_blank" rel="noreferrer" onClick={onClose} className="sidebar-link">
+              <button className="ml-4 px-3 py-2 bg-[rgb(109,169,68)] text-white font-semibold shadow rounded">
+                Apply For Funding
+              </button>
+            </Link>
+          </li>
+
+          <li className="sidebar-item">
+            <Link to="https://givebutter.com/0nhBTh" target="_blank" rel="noreferrer" onClick={onClose} className="sidebar-link">
               <button className="px-3 py-2 bg-[rgb(195,41,58)] text-white font-semibold shadow rounded">
                 Donate Now
               </button>

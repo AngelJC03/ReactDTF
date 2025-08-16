@@ -143,24 +143,49 @@ function Footer() {
 
                 {/* Logo and Navigation */}
                 <div className="footer-section logo-nav">
-                    <Link to="/">
-                        <img
-                            src={DTFLogo}
-                            alt="Davis Tennon Foundation Logo"
-                            className="footer-logo"
-                        />
-                    </Link>
-                    <ul className="nav-links">
-                        <li><Link to="/in-the-news">In The News</Link></li>
-                        <li><Link to="/foundation-staff">Foundation Staff</Link></li>
-                        <li><Link to="/what-we-fund">What We Fund</Link></li>
-                    </ul>
-                    <ul className="nav-links">
-                        <li><Link to="/board-members">Board Members</Link></li>
-                        <li><Link to="/partners">Partners/Resources</Link></li>
-                        <li><Link to="/violas-story">About Viola and Julius</Link></li>
-                    </ul>
-                </div>
+  <Link to="/">
+    <img
+      src={DTFLogo}
+      alt="Davis Tennon Foundation Logo"
+      className="footer-logo"
+    />
+  </Link>
+
+  <div className="footer-grid">
+    <ul className="footer-column">
+      <li className="column-name">Home</li>
+      <li><Link to="/">Home</Link></li>
+    </ul>
+
+    <ul className="footer-column">
+      <li className="column-name">About Us</li>
+      <li><Link to="/WhatWeFund">What We Fund</Link></li>
+      <li><Link to="/WhatWeDontFund">What We Don’t Fund</Link></li>
+      <li><Link to="/FundingOpportunities">Funding Opportunities</Link></li>
+      <li><Link to="/FundingRecipients">Funding Recipients</Link></li>
+      <li><Link to="/InTheNews">In The News</Link></li>
+    </ul>
+
+    <ul className="footer-column">
+      <li className="column-name">Our Team</li>
+      <li><Link to="/AboutViolaAndJulius">About Viola And Julius</Link></li>
+      <li><Link to="/FoundationStaff">Foundation Staff</Link></li>
+      <li><Link to="/BecomeBoardMember">Become a Board Member</Link></li>
+    </ul>
+
+    <ul className="footer-column">
+      <li className="column-name">Partners/Resources</li>
+      <li><Link to="/PartnersAndResources">Partners/Resources</Link></li>
+    </ul>
+
+    <ul className="footer-column">
+      <li className="column-name">Important Links</li>
+      <li><Link to="/">Apply For Funding</Link></li>
+      <li><Link to="/">Donate Now</Link></li>
+    </ul>
+  </div>
+</div>
+
 
                 {/* Donate Button */}
                 <div className="footer-section donate">

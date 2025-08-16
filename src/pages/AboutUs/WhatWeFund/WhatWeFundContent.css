@@ -1,0 +1,115 @@
+/* WhatWeFund.css */
+
+p, li {
+  line-height: 1.6;
+}
+
+/* Page Title */
+.WWF-title {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
+}
+
+.WWF-title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.WWF-title p {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.what-we-fund-content {
+  background-color: #d2f3ae;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Funding Priorities */
+.funding-container-container {
+  width: 100%;
+  margin: 40px 0;
+}
+
+.funding-container {
+  width: 700;
+  padding: 20px;
+}
+
+.funding-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* Grid */
+/* Grid */
+.impact-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* exactly 2 columns */
+  grid-template-rows: repeat(2, 1fr);    /* exactly 2 rows */
+  gap: 20px;
+}
+
+
+/* Optional: limit max card height for better layout */
+.impact-card {
+  position: relative;
+  height: 500px; /* smaller than 500px so multiple fit nicely */
+  border-radius: 15px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.impact-card:hover {
+  transform: scale(1.02);
+}
+
+/* Caption bar at bottom */
+.caption-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Overlay on hover */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.impact-card:hover .overlay {
+  opacity: 1;
+}
+
+@media (max-width: 1000px) {
+  .impact-grid {
+    grid-template-columns: 1fr; /* single column on smaller screens */
+    grid-template-rows: auto;   /* rows adjust height automatically */
+  }
+
+  .impact-card {
+    height: 400px; /* slightly shorter cards for smaller screens */
+  }
+}

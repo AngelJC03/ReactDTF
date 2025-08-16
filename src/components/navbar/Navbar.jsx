@@ -77,14 +77,11 @@ function Navbar() {
                 About Us <FaAngleDown className={`inline ml-1 dropdown-arrow ${activeMenu === 'about' ? 'rotate' : ''}`} />
               </Link>
               <ul className={`dropdown-menu ${activeMenu === 'about' ? 'show' : ''}`}>
-                <li><Link to="/" className="dropdown-link">What We Fund</Link></li>
-                <li><Link to="/" className="dropdown-link">In The News</Link></li>
-                <li><Link to="/" className="dropdown-link">Funding Recipients</Link></li>
-                <li><Link to="/" className="dropdown-link">
-                  <button className="ml-4 px-3 py-2 bg-[rgb(109,169,68)] text-white font-semibold shadow rounded">
-                    Apply For Funding
-                  </button>
-                </Link></li>
+                <li><Link to="/WhatWeFund" className="dropdown-link">What We Fund</Link></li>
+                <li><Link to="/WhatWeDontFund" className="dropdown-link">What We Don't Fund</Link></li>
+                <li><Link to="/FundingOpportunities" className="dropdown-link">Funding Opportunities</Link></li>
+                <li><Link to="/FundingRecipients" className="dropdown-link">Funding Recipients</Link></li>
+                <li><Link to="/InTheNews" className="dropdown-link">In The News</Link></li>
               </ul>
             </div>
 
@@ -98,22 +95,28 @@ function Navbar() {
                 Our Team <FaAngleDown className={`inline ml-1 dropdown-arrow ${activeMenu === 'ourTeam' ? 'rotate' : ''}`} />
               </Link>
               <ul className={`dropdown-menu ${activeMenu === 'ourTeam' ? 'show' : ''}`}>
-                <li><Link to="/" className="dropdown-link">About Viola and Julius</Link></li>
-                <li><Link to="/"  className="dropdown-link">Foundation Staff</Link></li>
-                <li><Link to="/"  className="dropdown-link">Become a Board Member</Link></li>
+                <li><Link to="/AboutViolaAndJulius" className="dropdown-link">About Viola and Julius</Link></li>
+                <li><Link to="/FoundationStaff" className="dropdown-link">Foundation Staff</Link></li>
+                <li><Link to="/BecomeBoardMember" className="dropdown-link">Become a Board Member</Link></li>
               </ul>
             </div>
 
-            {/* Partners/Resources */}
-            <Link to="" className="nav-link" onClick={() => toggleDropdown('partnersResources')}>
+            <Link to="/PartnersAndResources" className="nav-link" onClick={() => toggleDropdown('partnersResources')}>
               Partners/Resources
             </Link>
 
-            <Link to="/">
+            <Link to="https://docs.google.com/forms/d/e/1FAIpQLSeyf2L9swDTLg0CM6kyN8VamFCxlJ4w-BgiWQihqsM--hBiWA/viewform" target="_blank" rel="noreferrer" className="nav-button">
+              <button className="ml-4 px-3 py-2 bg-[rgb(109,169,68)] text-white font-semibold shadow rounded">
+                Apply For Funding
+              </button>
+            </Link>
+
+            <Link to="https://givebutter.com/0nhBTh" target="_blank" rel="noreferrer" className="nav-button">
               <button className="px-3 py-2 bg-[rgb(195,41,58)] text-white font-semibold shadow rounded">
                 Donate Now
               </button>
             </Link>
+
           </div>
         </div>
       </nav>
