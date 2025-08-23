@@ -6,26 +6,24 @@ import AccordionItem from "../../../components/Accordion/AccordionItem.jsx";
 const recipients = [
   {
     name: "Rhode Island Coalition Against Domestic Violence (RICADV)",
-    content: `
-Supports survivor-led advocacy and empowerment; partners with SOAR to prevent domestic abuse.
-"This funding ensures our critical advocacy work remains intact."
-    `,
+    content: "Supports and enhances the work of member agencies, provides 24/7 confidential helpline, policy advocacy, prevention programs, survivor activism, and training to create a society free from domestic violence.",
+    website: "https://www.ricadv.org",
   },
   {
-    name: "The Warde-robe Thrift Store (McAuley Ministries)",
-    content: `
-Supports families in Central Falls; expands outreach and provides essential items.
-"This funding allows us to better serve our community." 
-    `,
+    name: "The Warde-robe (McAuley Ministries)",
+    content: "A thrift store ministry in Central Falls providing quality, gently used clothing and household goods, promoting dignity, offering affordable essentials, volunteer opportunities, and community support for working families.",
+    website: "https://mcauleyri.org/warde-robe",
   },
   {
     name: "Central Falls/Rhode Island College Workforce Hub",
-    content: "Expands workforce access in Rhode Island.",
+    content: "Collaborates with local organizations and partners to build Rhode Islanders' skills through ESL classes, professional training, licensure testing facilitation, and tailor-made educational experiences for businesses and employees.",
+    website: "https://www.ric.edu/professional-studies-and-continuing-education/ric-workforce-development-hub",
   },
   {
     name: "Central Falls Square Mile Club",
-    content: "Creates out-of-school enrichment programs for youth.",
-  },
+    content: "Provides out-of-school enrichment programs for youth, mentorship, career development workshops, hands-on experience in various career fields, and fosters personal and professional growth in Central Falls.",
+    website: "https://www.facebook.com/people/Central-Falls-Square-Mile-Club/61553554014458/?_rdr",
+  }
 ];
 
 const FundingRecipientsContent = () => {
@@ -40,11 +38,18 @@ const FundingRecipientsContent = () => {
 
           <div className="recipients-grid">
             {recipients.map((rec) => (
-              <AccordionItem
-                key={rec.name}
-                title={rec.name}
-              >
+              <AccordionItem key={rec.name} title={rec.name}>
                 <p>{rec.content}</p>
+                {rec.website && (
+                  <a
+                    href={rec.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="learn-more-link"
+                  >
+                    Learn more here
+                  </a>
+                )}
               </AccordionItem>
             ))}
           </div>
@@ -52,26 +57,29 @@ const FundingRecipientsContent = () => {
           {/* Bottom Call-to-Action Section */}
           <div className="funding-bottom-cta">
             <div className="funding-bottom-cta-column">
-                <h2>Apply for Funding</h2>
-                <p>If your organization's mission aligns with our values, don't wait and apply for funding now.</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyf2L9swDTLg0CM6kyN8VamFCxlJ4w-BgiWQihqsM--hBiWA/viewform" target="_blank" rel="noopener noreferrer" className="ml-5 px-5 py-6 bg-[rgb(109,169,68)] text-white font-semibold shadow rounded no-underline apply-button">
-                    Apply For Funding
-                </a>
+              <h2>Apply for Funding</h2>
+              <p>If your organization's mission aligns with our values, don't wait and apply for funding now.</p>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeyf2L9swDTLg0CM6kyN8VamFCxlJ4w-BgiWQihqsM--hBiWA/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="ml-5 px-5 py-6 bg-[rgb(109,169,68)] text-white font-semibold shadow rounded no-underline apply-button"
+              >
+                Apply For Funding
+              </a>
             </div>
 
             <div className="funding-bottom-cta-column">
-                <h2>Funding Opportunities</h2>
-                <p>For information about the next funding deadline, click the button below.</p>
-                <a
-                    href="/fundingopportunities"
-                    className="px-5 py-5 border-2 border-[rgba(0,0,0)] text-[rgba(0,0,0))] font-semibold shadow-lg no-underline transition-transform duration-300 hover:scale-105 inline-block"
-                >
-                    View Deadlines
-                </a>
-                
+              <h2>Funding Opportunities</h2>
+              <p>For information about the next funding deadline, click the button below.</p>
+              <a
+                href="/fundingopportunities"
+                className="px-5 py-5 border-2 border-[rgba(0,0,0)] text-[rgba(0,0,0)] font-semibold shadow-lg no-underline transition-transform duration-300 hover:scale-105 inline-block"
+              >
+                View Deadlines
+              </a>
             </div>
           </div>
-
         </div>
       </FadeIn>
     </div>
