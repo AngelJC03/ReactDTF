@@ -1,7 +1,7 @@
 import React from "react";
 import "./FundingRecipientsContent.css";
 import FadeIn from "../../../components/fadeinsection/FadeIn.jsx";
-import AccordionItem from "../../../components/accordion/AccordionItem.jsx";
+import AccordionItem from "../../../components/Accordion/AccordionItem.jsx";
 
 const recipients = [
   {
