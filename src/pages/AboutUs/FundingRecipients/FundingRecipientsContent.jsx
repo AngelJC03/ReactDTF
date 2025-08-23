@@ -15,7 +15,7 @@ Supports survivor-led advocacy and empowerment; partners with SOAR to prevent do
     name: "The Warde-robe Thrift Store (McAuley Ministries)",
     content: `
 Supports families in Central Falls; expands outreach and provides essential items.
-"This funding allows us to better serve our community."
+"This funding allows us to better serve our community." 
     `,
   },
   {
