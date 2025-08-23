@@ -1,0 +1,167 @@
+p, li {
+  line-height: 1.6;
+}
+
+.funding-opportunities {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: #d2f3ae;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Page Title */
+.funding-title {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding-top: 30px;
+  font-size: 2.5rem;
+}
+
+/* Intro paragraph */
+.funding-intro {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.funding-intro-list {
+  width: 500px;
+  min-width: 250px;
+  margin: 0 auto;
+  margin-top: 20px;
+  list-style: disc;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.funding-intro-list li {
+  margin-bottom: 10px;
+}
+
+/* Note about deadlines */
+.funding-note {
+  background-color: #ef7556;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 35px;
+  font-size: 1rem;
+}
+
+/* Deadlines section */
+.deadlines-section {
+  padding: 20px;
+  margin: 0 auto;
+  margin-top: 35px;
+  max-width: 800px;
+}
+
+.deadlines-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+/* List of deadlines */
+.deadline-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.deadline-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.bullet-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+/* Closing paragraph */
+.funding-closing {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Contact link */
+.funding-contact {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.funding-contact a {
+  color: #0073e6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.funding-contact a:hover {
+  text-decoration: underline;
+}
+
+.funding-opps-sidebar {
+  display: flex;
+  flex-direction: column; /* keep your stacked layout */
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  height: 100%; /* fill parent grid cell */
+  align-self: stretch; /* key line: stretch full grid row height */
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .funding-opportunities {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      gap: 30px;
+      width: 100%;
+  }
+  .funding-title {
+    font-size: 2rem;
+  }
+
+  .funding-intro-list {
+    width: 250px;
+  }
+
+  .funding-intro,
+  .funding-note,
+  .funding-closing {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .bullet-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .deadline-list li {
+    font-size: 0.99rem;
+  }
+
+  .funding-contact {
+    font-size: 1.2rem;
+  }
+}

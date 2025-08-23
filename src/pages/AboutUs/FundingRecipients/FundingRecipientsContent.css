@@ -1,0 +1,84 @@
+.funding-recipients-container {
+  background-color: #d2f3ae;
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
+.funding-recipients-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.funding-recipients-intro {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 1.2rem;
+}
+
+.recipients-grid {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.recipient-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.recipient-header span {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.recipient-details {
+  padding: 15px 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.quote {
+  font-style: italic;
+  margin-top: 10px;
+  color: #555;
+}
+
+.funding-bottom-cta {
+  display: flex;
+  gap: 20px;
+  margin-top: 50px;
+  width: 100%;
+  justify-content: center;
+}
+
+.funding-bottom-cta-column {
+  flex: 1;
+  background: transparent;
+  padding: 25px;
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+.funding-bottom-cta-column h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.funding-bottom-cta-column p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 1000px) {
+  .funding-bottom-cta {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

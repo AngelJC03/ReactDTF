@@ -1,6 +1,7 @@
 import React from 'react';
 import './WhatWeDontFundContent.css';
 import FadeInSection from '../../../components/fadeinsection/FadeIn';
+import questionsPhoto from '../../../assets/images/what-we-dont-fund-photos/questionsPhoto.jpg';
 
 function WhatWeDontFundContent() {
   const dontFundItems = [
@@ -13,9 +14,9 @@ function WhatWeDontFundContent() {
 
   return (
     <div className="what-we-dont-fund-container">
-      <FadeInSection>
         <div className="what-we-dont-fund-inner-container">
-          <h1 className="title">What We Don’t Fund</h1>
+          <FadeInSection>
+            <h1 className="what-we-dont-fund-title ">What We Don’t Fund</h1>
 
           <p className="intro">
             The Davis-Tennon Foundation is committed to supporting direct services 
@@ -46,8 +47,30 @@ function WhatWeDontFundContent() {
             Grant amounts are determined based on need, alignment with our mission, and the 
             strength of collaboration and accountability practices within the applying organization.
           </p>
+          </FadeInSection>
         </div>
-      </FadeInSection>
+        <FadeInSection>
+        <div className="question-container">
+          <div
+            className="question-container-firstHalf"
+            style={{
+              backgroundImage: `url(${questionsPhoto})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          ></div>
+
+          <div className="question-container-secondHalf">
+            <p>
+              We’d love to hear from you. Our team is always active and willing to guide you in the right direction.  
+              Feel free to contact us directly at{" "}
+              <a href="mailto:agarcia@davis-tennonfoundation.org" className="contact-link">
+                agarcia@davis-tennonfoundation.org
+              </a>.
+            </p>
+          </div>
+        </div>
+        </FadeInSection>
     </div>
   );
 }

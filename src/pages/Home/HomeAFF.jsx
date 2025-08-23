@@ -17,9 +17,9 @@ function HomeAFF() {
             <div className="aff-right">
               <h2>Does your organization's mission align with our funding priorities?</h2>
                 <p>We invite you to apply for funding to support your impactful work.</p>
-              <button className="ml-5 px-5 py-6 bg-[rgb(109,169,68)] text-white font-semibold shadow rounded apply-button">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyf2L9swDTLg0CM6kyN8VamFCxlJ4w-BgiWQihqsM--hBiWA/viewform" target="_blank" rel="noopener noreferrer" className="ml-5 px-5 py-6 bg-[rgb(109,169,68)] text-white font-semibold shadow rounded no-underline apply-button">
                 Apply For Funding
-              </button>
+              </a>
             </div>
         </div>
       </FadeIn>

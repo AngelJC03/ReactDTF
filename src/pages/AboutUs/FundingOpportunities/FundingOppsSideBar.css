@@ -1,0 +1,32 @@
+.funding-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px;
+  border-left: 1px solid black;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.funding-sidebar-section {
+  height: 100%;
+  background: transparent;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.funding-sidebar-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .funding-sidebar {
+    max-width: 100%;
+    border-left: none;
+    border-top: 1px solid black;
+  }
+}

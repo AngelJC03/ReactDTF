@@ -1,6 +1,6 @@
 .what-we-dont-fund-container {
   margin: 0 auto;
-  padding: 40px 20px;
+  padding-top: 30px;
   line-height: 1.7;
   color: black;
   background-color: #9cb383;
@@ -12,8 +12,8 @@
     margin: 0 auto;
 }
 
-.title {
-  font-size: 2.2rem;
+.what-we-dont-fund-title {
+  font-size: 2.5rem;
   text-align: center;
   margin-bottom: 25px;
 }
@@ -110,4 +110,49 @@
   .dont-fund-grid {
     grid-template-columns: 1fr;
   }
+}
+
+
+.question-container {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-container-firstHalf {
+  flex: 1;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  background-color: rgb(255, 204, 138);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.question-container-secondHalf {
+  flex: 1;
+  height: 400px;
+  padding: 20px;
+  background-color: rgb(255, 204, 138);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question-container-secondHalf p {
+  margin: 40px 0;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 1000px) {
+  .question-container {
+    flex-direction: column; /* stack content vertically */
+    height: 800px; /* height adjusts based on content */
+  }
+
 }

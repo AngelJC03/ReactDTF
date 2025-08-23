@@ -4,18 +4,17 @@ p, li {
   line-height: 1.6;
 }
 
-/* Page Title */
 .WWF-title {
   text-align: center;
   max-width: 900px;
-  margin: 0 auto 40px;
-  padding-top: 20px;
+  margin: 0 auto;
+  padding-top: 30px;
 }
 
 .WWF-title h1 {
   font-size: 2.5rem;
   margin-bottom: 15px;
-  padding-top: 20px;
+
 }
 
 .WWF-title p {
@@ -32,12 +31,18 @@ p, li {
 .funding-container-container {
   padding: 0 20px;
   width: 100%;
-  margin: 40px 0;
+
 }
 
 .funding-container {
   width: 700;
   padding: 0 20px;
+}
+
+.funding-container ul {
+  list-style: disc;
+  margin: 20px auto;
+  width: 400px;
 }
 
 .funding-container h2 {
@@ -46,10 +51,9 @@ p, li {
   font-size: 2rem;
 }
 
-/* Grid */
-/* Grid */
 .impact-grid {
-  width: 100%;
+  margin: 0 auto;
+  width: 80%;
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* exactly 2 columns */
   grid-template-rows: repeat(2, 1fr);    /* exactly 2 rows */
@@ -57,7 +61,6 @@ p, li {
 }
 
 
-/* Optional: limit max card height for better layout */
 .impact-card {
   position: relative;
   height: 500px; /* smaller than 500px so multiple fit nicely */
@@ -73,7 +76,6 @@ p, li {
   transform: scale(1.02);
 }
 
-/* Caption bar at bottom */
 .caption-bar {
   position: absolute;
   bottom: 0;
@@ -105,6 +107,7 @@ p, li {
 }
 
 .apply-for-funding-container {
+  margin-top: 20px;
   text-align: center;
   width: 100%;
   height: auto;
@@ -139,6 +142,11 @@ p, li {
   margin: 40px 0;
 }
 
+.button-container:hover {
+  transform: scale(1.05);
+  transition: transform 0.9s ease;
+}
+
 @media (max-width: 1000px) {
   .impact-grid {
     grid-template-columns: 1fr; /* single column on smaller screens */
@@ -151,6 +159,11 @@ p, li {
   .apply-for-funding-container {
     flex-direction: column; /* stack content vertically */
     height: 800px; /* height adjusts based on content */
+  }
+
+  .funding-container ul {
+    width: 200px;
+    margin: 20px auto;
   }
 
 
