@@ -1,0 +1,55 @@
+.in-the-news {
+  display: flex;
+  background-color: #feeaab;
+  padding: 20px;
+  border-right: 2px solid grey;
+  gap: 20px;
+}
+
+/* Articles take main space */
+.articles-section {
+  flex: 1;
+}
+
+/* Sidebar styled same as FundingOppsSideBar */
+.news-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 20px;
+  border-left: 1px solid black;
+  width: 350px;
+  margin: 20px auto;
+}
+
+.news-sidebar-section {
+  background: transparent;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.news-sidebar-section h1 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.news-sidebar-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 1000px) {
+  .in-the-news {
+    flex-direction: column;
+  }
+
+  .news-sidebar {
+    width: 100%;
+    border-left: none;
+    border-top: 1px solid black;
+    margin: 0 auto;
+  }
+}

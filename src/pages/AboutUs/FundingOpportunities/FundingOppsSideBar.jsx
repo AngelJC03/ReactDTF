@@ -8,18 +8,8 @@ const FundingOppsSideBar = () => {
       <div className="funding-sidebar-section">
         <h1>Funding Initiatives</h1>
         <h3>Learn more about our funding initiatives</h3>
-          <a
-            href="/whatwefund"
-            className="
-                inline-block      
-                ml-4 px-3 py-5
-                border-2 border-[rgba(0,0,0,1)] text-[rgba(0,0,0,1)] font-semibold shadow-lg rounded
-                transition-transform duration-300 transform
-                hover:scale-105
-                no-underline
-            "
-            >
-            Visit What We Fund
+          <a href="/whatwefund" target="_blank" rel="noopener noreferrer" className=" inline-block ml-5 px-3 py-3 bg-[rgba(50,120,100)] text-white font-semibold shadow rounded no-underline apply-button">
+            What We Fund
           </a>
       </div>
 
@@ -36,19 +26,9 @@ const FundingOppsSideBar = () => {
       <div className="funding-sidebar-section">
         <h1>About Our Founders</h1>
         <h3>Learn about our founders</h3>
-        <a
-            href="/Aboutviolaandjulius"
-            className="
-                inline-block      
-                ml-4 px-3 py-5
-                border-2 border-[rgba(0,0,0,1)] text-[rgba(0,0,0,1)] font-semibold shadow-lg rounded
-                transition-transform duration-300 transform
-                hover:scale-105
-                no-underline
-            "
-            >
-            Visit About Viola and Julius
-          </a>
+        <a href="/aboutviolaandjulius" target="_blank" rel="noopener noreferrer" className=" inline-block ml-5 px-3 py-3 bg-[rgba(139,93,49)] text-white font-semibold shadow rounded no-underline apply-button">
+            About Viola and Julius
+        </a>
       </div>
     </div>
   );

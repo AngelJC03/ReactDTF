@@ -180,8 +180,24 @@ function Footer() {
 
     <ul className="footer-column">
       <li className="column-name">Important Links</li>
-      <li><Link to="/">Apply For Funding</Link></li>
-      <li><Link to="/">Donate Now</Link></li>
+        <li>
+            <a 
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeyf2L9swDTLg0CM6kyN8VamFCxlJ4w-BgiWQihqsM--hBiWA/viewform" 
+                target="_blank" 
+                rel="noopener noreferrer"
+            >
+                Apply For Funding
+            </a>
+            </li>
+            <li>
+            <a 
+                href="https://givebutter.com/0nhBTh" 
+                target="_blank" 
+                rel="noopener noreferrer"
+            >
+                Donate Now
+            </a>
+        </li>
     </ul>
   </div>
 </div>

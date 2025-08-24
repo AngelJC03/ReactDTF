@@ -4,7 +4,7 @@ import FadeIn from '../../components/fadeinsection/FadeIn.jsx';
 import HomeWWF from "./HomeWWF";
 import GivebutterWidget from "./GivebutterWidget";
 import { Fade } from "react-bootstrap";
-import NewsArticles from "./NewsArticles.jsx";
+import NewsArticles from "../../components/newsarticles/NewsArticles.jsx";
 import HomeAFF from "./HomeAFF.jsx";
 
 function HomeBody() {
