@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./AccordionItem.css";
 
-const AccordionItem = ({ title, children }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const AccordionItem = ({ title, children, defaultOpen }) => {
+  const [isOpen, setIsOpen] = useState(defaultOpen);
 
   return (
     <div className="accordion-item">

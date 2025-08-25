@@ -89,8 +89,6 @@ const FundingRecipientsContent = () => {
               <p>For information about the next funding deadline, click the button below.</p>
               <a
                 href="/fundingopportunities"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="ml-5 px-5 py-6 bg-[rgba(169,142,68)] text-white font-semibold shadow rounded no-underline apply-button inline-block"
               >
                 View Deadlines

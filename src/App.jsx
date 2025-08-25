@@ -1,6 +1,7 @@
 import './App.css';
 // import { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop.jsx';
 import Home from './pages/Home/Home';
 import WhatWeFund from './pages/AboutUs/WhatWeFund/WhatWeFund.jsx';
 import FundingOpportunities from './pages/AboutUs/FundingOpportunities/FundingOpportunities.jsx';
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/Home" element={<Home />} />
