@@ -55,13 +55,10 @@ function Articles() {
         const truncatedDescription =
           description.length > 100 ? (
             <>
-              {description.substring(0, 100)}...
-              <span className="read-more">
-                <br />
-                <br />
-                <a href="pages/in-the-news.html">See more articles...</a>
-                <br />
-              </span>
+              {description.substring(0, 100)}...<br />
+              <a href={link} className="read-more">
+                Read More
+              </a> 
             </>
           ) : (
             description
