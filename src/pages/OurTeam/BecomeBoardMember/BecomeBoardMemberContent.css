@@ -1,0 +1,117 @@
+/* BECOME BOARD MEMBERS PAGE STYLES */
+
+.BBM-OMEGA-CONTAINER {
+    background: #d9b99e;
+    padding: 20px 0;
+    height: auto;
+}
+
+.become-board-member-page-container .bbm-header-image {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 30px 10px;
+}
+
+.become-board-member-page-container .bbm-header-image img {
+    width: 80%;
+    height: auto;      
+    display: block;
+    margin: 0 auto;   
+}
+
+/* Board member content area */
+.become-board-member-page-container .bbm-content {
+    margin: 0 auto;
+    width: 80%;
+    padding: 0 10px;
+}
+
+.become-board-member-page-container .bbm-content h2,
+.become-board-member-page-container .bbm-content h3 {
+    font-weight: bold;
+    text-align: left;
+}
+
+.become-board-member-page-container .bbm-content p {
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+.become-board-member-page-container .bbm-content ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    line-height: 1.6;
+}
+
+.become-board-member-page-container .bbm-content a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.become-board-member-page-container .bbm-content a:hover {
+    text-decoration: underline;
+}
+
+/* Custom bullet for Become Board Member page */
+.become-board-member-page-container .bbm-content ul {
+    padding-left: 0; /* remove default bullets */
+    list-style: none;
+}
+
+.become-board-member-page-container .bbm-content ul li.bbm-bullet-item {
+    display: flex;
+    margin-bottom: 10px; /* spacing between items */
+}
+
+.become-board-member-page-container .bbm-content ul li.bbm-bullet-item .bbm-bullet-icon {
+    width: 20px;  /* adjust to your PNG size */
+    height: 20px; /* adjust to your PNG size */
+    margin-right: 10px; /* spacing between bullet and text */
+    flex-shrink: 0; /* prevent image from shrinking */
+}
+
+.bbm-bullet-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* List of deadlines */
+.bbm-bullet-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* makes everything align left */
+    padding: 0;
+}
+
+.bbm-bullet-list li {
+    width: 100%;
+    margin: 0 auto;              /* remove auto-centering */
+    display: flex;
+    align-items: center;    /* keeps icon + text aligned nicely */
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.bbm-intro-separator {
+    margin-bottom: 30px;
+}
+
+.bbm-spacer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .become-board-member-page-container .bbm-header-image img {
+        max-width: 80%;
+    }
+
+    .become-board-member-page-container .bbm-content {
+        padding: 0 15px;
+    }
+    .bbm-content li {
+        font-size: 1rem;
+    }
+}

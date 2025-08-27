@@ -1,6 +1,7 @@
 .accordion-item {
   border-bottom: 1px solid #000000; /* border bottom for container */
   margin-bottom: 10px;
+  font-family: 'gill-sans-bold', sans-serif;
 }
 
 .accordion-header {

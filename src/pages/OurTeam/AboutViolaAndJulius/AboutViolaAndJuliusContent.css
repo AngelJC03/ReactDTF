@@ -1,13 +1,13 @@
 .about-viola-and-julius-content {
     background-color: #ffb78d;
-    padding: 40px 20px;
+    padding: 30px 20px;
     margin: 0 auto;
 }
 
 .viola-slideshow {
     display: flex;
     gap: 20px;
-    margin-top: 20px;
+
     margin-bottom: 100px;
 }
 
@@ -32,10 +32,10 @@
 
 @media (min-width: 1440px) {
     .violas-story h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .violas-story p {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }
 .viola-slideshow-images {

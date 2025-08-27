@@ -1,0 +1,106 @@
+.foundation-staff-page-container {
+  background: #ebebeb;
+  padding: 20px 0;
+  height: auto;
+}
+/* Staff container */
+.staff-container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 30px 0;
+}
+
+.title-of-page {
+  font-size: 3rem;
+  color: #000;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Each staff card */
+.staff-member {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 10px auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px; /* lil polish */
+}
+
+.staff-member p,
+.staff-member h3 {
+  text-align: center;
+  margin: 6px 0;
+}
+
+/* Bio text */
+.text-content {
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+/* Staff photo */
+.staff-photo {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  margin: 10px auto;
+  width: 70%;
+  border-radius: 50%; /* optional: circle crop */
+}
+
+/* Caption container */
+.staff-caption {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Toggle bar */
+.toggle-bar {
+  display: none;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #aaa;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.toggle-bar:hover {
+  background-color: #e0e0e0;
+}
+
+/* Responsive rules */
+@media (max-width: 900px) {
+  .text-content {
+    display: block;
+  }
+
+  .staff-member {
+    width: 100%;
+  }
+
+  .staff-photo {
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .toggle-bar {
+    display: block;
+  }
+}
