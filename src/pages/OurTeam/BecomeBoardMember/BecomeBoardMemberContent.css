@@ -2,14 +2,13 @@
 
 .BBM-OMEGA-CONTAINER {
     background: #d9b99e;
-    padding: 20px 0;
+    padding: 30px 0;
     height: auto;
 }
 
 .become-board-member-page-container .bbm-header-image {
     text-align: center;
     color: rgb(0, 0, 0);
-    padding: 30px 10px;
 }
 
 .become-board-member-page-container .bbm-header-image img {
