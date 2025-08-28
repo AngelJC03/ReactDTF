@@ -1,0 +1,158 @@
+/* === Container Setup === */
+
+.partners-and-resources-page-container {
+    background-color: rgb(255, 181, 181);
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 0;
+  line-height: 1.6;
+}
+
+.community-partners {
+    background-color: rgb(255, 224, 224);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.community-partners p {
+    font-size: 1.1rem;
+}
+
+.par-page-content {
+  width: 80%;
+  margin: 0 auto;
+  color: #333;
+}
+
+.par-page-content h1,
+.par-page-content h2 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* === Hero Image Section === */
+.page-image {
+  margin-bottom: 30px;
+}
+
+.page-image h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 20px auto;
+}
+
+.page-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.photo-credit {
+  font-size: 0.85rem;
+  margin-top: 8px;
+  color: #555;
+}
+
+.community-partners p {
+  margin-bottom: 15px;
+}
+
+.partners-bullet-list {
+  list-style: none;         /* remove default dots */
+  padding-left: 20px;          /* reset padding */
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.partners-bullet-list li {
+  display: flex;            /* align img + text side by side */
+  align-items: flex-start;  /* top-align text with img */
+  margin-bottom: 1rem;      /* spacing between items */
+  padding: 0.5rem;
+}
+
+.partners-bullet-list img {
+  width: 20px;              /* adjust size of your “dot” */
+  height: 20px;
+  margin-right: 0.75rem;    /* spacing between img and text */
+  flex-shrink: 0;           /* prevents shrinking on smaller screens */
+}
+
+.partners-bullet-list span {
+  flex: 1;                  /* text takes remaining space */
+  line-height: 1.5;         /* improve readability */
+}
+
+
+/* === Outer Partners Container === */
+.outer-partners-container {
+  margin: 40px 0;
+}
+
+.outer-partners-container h2 {
+  margin-top: 25px;
+}
+
+/* === Partner Logos Grid === */
+.partner-logos {
+  margin: 40px 0;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-logo-row-1, .partner-logo-row-2, .partner-logo-row-3 {
+  display: flex;
+  flex-direction: row;
+  gap: 80px; /* space between logos */
+  justify-content: center;
+  flex-wrap: wrap; /* wraps logos on smaller screens */
+}
+
+.partner-logo:hover {
+  width: 180px;
+  height: 180px;
+  transform: scale(1.05);
+}
+
+/* === Contact Section === */
+.contact-us-partners-page {
+  margin: 50px 0;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.contact-us-partners-page h2 {
+  margin-bottom: 15px;
+}
+
+.contact-email {
+  color: #0066cc;
+  font-weight: 600;
+}
+
+/* === Responsive Adjustments === */
+@media (max-width: 1000px) {
+  /* collapse spacing & font size */
+  .par-page-content h1 {
+    font-size: 1.6rem;
+  }
+
+  .par-page-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .partners-content-container,
+  .contact-us-partners-page {
+    padding: 15px;
+  }
+
+  .partners-content-container li,
+  .outer-partners-container li {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+}
