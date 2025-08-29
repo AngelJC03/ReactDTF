@@ -139,6 +139,7 @@ function PartnersAndResourcesContent() {
                 </span>
             </li>
             <li>
+                <img src={DavisTennonLogo} alt="Davis-Tennon Foundation Logo" />
                 <span>
                     <a href="https://www.nld.org/rhode-island-college-workforce-development-hub" target="_blank">Central Falls Workforce Hub:</a> Workforce training and career advancement.
                 </span>
@@ -154,6 +155,7 @@ function PartnersAndResourcesContent() {
                 </span>
             </li>
             <li>
+                <img src={DavisTennonLogo} alt="Davis-Tennon Foundation Logo" />
                 <span>
                     <a href="https://chartergrowthfund.org/" target="_blank">Trailblazers Initiative:</a> Support for innovative educational programs.
                 </span>

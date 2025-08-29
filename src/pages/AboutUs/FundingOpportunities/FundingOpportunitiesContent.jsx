@@ -14,10 +14,30 @@ const FundingOpportunitiesContent = () => {
             The Davis-Tennon Foundation accepts Letters of Intent (LOIs) on a quarterly basis to support initiatives aligned with our mission of:
         </p>
         <ul className="funding-intro-list">
-            <li>Empowering women</li>
-            <li>Preventing domestic violence</li>
-            <li>Supporting student enrichment outside the classroom</li>
-            <li>Promoting housing stability</li>
+            <li>
+              <img src={DavisTennonLogo} alt="Davis-Tennon Foundation Logo" className="bullet-icon" />
+              <span>
+                Empowering women
+              </span>
+            </li>
+            <li>
+              <img src={DavisTennonLogo} alt="Davis-Tennon Foundation Logo" className="bullet-icon" />
+              <span>
+                Preventing domestic violence
+              </span>
+            </li>
+            <li>
+              <img src={DavisTennonLogo} alt="Davis-Tennon Foundation Logo" className="bullet-icon"/>
+              <span>
+                Supporting student enrichment outside the classroom
+              </span>
+            </li>
+            <li>
+              <img src={DavisTennonLogo} alt="Davis-Tennon Foundation Logo" className="bullet-icon"/>
+              <span>
+                Promoting housing stability
+              </span>
+            </li>
         </ul>
 
         <p className="funding-note">

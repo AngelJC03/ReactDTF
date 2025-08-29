@@ -58,7 +58,7 @@ function NewsArticles() {
               <span className="read-more">
                 <br />
                 <br />
-                <a href="pages/in-the-news.html">See more articles...</a>
+                <a href="/InTheNews">See more articles...</a>
                 <br />
               </span>
             </>

@@ -38,10 +38,20 @@ p, li {
   font-size: 1.2rem;
   line-height: 1.6;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* makes everything align left */
+  padding: 0;
 }
 
 .funding-intro-list li {
+  width: 500px;
+  margin: 0 auto;              /* remove auto-centering */
   margin-bottom: 10px;
+  display: flex;
+  align-items: center;    /* keeps icon + text aligned nicely */
+  margin-bottom: 15px;
+  font-size: 1.3rem;
 }
 
 /* Note about deadlines */
@@ -146,6 +156,11 @@ p, li {
 
   .funding-intro-list {
     width: 250px;
+  }
+
+  .funding-intro-list li {
+    width: 250px;
+    font-size: 0.99rem;
   }
 
   .funding-intro,
