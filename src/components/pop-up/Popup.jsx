@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import NewsletterForm from './Newsletter';
-import './popup.css';
+import './Popup.css';
 
 function Popup() {
   const [isOpen, setIsOpen] = useState(false); // start closed
