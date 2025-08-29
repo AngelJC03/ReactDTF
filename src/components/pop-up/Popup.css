@@ -14,7 +14,7 @@
   position: relative; /* so the X stays inside */
   background: #ffcc8a;
   width: 90%;
-  max-width: 500px;
+  max-width: 600px;
   padding: 40px 20px 20px; /* extra top padding for X */
   border-radius: 16px 16px 0 0;
   box-shadow: 0 -4px 12px rgba(0,0,0,0.2);
