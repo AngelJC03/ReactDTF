@@ -66,6 +66,7 @@ function NewsletterForm() {
         </div>
 
         <div className="popup-input-wrapper">
+          <label className="popup-label"></label>
           <input
             type="text"
             name="MMERGE5" // 👈 Mailchimp merge field for comments
@@ -74,7 +75,8 @@ function NewsletterForm() {
             value={comment}
             onChange={(e) => setComment(e.target.value)}
           />
-          <span className="required-star"> </span>
+          <span className="empty-space"></span>
+          <span className="empty-space"></span>
         </div>
 
         <div className="popup-input-wrapper">
