@@ -12,6 +12,7 @@ import AboutViolaAndJulius from './pages/OurTeam/AboutViolaAndJulius/AboutViolaA
 import BecomeBoardMember from './pages/OurTeam/BecomeBoardMember/BecomeBoardMember.jsx';
 import PartnersAndResources from './pages/PartnersAndResources/PartnersAndResources.jsx';
 import FoundationStaff from './pages/OurTeam/FoundationStaff/FoundationStaff.jsx';
+import Popup from './components/pop-up/popup.jsx';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/FoundationStaff" element={<FoundationStaff />} />
         </Routes>
       </Router>
+      <Popup />
     </div>
   );
 }

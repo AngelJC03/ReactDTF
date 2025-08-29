@@ -167,5 +167,16 @@ p, li {
     margin: 20px auto;
   }
 
+}
 
+@media (max-width: 600px) {
+  .impact-card {
+    height: 200px;
+  }
+  .overlay h3 {
+    font-size: 0.6rem;
+  }
+  .overlay p {
+    font-size: 0.5rem;
+  }
 }
