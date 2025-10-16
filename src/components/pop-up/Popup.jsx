@@ -3,23 +3,22 @@ import NewsletterForm from './Newsletter';
 import './Popup.css';
 
 function Popup() {
-  const [isOpen, setIsOpen] = useState(false); // start closed
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    // Check if popup was already seen
     const popupSeen = sessionStorage.getItem('popupSeen');
-    if (popupSeen) return; // do not show popup
+    if (popupSeen) return;
 
     const timer = setTimeout(() => {
       setIsOpen(true);
-    }, 3000); // show after 3 seconds
+    }, 3000);
 
-    return () => clearTimeout(timer); // cleanup
+    return () => clearTimeout(timer);
   }, []);
 
   const handleClose = () => {
     setIsOpen(false);
-    sessionStorage.setItem('popupSeen', 'true'); // store in sessionStorage
+    sessionStorage.setItem('popupSeen', 'true');
   };
 
   if (!isOpen) return null;
@@ -30,7 +29,9 @@ function Popup() {
         <button className="close-btn" onClick={handleClose}>×</button>
         <h2>Thank You for Visiting our Page!</h2>
         <p>Sign up for our newsletter to stay updated and leave your thoughts below!</p>
-        <NewsletterForm />
+
+        {/* 👇 Pass handleClose to the NewsletterForm */}
+        <NewsletterForm onClose={handleClose} />
       </div>
     </div>
   );

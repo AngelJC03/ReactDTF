@@ -1,6 +1,6 @@
 import React, { useState, useRef } from 'react';
 
-function NewsletterForm() {
+function NewsletterForm({ onClose }) {
   const [email, setEmail] = useState('');
   const [comment, setComment] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
@@ -9,7 +9,6 @@ function NewsletterForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
     setErrorMessage('');
     setSuccessMessage('');
 
@@ -31,6 +30,11 @@ function NewsletterForm() {
         setEmail('');
         setComment('');
         formRef.current.reset();
+
+        // 👇 Automatically close popup after 2 seconds
+        setTimeout(() => {
+          if (onClose) onClose();
+        }, 2000);
       })
       .catch(() => {
         setErrorMessage('There was an error. Please try again later.');
@@ -46,47 +50,37 @@ function NewsletterForm() {
         method="post"
         className="popup-form"
         noValidate
-        style={{ display: 'flex', flexDirection: 'column', gap: '10px' }} // 👈 gap here
+        style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}
       >
         <label style={{ fontSize: '14px', color: '#555' }}>
           Required <span style={{ color: 'red' }}>*</span>
         </label>
-        <div className="popup-input-wrapper">
-          <label className="popup-label"></label>
-          <input
-            type="email"
-            name="EMAIL"
-            className={`popup-input ${errorMessage ? 'popup-input-error' : ''}`}
-            required
-            placeholder="Enter your email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <span className="required-star">*</span>
-        </div>
 
-        <div className="popup-input-wrapper">
-          <label className="popup-label"></label>
-          <input
-            type="text"
-            name="MMERGE5" // 👈 Mailchimp merge field for comments
-            className="popup-input"
-            placeholder="Leave a comment (optional)"
-            value={comment}
-            onChange={(e) => setComment(e.target.value)}
-          />
-          <span className="empty-space"></span>
-          <span className="empty-space"></span>
-        </div>
+        <input
+          type="email"
+          name="EMAIL"
+          required
+          placeholder="Enter your email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className={`popup-input ${errorMessage ? 'popup-input-error' : ''}`}
+        />
 
-        <div className="popup-input-wrapper">
-          <input
-            type="submit"
-            name="subscribe"
-            className="popup-submit-btn"
-            value="Subscribe"
-          />
-        </div>
+        <input
+          type="text"
+          name="MMERGE5"
+          placeholder="Leave a comment (optional)"
+          value={comment}
+          onChange={(e) => setComment(e.target.value)}
+          className="popup-input"
+        />
+
+        <input
+          type="submit"
+          name="subscribe"
+          value="Subscribe"
+          className="popup-submit-btn"
+        />
 
         <div className="popup-messages">
           {errorMessage && <div className="popup-error">{errorMessage}</div>}
