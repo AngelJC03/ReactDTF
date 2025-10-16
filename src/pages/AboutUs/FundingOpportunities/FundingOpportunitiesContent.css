@@ -11,6 +11,18 @@ p, li {
     gap: 20px;
 }
 
+.funding-cycle-important-notices {
+  background-color: #ffcc00;
+  color: black;
+  padding: 15px;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  text-align: center;
+}
+
 /* Page Title */
 .funding-title {
   text-align: center;

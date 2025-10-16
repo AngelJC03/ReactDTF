@@ -1,0 +1,26 @@
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.homepage-video {
+  width: 100%;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  outline: none;
+  border-radius: 20px;
+}
+
+/* Hide Chrome’s download and PiP buttons */
+.homepage-video::-internal-media-controls-download-button {
+  display: none;
+}
+.homepage-video::-webkit-media-controls-enclosure {
+  overflow: hidden;
+}
+.homepage-video::-webkit-media-controls-panel {
+  display: flex !important;
+  opacity: 1 !important;
+}

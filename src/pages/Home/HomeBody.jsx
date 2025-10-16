@@ -6,10 +6,20 @@ import GivebutterWidget from "./GivebutterWidget";
 import { Fade } from "react-bootstrap";
 import NewsArticles from "../../components/newsarticles/NewsArticles.jsx";
 import HomeAFF from "./HomeAFF.jsx";
+import LazyPlayVideo from "./LazyPlayVideo.jsx";
 
 function HomeBody() {
   return (
     <div className="homebody-container">
+        <FadeIn>
+            <div className="video-section">
+                <LazyPlayVideo />
+            </div>
+        </FadeIn>
+        <FadeIn>
+            <div className="video-section">
+            </div>
+        </FadeIn>
         <FadeIn>
             <div className="WWF-section">
                 <HomeWWF />

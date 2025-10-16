@@ -112,8 +112,6 @@
 }
 
 .partner-logo:hover {
-  width: 180px;
-  height: 180px;
   transform: scale(1.05);
 }
 

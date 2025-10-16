@@ -34,6 +34,36 @@ const recipients = [
     website:
       "https://www.facebook.com/people/Central-Falls-Square-Mile-Club/61553554014458/?_rdr",
   },
+  {
+    "name": "Shri Foundation / Segue-Mary Alice Davis Food Pantry",
+    "amount": "$75,000",
+    "content": "Funds support pantry operations to better serve the Blackstone Valley community by increasing staff capacity and adding an extra day of service for food, resources, and community assistance.",
+    "website": "https://shri-foundation.org/"
+  },
+  {
+    "name": "RI Coalition to End Homelessness",
+    "amount": "$25,000",
+    "content": "Provides staff and operational support focused on increasing professional development opportunities and strengthening homelessness prevention efforts across Rhode Island.",
+    "website": "https://www.rihomeless.org/"
+  },
+  {
+    "name": "Central Falls Children Foundation",
+    "amount": "$30,000",
+    "content": "Supports programs for mothers and heads of households, including employability training, family services, and Adult Education programming to enhance community empowerment.",
+    "website": "https://www.cfchildrensfoundation.org/"
+  },
+  {
+    "name": "Newport County / Community Mental Health Center",
+    "amount": "$10,000",
+    "content": "Covers transportation costs for individuals seeking mental health support, ensuring access to public transit for appointments and essential care visits.",
+    "website": "https://www.newportmentalhealth.org/"
+  },
+  {
+    "name": "Central Falls Athletics",
+    "amount": "$10,000",
+    "content": "Provides funding to support Central Falls Athletics programs and students, promoting physical activity and community engagement through sports.",
+    "website": "https://www.cfhswarriorsathletics.com/"
+  }
 ];
 
 const FundingRecipientsContent = () => {
