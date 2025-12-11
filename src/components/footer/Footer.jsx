@@ -58,12 +58,14 @@ function Footer() {
                             action="https://davis-tennonfoundation.us20.list-manage.com/subscribe/post?u=ee1896e60a2c02f5c56dffd15&amp;id=e40c54c790&amp;f_id=002cc7f1f0"
                             method="post"
                             className="validate"
+                            aria-label="Newsletter Subscription Form"
                             noValidate
                         >
                             <div className="email-enter">
                                 <input
                                     type="email"
                                     name="EMAIL"
+                                    aria-label="Enter email Address for Newsletter Subscription"
                                     className="required email newsletter-input"
                                     required
                                     placeholder="E-mail"

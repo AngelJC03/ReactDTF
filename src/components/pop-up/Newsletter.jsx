@@ -60,6 +60,7 @@ function NewsletterForm({ onClose }) {
           type="email"
           name="EMAIL"
           required
+          aria-label="Enter email Address here for Newsletter Subscription"
           placeholder="Enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -68,6 +69,7 @@ function NewsletterForm({ onClose }) {
 
         <input
           type="text"
+          aria-label="Leave a comment (optional)"
           name="MMERGE5"
           placeholder="Leave a comment (optional)"
           value={comment}
@@ -77,6 +79,7 @@ function NewsletterForm({ onClose }) {
 
         <input
           type="submit"
+          aria-label="Submit email to Newsletter"
           name="subscribe"
           value="Subscribe"
           className="popup-submit-btn"
