@@ -34,7 +34,7 @@ function InTheNews() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeyf2L9swDTLg0CM6kyN8VamFCxlJ4w-BgiWQihqsM--hBiWA/viewform" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="inline-block ml-5 px-3 py-3 bg-[rgb(109,169,68)] text-white font-semibold shadow rounded no-underline apply-button"
+                className="inline-block ml-5 px-3 py-3 bg-[rgb(76,122,47)] text-white font-semibold shadow rounded no-underline apply-button"
               >
                 Apply For Funding
               </a>
