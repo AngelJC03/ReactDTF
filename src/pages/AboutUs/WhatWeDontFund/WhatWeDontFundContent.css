@@ -87,11 +87,11 @@
 }
 
 /* Card colors */
-.dont-fund-card.red    { background-color: #e74c3c; color: black; }  /* bright red – strongest warning */
-.dont-fund-card.brown  { background-color: #c0392b; color: black; }  /* darker red-brown – serious / blocked */
-.dont-fund-card.green  { background-color: #7f8c8d; color: black; }  /* gray – neutral / restricted */
-.dont-fund-card.yellow { background-color: #d35400; color: black; } /* dark orange – caution */
-.dont-fund-card.orange { background-color: #e67e22; color: black; }  /* burnt orange – alert / warning */
+.dont-fund-card.red    { background-color: #7a271e; }  /* bright red – strongest warning */
+.dont-fund-card.brown  { background-color: #75231a; }  /* darker red-brown – serious / blocked */
+.dont-fund-card.green  { background-color: #3e4444; }  /* gray – neutral / restricted */
+.dont-fund-card.yellow { background-color: #612700; } /* dark orange – caution */
+.dont-fund-card.orange { background-color: #894b14; }  /* burnt orange – alert / warning */
 
 /* Second row centered with 2 cards */
 .dont-fund-card:nth-child(4),
