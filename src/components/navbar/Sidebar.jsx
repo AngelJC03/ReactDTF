@@ -38,7 +38,10 @@ function Sidebar({ isOpen, onClose }) {
 
   return (
     <>
-      <div className={`sidebar ${isOpen ? 'sidebar-open' : ''}`}>
+      <nav 
+        aria-label="Sidebar navigation" 
+        className={`sidebar ${isOpen ? 'sidebar-open' : ''}`}
+      >
         
         <Link to="/Home" className="sidebar-logo-container" onClick={onClose}>
           <img src={logo} alt="Logo" className="sidebar-logo" />
@@ -120,7 +123,7 @@ function Sidebar({ isOpen, onClose }) {
         </ul>
 
         </div>
-      </div>
+      </nav>
 
       {isOpen && <div className="sidebar-overlay" onClick={onClose}></div>}
     </>

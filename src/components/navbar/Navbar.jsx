@@ -106,7 +106,7 @@ function Navbar() {
             </Link>
 
             <Link to="https://docs.google.com/forms/d/e/1FAIpQLSeyf2L9swDTLg0CM6kyN8VamFCxlJ4w-BgiWQihqsM--hBiWA/viewform" target="_blank" rel="noreferrer" className="nav-button">
-              <button className="ml-4 px-3 py-2 bg-[rgb(109,169,68)] text-white font-semibold shadow rounded">
+              <button className="ml-4 px-3 py-2 bg-[rgb(76,122,47)] text-white font-semibold shadow rounded">
                 Apply For Funding
               </button>
             </Link>

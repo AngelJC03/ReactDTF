@@ -137,7 +137,7 @@
         
         /* Subscribe Button */
         .subscribe-btn {
-            background-color: rgb(105,169,68);
+            background-color: rgb(76,122,47);
             color: white; /* Text color */
             padding: 15px; /* Button size */
             font-size: 16px; /* Font size */
@@ -155,7 +155,7 @@
         }
 
         .newsletter-container h2 {
-            color: #8e8e8e;
+            color: #000000;
             font-size: 12px;
             margin-top: 10px;
         }
