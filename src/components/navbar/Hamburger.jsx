@@ -10,7 +10,7 @@ function Hamburger({ click, checkboxRef, handleToggle }) {
         className="checkbox4 visuallyHidden"
         ref={checkboxRef}
         onChange={handleToggle}
-        label="Menu Toggle"
+        aria-label="Menu Toggle"
         checked={click}
       />
       <label htmlFor="checkbox4">
