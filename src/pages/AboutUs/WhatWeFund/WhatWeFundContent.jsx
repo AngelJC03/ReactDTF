@@ -100,12 +100,10 @@ const WhatWeFundContent = () => {
             <p>
               We support organizations whose work reflects our mission and funding priorities.
               If your values align with ours, we encourage you to explore the opportunity to apply.
-              Visit our{" "}
-              <a href="/apply-for-funding" className="apply-link">Apply for Funding</a>{" "}
-              page to learn more about the application process.
+              Visit our Apply for Funding page to learn more about the application process.
             </p>
             <div className="button-container">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyf2L9swDTLg0CM6kyN8VamFCxlJ4w-BgiWQihqsM--hBiWA/viewform" target="_blank" rel="noopener noreferrer" className="ml-5 px-5 py-6 bg-[rgb(109,169,68)] text-white font-semibold shadow rounded no-underline apply-button">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyf2L9swDTLg0CM6kyN8VamFCxlJ4w-BgiWQihqsM--hBiWA/viewform" target="_blank" rel="noopener noreferrer" className="ml-5 px-5 py-6 bg-[rgb(76,122,47)] text-white font-semibold shadow rounded no-underline apply-button">
                 Apply For Funding
               </a>
             </div>
