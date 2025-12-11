@@ -89,6 +89,7 @@ const FundingRecipientsContent = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="learn-more-link"
+                    style={{ color: "#0B3D91" }}
                   >
                     Learn more here
                   </a>
@@ -108,7 +109,7 @@ const FundingRecipientsContent = () => {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeyf2L9swDTLg0CM6kyN8VamFCxlJ4w-BgiWQihqsM--hBiWA/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ml-5 px-5 py-6 bg-[rgb(109,169,68)] text-white font-semibold shadow rounded no-underline apply-button inline-block"
+                className="ml-5 px-5 py-6 bg-[rgb(76,122,47)] text-white font-semibold shadow rounded no-underline apply-button inline-block"
               >
                 Apply For Funding
               </a>
