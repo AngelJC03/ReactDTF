@@ -149,6 +149,10 @@
   font-size: 1.3rem;
 }
 
+.contact-link {
+  color: #0B3D91;
+}
+
 @media (max-width: 1000px) {
   .question-container {
     flex-direction: column; /* stack content vertically */
