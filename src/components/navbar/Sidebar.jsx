@@ -69,7 +69,7 @@ function Sidebar({ isOpen, onClose }) {
                 >
                 <span className="flex items-center gap-2">
                   {label}
-                  <FaAngleRight className={`sidebar-arrow ${openDropdown === label ? 'rotate' : ''}`} role="dropdowns"/>
+                  <FaAngleRight className={`sidebar-arrow ${openDropdown === label ? 'rotate' : ''}`} role="none"/>
                 </span>
               </div>
 
