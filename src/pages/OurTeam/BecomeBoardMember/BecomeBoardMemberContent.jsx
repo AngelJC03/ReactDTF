@@ -81,22 +81,20 @@ function BecomeBoardMemberContent() {
             <AccordionItem title="How to Apply" defaultOpen={ContentShown}>
               <p>
                 Submit a letter of interest and your resume to 
-                <a href="mailto:agarcia@davis-tennonfoundation.org"> agarcia@davis-tennonfoundation.org </a>
+                <a href="mailto:agarcia@davis-tennonfoundation.org" style={{ color: "#0B3D91" }}> agarcia@davis-tennonfoundation.org </a>
                 with the subject line: <b>Board Member Application</b>. Applications will be reviewed on a rolling basis. 
-                Use <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvbXJiOKQTISXbQi4hbM31X9YlVZB5VaNLEb8wX28n6E3gOg/viewform" target="_blank" rel="noopener noreferrer">
+                Use <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvbXJiOKQTISXbQi4hbM31X9YlVZB5VaNLEb8wX28n6E3gOg/viewform" target="_blank" rel="noopener noreferrer" style={{ color: "#0B3D91" }}>
                 THIS FORM
                 </a> to complete your application.
               </p>
               <br />
               <p>Together, we can break down barriers, build connections, and strengthen communities. Join us in this important work!</p>
               <br />
-              <div className="bbm-spacer">
-                <button className="bbm-apply-button">
-                  <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvbXJiOKQTISXbQi4hbM31X9YlVZB5VaNLEb8wX28n6E3gOg/viewform" target='_blank' rel='noopener noreferrer' className=" inline-block ml-5 px-3 py-3 bg-[rgba(139,93,49)] text-white font-semibold shadow rounded no-underline apply-button">
-                      Apply to be a Board Member
-                  </a>
-                </button>
-              </div>
+              <button className="bbm-apply-button">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvbXJiOKQTISXbQi4hbM31X9YlVZB5VaNLEb8wX28n6E3gOg/viewform" target='_blank' rel='noopener noreferrer' className=" inline-block ml-5 px-3 py-3 bg-[rgba(139,93,49)] text-white font-semibold shadow rounded no-underline apply-button">
+                    Apply to be a Board Member
+                </a>
+              </button>
             </AccordionItem>
           </FadeInSection>
         </div>

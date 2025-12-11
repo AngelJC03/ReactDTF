@@ -96,7 +96,9 @@
     margin-bottom: 30px;
 }
 
-.bbm-spacer {
+.bbm-apply-button {
+    display: block;
+    width: fit-content;
     margin: 0 auto;
     text-align: center;
 }
