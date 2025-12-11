@@ -10,7 +10,7 @@ import LazyPlayVideo from "./LazyPlayVideo.jsx";
 
 function HomeBody() {
   return (
-    <div className="homebody-container" aria-label="Home Content">
+    <main className="homebody-container" aria-label="Home Content">
         <FadeIn>
             <div className="video-section">
                 <LazyPlayVideo />
@@ -38,7 +38,7 @@ function HomeBody() {
                 <NewsArticles />
             </div>
         </FadeIn>
-    </div>
+    </main>
   );
 }
 
