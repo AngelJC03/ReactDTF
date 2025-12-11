@@ -50,7 +50,7 @@ function Navbar() {
   }, []);
 
   return (
-    <div className="navbar-container">
+    <nav className="navbar-container">
       <nav className="w-full h-[120px] bg-[#ffcc8a] text-black px-8 py-6 flex items-center justify-between font-gill-sans-bold">
 
         <Hamburger click={click} checkboxRef={checkboxRef} handleToggle={handleToggle} />
@@ -121,7 +121,7 @@ function Navbar() {
         </div>
       </nav>
       <Sidebar isOpen={click} onClose={closeSidebar} />
-    </div>
+    </nav>
   );
 }
 
