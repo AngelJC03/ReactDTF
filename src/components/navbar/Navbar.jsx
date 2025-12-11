@@ -51,7 +51,7 @@ function Navbar() {
 
   return (
     <nav className="navbar-container" role="navigation" aria-label="Main Navigation">
-      <nav className="w-full h-[120px] bg-[#ffcc8a] text-black px-8 py-6 flex items-center justify-between font-gill-sans-bold">
+      <div className="w-full h-[120px] bg-[#ffcc8a] text-black px-8 py-6 flex items-center justify-between font-gill-sans-bold">
 
         <Hamburger click={click} checkboxRef={checkboxRef} handleToggle={handleToggle} />
 
@@ -119,7 +119,7 @@ function Navbar() {
 
           </div>
         </div>
-      </nav>
+      </div>
       <Sidebar isOpen={click} onClose={closeSidebar} />
     </nav>
   );
