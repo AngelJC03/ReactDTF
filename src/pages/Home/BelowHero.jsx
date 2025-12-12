@@ -10,7 +10,7 @@ function Home() {
       <FadeIn>
         <div className="banner-content" style={{ backgroundImage: `url(${bannerBackground})` }}>
             <div className="banner-text">
-                <p>“The birth of the Davis-Tennon Foundation
+                <p role="heading">“The birth of the Davis-Tennon Foundation
                     started with the realization that the
                     gift of success is the ability to give back.”
                     - Viola Davis

@@ -96,6 +96,7 @@ function Footer() {
                                     name="b_ee1896e60a2c02f5c56dffd15_e40c54c790"
                                     tabIndex="-1"
                                     defaultValue=""
+                                    aria-label="Leave this field empty"
                                 />
                             </div>
 
@@ -106,6 +107,7 @@ function Footer() {
                                         name="subscribe"
                                         className="subscribe-btn"
                                         value="Subscribe"
+                                        aria-label="Submit email to Newsletter"
                                     />
                                 </div>
                             </div>
@@ -134,11 +136,13 @@ function Footer() {
                         href="https://www.facebook.com/DavisTennonFoundation"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Davis-Tennon Foundation Facebook Page (opens in new tab)"
                     >
                         <img
                             src={facebookLogo}
                             alt="Facebook Logo"
                             className="social-icon"
+                            aria-label="Davis-Tennon Foundation Facebook Page (opens in new tab)"
                         />
                     </a>
                 </div>
@@ -187,6 +191,7 @@ function Footer() {
                 href="https://docs.google.com/forms/d/e/1FAIpQLSeyf2L9swDTLg0CM6kyN8VamFCxlJ4w-BgiWQihqsM--hBiWA/viewform" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                aria-label="Apply For Funding (opens in new tab)"
             >
                 Apply For Funding
             </a>
@@ -196,6 +201,7 @@ function Footer() {
                 href="https://givebutter.com/0nhBTh" 
                 target="_blank" 
                 rel="noopener noreferrer"
+                aria-label="Donate Now"
             >
                 Donate Now
             </a>
@@ -214,6 +220,7 @@ function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn"
+                                aria-label="Donate Now"
                             >
                                 Donate Now
                             </a>

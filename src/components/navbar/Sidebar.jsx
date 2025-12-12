@@ -51,7 +51,7 @@ function Sidebar({ isOpen, onClose }) {
           <ul className="sidebar-menu">
 
             <li className="sidebar-item">
-              <Link to="/Home" onClick={onClose} className="sidebar-link">
+              <Link to="/Home" onClick={onClose} className="sidebar-link" aria-label="Home">
                 <span>Home</span>
               </Link>
             </li>
@@ -99,13 +99,13 @@ function Sidebar({ isOpen, onClose }) {
           ))}
 
           <li className="sidebar-item">
-            <Link to="/PartnersAndResources" onClick={onClose} className="sidebar-link">
+            <Link to="/PartnersAndResources" onClick={onClose} className="sidebar-link" aria-label="Partners and Resources">
               <span>Partners/Resources</span>
             </Link>
           </li>
           
           <li className="sidebar-item">
-            <Link to="https://docs.google.com/forms/d/e/1FAIpQLSeyf2L9swDTLg0CM6kyN8VamFCxlJ4w-BgiWQihqsM--hBiWA/viewform" target="_blank" rel="noreferrer" onClick={onClose} className="sidebar-link">
+            <Link to="https://docs.google.com/forms/d/e/1FAIpQLSeyf2L9swDTLg0CM6kyN8VamFCxlJ4w-BgiWQihqsM--hBiWA/viewform" target="_blank" rel="noreferrer" onClick={onClose} className="sidebar-link" aria-label="Apply For Funding (opens in new tab)">
               <button className="ml-4 px-3 py-2 bg-[rgb(109,169,68)] text-white font-semibold shadow rounded">
                 Apply For Funding
               </button>
@@ -113,7 +113,7 @@ function Sidebar({ isOpen, onClose }) {
           </li>
 
           <li className="sidebar-item">
-            <Link to="https://givebutter.com/0nhBTh" target="_blank" rel="noreferrer" onClick={onClose} className="sidebar-link">
+            <Link to="https://givebutter.com/0nhBTh" target="_blank" rel="noreferrer" onClick={onClose} className="sidebar-link" aria-label="Donate Now (opens in new tab)">
               <button className="px-3 py-2 bg-[rgb(195,41,58)] text-white font-semibold shadow rounded">
                 Donate Now
               </button>

@@ -10,7 +10,7 @@ function WhatWeFund() {
   return (
     <section className="wwf-container">
       <h2 className="wwf-title">What We Fund</h2>
-      <p className="wwf-description">
+      <p className="wwf-description" role="heading">
         The Davis-Tennon Foundation is committed to driving meaningful change by funding initiatives that address critical needs within Rhode Island communities. Our goal is to empower individuals and families, remove barriers to opportunity, and create lasting solutions for underserved populations.
       </p>
       <div className="wwf-grid">

@@ -83,7 +83,7 @@ function BecomeBoardMemberContent() {
                 Submit a letter of interest and your resume to 
                 <a href="mailto:agarcia@davis-tennonfoundation.org" style={{ color: "#0B3D91" }}> agarcia@davis-tennonfoundation.org </a>
                 with the subject line: <b>Board Member Application</b>. Applications will be reviewed on a rolling basis. 
-                Use <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvbXJiOKQTISXbQi4hbM31X9YlVZB5VaNLEb8wX28n6E3gOg/viewform" target="_blank" rel="noopener noreferrer" style={{ color: "#0B3D91" }}>
+                Use <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvbXJiOKQTISXbQi4hbM31X9YlVZB5VaNLEb8wX28n6E3gOg/viewform" target="_blank" rel="noopener noreferrer" style={{ color: "#0B3D91" }} aria-label="Board Member Application Form (opens in new tab)">
                 THIS FORM
                 </a> to complete your application.
               </p>
@@ -91,7 +91,7 @@ function BecomeBoardMemberContent() {
               <p>Together, we can break down barriers, build connections, and strengthen communities. Join us in this important work!</p>
               <br />
               <button className="bbm-apply-button">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvbXJiOKQTISXbQi4hbM31X9YlVZB5VaNLEb8wX28n6E3gOg/viewform" target='_blank' rel='noopener noreferrer' className=" inline-block ml-5 px-3 py-3 bg-[rgba(139,93,49)] text-white font-semibold shadow rounded no-underline apply-button">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvbXJiOKQTISXbQi4hbM31X9YlVZB5VaNLEb8wX28n6E3gOg/viewform" target='_blank' rel='noopener noreferrer' className=" inline-block ml-5 px-3 py-3 bg-[rgba(139,93,49)] text-white font-semibold shadow rounded no-underline apply-button" aria-label="Apply to be a Board Member (opens in new tab)">
                     Apply to be a Board Member
                 </a>
               </button>
