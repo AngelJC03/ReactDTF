@@ -24,7 +24,7 @@ function GivebutterWidget() {
         </div>
       
         <div className="widget-wrapper">
-          <givebutter-widget id="p5odxL" align="center"></givebutter-widget>
+          <givebutter-widget id="p5odxL" align="center" aria-label="Givebutter Widget"></givebutter-widget>
         </div>
       </FadeIn>
     </section>

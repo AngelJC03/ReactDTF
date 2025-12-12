@@ -201,7 +201,7 @@ function Footer() {
                 href="https://givebutter.com/0nhBTh" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                aria-label="Donate Now"
+                aria-label="Donate Now (opens in new tab)"
             >
                 Donate Now
             </a>
@@ -220,7 +220,7 @@ function Footer() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="btn"
-                                aria-label="Donate Now"
+                                aria-label= "Donate Now (opens in new tab)"
                             >
                                 Donate Now
                             </a>
