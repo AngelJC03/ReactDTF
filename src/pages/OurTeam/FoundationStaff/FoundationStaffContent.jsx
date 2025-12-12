@@ -118,7 +118,7 @@ function FoundationStaffContent() {
                     className="staff-photo"
                     />
                     <div className="staff-caption">
-                        <h3>{member.name}</h3>
+                        <h1>{member.name}</h1>
                         <p>{member.role}</p>
 
                         {/* only show toggle on mobile */}

@@ -10,7 +10,7 @@ const AccordionItem = ({ title, children, defaultOpen }) => {
         className="accordion-header"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <h3>{title}</h3>
+        <h1>{title}</h1>
         <span className="accordion-icon">{isOpen ? "−" : "+"}</span>
       </div>
       {isOpen && <div className="accordion-content">{children}</div>}

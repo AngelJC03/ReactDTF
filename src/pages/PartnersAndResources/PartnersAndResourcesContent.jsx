@@ -49,7 +49,7 @@ function PartnersAndResourcesContent() {
           <AccordionItem title="Community Partners">
               <div className="community-partners">
 
-                  <h3>Our Community Partners</h3>
+                  <h1>Our Community Partners</h1>
                   <p>
                       At the Davis-Tennon Foundation, we are dedicated to connecting families with the tools, 
                       organizations, and support systems they need to thrive. Below, you’ll find a curated list 
@@ -101,7 +101,7 @@ function PartnersAndResourcesContent() {
           </AccordionItem>
 
           <AccordionItem title="Partner Programs & Opportunities">
-            <h3>Empowering Women and Preventing Domestic Violence</h3>
+            <h1>Empowering Women and Preventing Domestic Violence</h1>
             <ul className="partners-bullet-list" style={{ fontFamily: '"Gill Sans", "Gill Sans MT", Calibri, sans-serif' }}>
               <li>
                   <img src={DavisTennonLogo} alt="Davis-Tennon Foundation Logo" />
@@ -117,7 +117,7 @@ function PartnersAndResourcesContent() {
               </li>
             </ul>
 
-            <h3>Housing Assistance</h3>
+            <h1>Housing Assistance</h1>
             <ul className="partners-bullet-list" style={{ fontFamily: '"Gill Sans", "Gill Sans MT", Calibri, sans-serif' }}>
               <li>
                   <img src={DavisTennonLogo} alt="Davis-Tennon Foundation Logo" />
@@ -133,7 +133,7 @@ function PartnersAndResourcesContent() {
               </li>
             </ul>
 
-            <h3>Student Enrichment and Education</h3>
+            <h1>Student Enrichment and Education</h1>
             <ul className="partners-bullet-list" style={{ fontFamily: '"Gill Sans", "Gill Sans MT", Calibri, sans-serif' }}>
               <li>
                   <img src={DavisTennonLogo} alt="Davis-Tennon Foundation Logo" />
@@ -149,7 +149,7 @@ function PartnersAndResourcesContent() {
               </li>
             </ul>
 
-            <h3>Financial and Grant Support</h3>
+            <h1>Financial and Grant Support</h1>
             <ul className="partners-bullet-list" style={{ fontFamily: '"Gill Sans", "Gill Sans MT", Calibri, sans-serif' }}>
               <li>
                   <img src={DavisTennonLogo} alt="Davis-Tennon Foundation Logo" />
@@ -165,7 +165,7 @@ function PartnersAndResourcesContent() {
               </li>
             </ul>
 
-            <h3>Parent Advocacy and Leadership</h3>
+            <h1>Parent Advocacy and Leadership</h1>
             <ul className="partners-bullet-list" style={{ fontFamily: '"Gill Sans", "Gill Sans MT", Calibri, sans-serif' }}>
               <li>
                   <img src={DavisTennonLogo} alt="Davis-Tennon Foundation Logo" />

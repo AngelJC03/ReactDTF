@@ -52,12 +52,12 @@ const WhatWeFundContent = () => {
       <div className="funding-container-container">
         <FadeIn>
           <div className="funding-container">
-            <h2>Our Funding Priorities</h2>
+            <h1>Our Funding Priorities</h1>
             <div className="impact-grid">
               <div className="impact-card" style={{ backgroundImage: `url(${empoweringWomen})` }}>
                 <div className="caption-bar">Empowering Women</div>
                 <div className="overlay">
-                  <h3>Empowering Women</h3>
+                  <h2>Empowering Women</h2>
                   <p>We support programs that uplift and empower women through education, leadership training, workforce development, and resources to help them achieve independence and stability.</p>
                 </div>
               </div>
@@ -65,7 +65,7 @@ const WhatWeFundContent = () => {
               <div className="impact-card" style={{ backgroundImage: `url(${dvRibbon})` }}>
                 <div className="caption-bar">Domestic Violence Awareness</div>
                 <div className="overlay">
-                  <h3>Preventing Domestic Violence</h3>
+                  <h2>Preventing Domestic Violence</h2>
                   <p>We fund initiatives that provide critical resources for survivors, promote prevention education, support intervention efforts, and create safer communities for all.</p>
                 </div>
               </div>
@@ -73,7 +73,7 @@ const WhatWeFundContent = () => {
               <div className="impact-card" style={{ backgroundImage: `url(${studentOpportunities})` }}>
                 <div className="caption-bar">Student Opportunities</div>
                 <div className="overlay">
-                  <h3>Student Opportunities</h3>
+                  <h2>Student Opportunities</h2>
                   <p>We are passionate about funding programs that enrich students’ lives outside of school hours, such as after-school programs, mentorship opportunities, and access to the arts and STEM education.</p>
                 </div>
               </div>
@@ -81,7 +81,7 @@ const WhatWeFundContent = () => {
               <div className="impact-card" style={{ backgroundImage: `url(${housingStability})` }}>
                 <div className="caption-bar">Housing Stability</div>
                 <div className="overlay">
-                  <h3>Housing Stability</h3>
+                  <h2>Housing Stability</h2>
                   <p>We invest in efforts that address housing challenges, including affordable housing projects, emergency shelter programs, and initiatives that combat homelessness in our communities.</p>
                 </div>
               </div>
