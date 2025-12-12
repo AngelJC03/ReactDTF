@@ -125,7 +125,7 @@ function Footer() {
             <div className="footer-container">
                 {/* Contact Info */}
                 <div className="footer-section contact-info">
-                    <h1>Contact Us</h1>
+                    <h2>Contact Us</h2>
                     <p>
                         Email:{' '}
                         <a href="mailto:agarcia@davis-tennonfoundation.org">
