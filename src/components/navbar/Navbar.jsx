@@ -55,7 +55,7 @@ function Navbar() {
         <Hamburger click={click} checkboxRef={checkboxRef} handleToggle={handleToggle} />
 
         <div className="navbar-image flex items-center gap-4">
-          <Link to="/Home">
+          <Link to="/Home" aria-label="Home" role="link">
             <img src={currentLogo} alt="Logo" style={{ width: `${currentWidth}px`, height: 'auto' }} />
           </Link>
         </div>
@@ -65,7 +65,7 @@ function Navbar() {
 
             {/* Home */}
             <li role="none">
-              <Link to="/Home" className="nav-link" role="menuitem">
+              <Link to="/Home" className="nav-link" aria-label="Home" role="menuitem">
                 Home
               </Link>
             </li>
@@ -121,7 +121,7 @@ function Navbar() {
             </li>
 
             <li role="none">
-              <Link to="/PartnersAndResources" className="nav-link" role="menuitem">
+              <Link to="/PartnersAndResources" className="nav-link" aria-label="partners and resources opens in new tab" role="menuitem">
                 Partners/Resources
               </Link>
             </li>
