@@ -44,7 +44,7 @@ function Footer() {
         <footer>
             {/* Newsletter Section */}
             <div className="newsletter-container">
-                <h4>NEWSLETTER</h4>
+                <h1>NEWSLETTER</h1>
                 <p>
                     Subscribe to our newsletter to keep up with our latest news,
                     funding opportunities, and community initiatives!
@@ -125,7 +125,7 @@ function Footer() {
             <div className="footer-container">
                 {/* Contact Info */}
                 <div className="footer-section contact-info">
-                    <h4>Contact Us</h4>
+                    <h1>Contact Us</h1>
                     <p>
                         Email:{' '}
                         <a href="mailto:agarcia@davis-tennonfoundation.org">
