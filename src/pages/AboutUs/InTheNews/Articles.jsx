@@ -70,11 +70,13 @@ function Articles() {
               <img src={imageUrl} alt="Article Image" />
             </div>
             <div className="content">
-              <div className="date">{formattedDate}</div>
-              <div className="title" role="heading">
-                <a href={link}>{title}</a>
-              </div>
-              <div className="description">{truncatedDescription}</div>
+              <a href={link} className="article-cell">
+                <div className="date">{formattedDate}</div>
+                <div className="title" role="heading">
+                  <a href={link}>{title}</a>
+                </div>
+                <div className="description">{truncatedDescription}</div>
+              </a>
             </div>
           </div>
         );

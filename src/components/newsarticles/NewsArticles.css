@@ -60,6 +60,11 @@ h2 {
     flex-direction: column;
 }
 
+.article-cell {
+    text-decoration: none;
+    color: inherit;
+}
+
 .date {
     font-size: 1.1rem;
     color: grey;
