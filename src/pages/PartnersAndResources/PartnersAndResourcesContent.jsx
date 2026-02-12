@@ -11,6 +11,7 @@ import TrailblazersInitiativeLogo from '../../assets/images/partner-photos/csgf.
 import DavisTennonLogo from '../../assets/images/logo-photos/icononly_nobuffer.png';
 import FadeIn from '../../components/fadeinsection/FadeIn.jsx';
 import GCRILogo from '../../assets/images/partner-photos/GCRI-logo.svg';
+import ThreeRoot from '../../assets/images/partner-photos/3roots-logo.svg';
 
 import AccordionItem from "../../components/Accordion/AccordionItem.jsx";
 
@@ -24,6 +25,15 @@ function PartnersAndResourcesContent() {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+  
+  useEffect(() => {
+    const handleResize = () => setScreenWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const [Screenwidth, setScreenWidth] = useState(window.innerWidth);
 
   return (
     <div className="partners-and-resources-page-container">
@@ -186,6 +196,7 @@ function PartnersAndResourcesContent() {
               <div className="partner-logo-row-2">
                 <a href="https://pocfoundation.com/" target="_blank"><img src={PapittoOpportunityConnectionLogo} alt="Papitto Opportunity Connection Logo" className="partner-logo"/></a>
                 <a href="https://champlinfoundation.org/" target="_blank"><img src={ChamplinFoundationLogo} alt="Champlin Foundation Logo" className="partner-logo"/></a>
+                <a href="https://www.threeroots.org/" target="_blank"><img src={ThreeRoot} alt="Three Roots Logo" className="partner-logo" style={{ Width: '100%', height: '100px' }}/></a>
               </div>
               <div className="partner-logo-row-3">
                 <a href="https://sojournerri.org/" target="_blank"><img src={SojournerHouseLogo} alt="Sojourner House Logo" className="partner-logo"/></a>
@@ -221,8 +232,8 @@ function PartnersAndResourcesContent() {
           <div className="contact-us-partners-page">
             <h2>Contact Us for Assistance</h2>
             <p>
-              If you’re unsure where to start or need help connecting with the right resource, contact us at 
-              <a href="mailto:agarcia@davis-tennonfoundation.org" className="contact-email">agarcia@davis-tennonfoundation.org</a>.
+              If you’re unsure where to start or need help connecting with the right resource, contact us
+              {Screenwidth > 600 ? <p> at  <a href="mailto:agarcia@davis-tennonfoundation.org" className="contact-email"> agarcia@davis-tennonfoundation.org.</a></p> : <a href="mailto:agarcia@davis-tennonfoundation.org" className="contact-email"> Here.</a>}
             </p>
             <p>
               Together, we can eliminate barriers, build connections, and create brighter futures for families across Rhode Island.
