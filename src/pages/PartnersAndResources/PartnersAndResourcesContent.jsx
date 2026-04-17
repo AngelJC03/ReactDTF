@@ -6,7 +6,7 @@ import RhodeIslandFoundationLogo from '../../assets/images/partner-photos/rif.pn
 import ChamplinFoundationLogo from '../../assets/images/partner-photos/champlin.svg';
 import RhodeIslandCollegeLogo from '../../assets/images/partner-photos/ric.jpg';
 import TrailblazersInitiativeLogo from '../../assets/images/partner-photos/csgf.png';
-import DavisTennonLogo from '../../assets/images/logo-photos/icononly_nobuffer.png';
+import SojournerLogo from '../../assets/images/partner-photos/sojouner.png';
 import FadeIn from '../../components/fadeinsection/FadeIn.jsx';
 import GCRILogo from '../../assets/images/partner-photos/GCRI-logo.svg';
 import ThreeRoot from '../../assets/images/partner-photos/3roots-logo.svg';
@@ -111,6 +111,11 @@ const partnerLogos = [
     src: TidesFamilyServicesLogo,
     alt: 'Tides Family Services Logo',
   },
+  {
+    href: 'https://sojournerri.org/',
+    src: SojournerLogo,
+    alt: 'Sojourner House Logo',
+  }
 ];
 
 function PartnersAndResourcesContent() {
@@ -208,6 +213,16 @@ function PartnersAndResourcesContent() {
                   >
                     <strong>Project R.E.A.D.</strong>
                     <span>Promoting literacy and lifelong learning through adult education.</span>
+                  </a>
+
+                  <a
+                    href="https://sojournerri.org/"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="community-partners-highlight-item"
+                  >
+                    <strong>Sojourner House</strong>
+                    <span>Providing housing, counseling, and education for people impacted by domestic violence.</span>
                   </a>
                 </div>
               </div>

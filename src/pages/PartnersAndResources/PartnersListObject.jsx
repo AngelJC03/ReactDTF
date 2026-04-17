@@ -19,6 +19,15 @@ function PartnersListObject() {
                       <li>
                         <img src={DavisTennonLogo} alt="Davis-Tennon Foundation Logo" />
                         <span>
+                          <a href="https://sojournerri.org/" target="_blank" rel="noreferrer">
+                            Sojourner House:
+                          </a>{" "}
+                          Housing, counseling, and education for individuals impacted by domestic violence.
+                        </span>
+                      </li>
+                      <li>
+                        <img src={DavisTennonLogo} alt="Davis-Tennon Foundation Logo" />
+                        <span>
                           <a href="https://www.shriyoga.org/" target="_blank" rel="noreferrer">
                             SHRI Yoga:
                           </a>{" "}
