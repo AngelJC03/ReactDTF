@@ -78,7 +78,7 @@ const recipients = [
     website: "https://www.projectgoal.org/"
   },
   {
-    name: "Tides/Family Services",
+    name: "Tides/Family Services", 
     amount: "$20,000",
     content:
       "With the generosity of the Davis-Tennon Foundation, TFS will be positioned to swiftly launch our critical Screen-printing Social Enterprise initiative.",
