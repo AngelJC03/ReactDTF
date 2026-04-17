@@ -6,7 +6,8 @@ p, li {
 
 .WWF-title {
   text-align: center;
-  max-width: 900px;
+  max-width: 1000px;
+  padding: 20px;
   margin: 0 auto;
   padding-top: 30px;
 }
@@ -20,6 +21,19 @@ p, li {
 .WWF-title p {
   font-size: 1.2rem;
   color: #333;
+}
+
+.WWDNF-container {
+  margin: 0 auto;
+  border-radius: 8px;
+  max-width: 1000px;
+  font-size: 1.1rem;
+  padding: 20px;
+}
+
+.WWDNF-important-text {
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .what-we-fund-content {

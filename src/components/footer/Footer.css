@@ -267,6 +267,9 @@
             .footer-section.logo-nav img {
                 max-width: 300px;
             }
+            .newsletter-container h1 {
+                font-size: 20px; /* Adjust font size for smaller screens */
+            }
             .newsletter-container h4 {
                 font-size: 20px; /* Adjust font size for smaller screens */
             }
