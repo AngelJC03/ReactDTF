@@ -214,16 +214,6 @@ function PartnersAndResourcesContent() {
                     <strong>Project R.E.A.D.</strong>
                     <span>Promoting literacy and lifelong learning through adult education.</span>
                   </a>
-
-                  <a
-                    href="https://sojournerri.org/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="community-partners-highlight-item"
-                  >
-                    <strong>Sojourner House</strong>
-                    <span>Providing housing, counseling, and education for people impacted by domestic violence.</span>
-                  </a>
                 </div>
               </div>
 
