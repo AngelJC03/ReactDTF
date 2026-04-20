@@ -1,7 +1,6 @@
 import React from "react";
 import "./FundingRecipientsContent.css";
 import FadeIn from "../../../components/fadeinsection/FadeIn.jsx";
-import AccordionItem from "../../../components/Accordion/AccordionItem.jsx";
 
 const recipients = [
   {
@@ -63,6 +62,62 @@ const recipients = [
     "amount": "$10,000",
     "content": "Provides funding to support Central Falls Athletics programs and students, promoting physical activity and community engagement through sports.",
     "website": "https://www.cfhswarriorsathletics.com/"
+  },
+  {
+    name: "Segue/Mary Alice Davis Food Pantry",
+    amount: "$75,000",
+    content:
+      "These funds will allow the continuation of the work done to serve the Blackstone Valley at the Mary Alice Davis Food Pantry. The Pantry now operates three days a week and extends its hours into the early evening. The Pantry continues to serve 3,000 residents monthly.",
+    website: "https://www.segueifl.org/FoodPantry"
+  },
+  {
+    name: "Project GOAL",
+    amount: "$25,000",
+    content:
+      "With support from the Davis-Tennon Foundation, we will be able to provide high-quality, proven, free-of-cost academic and youth development afterschool programming in support of Central Falls elementary and middle grade youth with a goal of growing the number of CF supported annually.",
+    website: "https://www.projectgoal.org/"
+  },
+  {
+    name: "Tides/Family Services", 
+    amount: "$20,000",
+    content:
+      "With the generosity of the Davis-Tennon Foundation, TFS will be positioned to swiftly launch our critical Screen-printing Social Enterprise initiative.",
+    website: "https://www.tidesfs.org/"
+  },
+  {
+    name: "The Learning Community",
+    amount: "$5,000",
+    content:
+      "Generous support from the Davis-Tennon Foundation will allow our organization to cover the costs of bringing in high-quality outside STEAM vendors, teaching artists, and industry professionals who provide real-world, hands-on learning experiences for students in our Exploration program.",
+    website: "https://www.thelearningcommunity.com/"
+  },
+  {
+    name: "The Institute for the Practice of Non-Violence",
+    amount: "$30,000",
+    content:
+      "This grant funds an outreach worker to connect at-risk youth programming, supports two SEED cohorts 40 students, provides nonviolence training, strengthens collaboration among schools, families, and trainees to reduce violence.",
+    website: "https://www.nonviolence.org/"
+  },
+  {
+    name: "Big Brothers/Big Sisters of RI",
+    amount: "$25,000",
+    content:
+      "Your generous support will allow our organization to increase the number of youth and families we serve and expand access to safe, structured enrichment opportunities that build confidence, stability, and long-term success for young people across RI.",
+    website: "https://bigsri.org/"
+  },
+  {
+    name: "Square Mile Club",
+    amount: "$30,000",
+    content:
+      "Afterschool and evening activities for students from Central Falls schools to participate in three day a week program. Program offers arts, career exploration, cultural events, job training, etc.",
+    website: "https://www.facebook.com/people/Central-Falls-Square-Mile-Club/61553554014458/?_rdr"
+  },
+  {
+    name: "SOAR/RI Coalition Against Domestic Violence",
+    amount: "$25,000",
+    content:
+      "Program to support Survivors of Domestic Violence. Resources and basic necessities will be offered with these funds. This program is statewide and offers services to non-English speaking victims as well.",
+    website: "https://ricadv.org/soar/"
   }
 ];
 
@@ -78,23 +133,29 @@ const FundingRecipientsContent = () => {
 
           <div className="recipients-grid">
             {recipients.map((rec) => (
-              <AccordionItem key={rec.name} title={rec.name}>
-                <p className="font-semibold text-[rgba(37, 78, 52, 1)] text-2xl mb-2">
-                  {rec.amount}
-                </p>
-                <p>{rec.content}</p>
-                {rec.website && (
-                  <a
-                    href={rec.website}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="learn-more-link"
-                    style={{ color: "#0B3D91" }}
-                  >
-                    Learn more here
-                  </a>
-                )}
-              </AccordionItem>
+              <article
+                key={rec.name}
+                className="funding-recipient-card"
+                tabIndex={0}
+                aria-label={`${rec.name}, funded ${rec.amount}`}
+              >
+              
+                <a href={rec.website}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="funding-recipient-link"
+                >
+                  <div className="funding-recipient-card-front">
+                    <p className="funding-recipient-amount">{rec.amount}</p>
+                    <h2 className="funding-recipient-name">{rec.name}</h2>
+                  </div>
+
+                  <div className="funding-recipient-card-overlay">
+                    <p className="funding-recipient-description">{rec.content}</p>
+
+                  </div>
+                </a>
+              </article>
             ))}
           </div>
 

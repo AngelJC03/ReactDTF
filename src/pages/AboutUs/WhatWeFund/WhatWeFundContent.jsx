@@ -23,6 +23,9 @@ const WhatWeFundContent = () => {
             populations.
           </p>
         </div>
+        <div className="WWDNF-container">
+          <p> <span className="WWDNF-important-text">The Davis-Tennon Foundation does not </span>fund individual requests, fundraising events or campaigns, capital campaigns, or sponsorships. We also do not support projects that are primarily promotional in nature or that fall outside our core focus areas. Our funding is dedicated to organizations providing direct services that address basic human needs and strengthen access, dignity, and opportunity for individuals and communities. We prioritize partners whose work is collaborative, community-embedded, and aligned with our mission.</p>
+        </div>
       </FadeIn>
 
       {/* Our Current Funding Focus */}
@@ -103,7 +106,7 @@ const WhatWeFundContent = () => {
               Visit our Apply for Funding page to learn more about the application process.
             </p>
             <div className="button-container">
-              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyf2L9swDTLg0CM6kyN8VamFCxlJ4w-BgiWQihqsM--hBiWA/viewform" target="_blank" rel="noopener noreferrer" className="ml-5 px-5 py-6 bg-[rgb(76,122,47)] text-white font-semibold shadow rounded no-underline apply-button" aria-label="Apply For Funding (opens in new tab)">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSeyf2L9swDTLg0CM6kyN8VamFCxlJ4w-BgiWQihqsM--hBiWA/viewform" target="_blank" rel="noopener noreferrer" className="ml-5 px-4 py-6 bg-[rgb(76,122,47)] text-white font-semibold shadow rounded no-underline apply-button" aria-label="Apply For Funding (opens in new tab)">
                 Apply For Funding
               </a>
             </div>

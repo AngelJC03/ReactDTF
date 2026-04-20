@@ -8,4 +8,7 @@ export default defineConfig({
     react(), 
     tailwindcss()
   ],
+  server: {
+    allowedHosts: ['devserver-development--reactdtf.netlify.app']
+  }
 })
