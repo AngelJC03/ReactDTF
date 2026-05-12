@@ -12,6 +12,7 @@ import AboutViolaAndJulius from './pages/OurTeam/AboutViolaAndJulius/AboutViolaA
 import BecomeBoardMember from './pages/OurTeam/BecomeBoardMember/BecomeBoardMember.jsx';
 import PartnersAndResources from './pages/PartnersAndResources/PartnersAndResources.jsx';
 import FoundationStaff from './pages/OurTeam/FoundationStaff/FoundationStaff.jsx';
+import MemorabiliaPage from './pages/Memorabilia/MemorabiliaPage.jsx';
 import Popup from './components/pop-up/Popup.jsx';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/BecomeBoardMember" element={<BecomeBoardMember />} />
           <Route path="/PartnersAndResources" element={<PartnersAndResources />} />
           <Route path="/FoundationStaff" element={<FoundationStaff />} />
+          <Route path="/memorabilia" element={<MemorabiliaPage />} />
         </Routes>
       </Router>
       <Popup />

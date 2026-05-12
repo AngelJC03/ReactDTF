@@ -126,6 +126,12 @@ function Navbar() {
               </Link>
             </li>
 
+            <li role="none">
+              <Link to="/memorabilia" className="nav-link" aria-label="Memorabilia" role="menuitem">
+                Memorabilia
+              </Link>
+            </li>
+
             {/* External links styled as buttons */}
             <li role="none">
               <Link

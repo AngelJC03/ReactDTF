@@ -1,0 +1,83 @@
+import basketballImage from '../../assets/images/home-page-photos/placeHolder.png';
+import jerseyImage from '../../assets/images/home-page-photos/hero_photo2.jpg';
+import championshipImage from '../../assets/images/home-page-photos/angelo-garcia-davistenon-foundation.webp';
+import posterImage from '../../assets/images/what-we-fund-photos/empowering-women.jpg';
+import pinImage from '../../assets/images/logo-photos/repeated-logo-clear-background.png';
+import plaqueImage from '../../assets/images/logo-photos/background-for-page.jpg';
+import bundleImage from '../../assets/images/what-we-fund-photos/student-opportunities.jpg';
+import sneakersImage from '../../assets/images/home-page-photos/housing-stability.jpg';
+
+export const memorabiliaItems = [
+  {
+    id: 'signed-basketball',
+    title: 'Signed Basketball',
+    description: 'A display-ready basketball signed for supporters of the foundation.',
+    currentBid: 225,
+    buyNowPrice: 500,
+    remainingTime: '6 days remaining',
+    image: basketballImage,
+  },
+  {
+    id: 'vintage-team-jersey',
+    title: 'Vintage Team Jersey',
+    description: 'Classic jersey styling with collectible appeal for longtime fans.',
+    currentBid: 180,
+    buyNowPrice: 425,
+    remainingTime: '4 days remaining',
+    image: jerseyImage,
+  },
+  {
+    id: 'championship-photo',
+    title: 'Championship Photo',
+    description: 'Framed commemorative photo celebrating a memorable season moment.',
+    currentBid: 150,
+    buyNowPrice: 350,
+    remainingTime: '3 days remaining',
+    image: championshipImage,
+  },
+  {
+    id: 'autographed-poster',
+    title: 'Autographed Poster',
+    description: 'A bold poster piece designed for a home office, gallery wall, or fan room.',
+    currentBid: 120,
+    buyNowPrice: 275,
+    remainingTime: '5 days remaining',
+    image: posterImage,
+  },
+  {
+    id: 'collector-pin-set',
+    title: 'Collector Pin Set',
+    description: 'A curated set of collectible pins packaged for display or gifting.',
+    currentBid: 75,
+    buyNowPrice: 175,
+    remainingTime: '2 days remaining',
+    image: pinImage,
+  },
+  {
+    id: 'limited-edition-plaque',
+    title: 'Limited Edition Plaque',
+    description: 'Limited-run plaque honoring the foundation mission and community impact.',
+    currentBid: 200,
+    buyNowPrice: 450,
+    remainingTime: '7 days remaining',
+    image: plaqueImage,
+  },
+  {
+    id: 'team-memorabilia-bundle',
+    title: 'Team Memorabilia Bundle',
+    description: 'A supporter bundle featuring collectible pieces and foundation keepsakes.',
+    currentBid: 260,
+    buyNowPrice: 600,
+    remainingTime: '8 days remaining',
+    image: bundleImage,
+  },
+  {
+    id: 'signed-sneakers',
+    title: 'Signed Sneakers',
+    description: 'Signed sneakers presented as a premium collectible for auction supporters.',
+    currentBid: 325,
+    buyNowPrice: 750,
+    remainingTime: '5 days remaining',
+    image: sneakersImage,
+  },
+];
