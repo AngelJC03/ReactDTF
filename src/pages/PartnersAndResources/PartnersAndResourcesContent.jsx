@@ -62,16 +62,6 @@ const partnerLogos = [
     alt: 'Trailblazers Initiative Logo',
   },
   {
-    href: 'https://bigsri.org/',
-    src: BigBrothersBigSistersLogo,
-    alt: 'Big Brothers Big Sisters of Rhode Island Logo',
-  },
-  {
-    href: 'https://www.cfchildrensfoundation.org/',
-    src: CentralFallsChildrensFoundationLogo,
-    alt: "Central Falls Children's Foundation Logo",
-  },
-  {
     href: 'https://www.cfschools.net/athletics',
     src: CentralFallsSchoolDistrictLogo,
     alt: 'Central Falls Athletics Logo',
@@ -80,11 +70,6 @@ const partnerLogos = [
     href: 'https://www.facebook.com/p/Central-Falls-Square-Mile-Club-61553554014458/',
     src: CentralFallsSquareMileClubLogo,
     alt: 'Central Falls Square Mile Club Logo',
-  },
-  {
-    href: 'https://www.thelearningcommunity.com/',
-    src: LearningCommunityLogo,
-    alt: 'The Learning Community Logo',
   },
   {
     href: 'https://www.newportmentalhealth.org/',

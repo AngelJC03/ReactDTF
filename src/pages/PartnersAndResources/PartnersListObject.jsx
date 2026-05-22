@@ -99,28 +99,10 @@ function PartnersListObject() {
                       <li>
                         <img src={DavisTennonLogo} alt="Davis-Tennon Foundation Logo" />
                         <span>
-                          <a href="https://www.thelearningcommunity.com/" target="_blank" rel="noreferrer">
-                            The Learning Community:
-                          </a>{" "}
-                          Expanded experiential learning opportunities by connecting students with educators, artists, and professionals beyond the traditional classroom.
-                        </span>
-                      </li>
-                      <li>
-                        <img src={DavisTennonLogo} alt="Davis-Tennon Foundation Logo" />
-                        <span>
                           <a href="https://www.nonviolenceinstitute.org/" target="_blank" rel="noreferrer">
                             Institute for the Practice of Non-Violence:
                           </a>{" "}
                           Strengthened outreach and programming for at-risk youth, including nonviolence training, social-emotional learning, and community-based support.
-                        </span>
-                      </li>
-                      <li>
-                        <img src={DavisTennonLogo} alt="Davis-Tennon Foundation Logo" />
-                        <span>
-                          <a href="https://bigsri.org/" target="_blank" rel="noreferrer">
-                            Big Brothers Big Sisters of Rhode Island:
-                          </a>{" "}
-                          Increased access to mentorship and structured enrichment opportunities that build confidence and long-term success.
                         </span>
                       </li>
                       <li>
@@ -184,15 +166,6 @@ function PartnersListObject() {
                               </a>{" "}
                               Learn about the Davis/Tennon Foundation's initiative to train parents in advocacy and leadership to better identify and address community needs. <a href="/WhatWeFund" target="_blank" rel="noreferrer">Learn more.</a>
                           </span>
-                      </li>
-                      <li>
-                        <img src={DavisTennonLogo} alt="Davis-Tennon Foundation Logo" />
-                        <span>
-                          <a href="https://www.cfchildrensfoundation.org/" target="_blank" rel="noreferrer">
-                            Central Falls Children&apos;s Foundation:
-                          </a>{" "}
-                          Expanded programming for mothers and heads of households, with a focus on workforce readiness and family stability.
-                        </span>
                       </li>
                     </ul>
                     </>
