@@ -53,6 +53,39 @@
   padding: 56px 0 66px;
 }
 
+.memorabilia-coming-soon-panel {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.85fr) minmax(320px, 1.15fr);
+  gap: 24px;
+  align-items: center;
+  margin: 0 auto 44px;
+  border: 1px solid rgba(33, 51, 33, 0.14);
+  background: rgba(255, 204, 138, 0.48);
+  padding: 30px;
+  box-shadow: 0 14px 32px rgba(31, 52, 24, 0.1);
+}
+
+.memorabilia-panel-label {
+  margin: 0 0 8px;
+  color: #4c7a2f;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.memorabilia-coming-soon-panel h2 {
+  margin: 0;
+  color: #213321;
+  font-size: clamp(1.9rem, 3vw, 2.8rem);
+  line-height: 1.05;
+}
+
+.memorabilia-coming-soon-panel p:last-child {
+  margin: 0;
+  color: rgba(33, 51, 33, 0.84);
+  font-size: 1.14rem;
+  line-height: 1.65;
+}
+
 .memorabilia-section-heading {
   max-width: 820px;
   margin: 0 auto 34px;
@@ -88,6 +121,12 @@
   gap: 22px;
 }
 
+.memorabilia-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
 .memorabilia-card {
   display: flex;
   min-height: 100%;
@@ -98,6 +137,25 @@
   box-shadow: 0 12px 28px rgba(31, 52, 24, 0.1);
   animation: memorabilia-card-fade 0.5s ease both;
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.memorabilia-preview-card {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid rgba(41, 73, 41, 0.16);
+  background: rgba(255, 247, 238, 0.92);
+  box-shadow: 0 12px 28px rgba(31, 52, 24, 0.1);
+  animation: memorabilia-card-fade 0.5s ease both;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.memorabilia-preview-card:hover,
+.memorabilia-preview-card:focus-within {
+  transform: translateY(-5px);
+  border-color: rgba(76, 122, 47, 0.38);
+  box-shadow: 0 18px 40px rgba(31, 52, 24, 0.18);
 }
 
 .memorabilia-card:hover,
@@ -125,6 +183,27 @@
   flex-direction: column;
   gap: 13px;
   padding: 18px;
+}
+
+.memorabilia-preview-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 12px;
+  padding: 18px;
+}
+
+.memorabilia-preview-card-body h3 {
+  margin: 0;
+  color: #213321;
+  font-size: 1.35rem;
+  line-height: 1.15;
+}
+
+.memorabilia-preview-card-body p:last-child {
+  margin: 0;
+  color: rgba(33, 51, 33, 0.78);
+  line-height: 1.5;
 }
 
 .memorabilia-card-time {
@@ -378,14 +457,20 @@
 }
 
 @media (max-width: 1100px) {
-  .memorabilia-grid {
+  .memorabilia-grid,
+  .memorabilia-preview-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
 @media (max-width: 820px) {
-  .memorabilia-grid {
+  .memorabilia-grid,
+  .memorabilia-preview-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .memorabilia-coming-soon-panel {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -403,7 +488,8 @@
     padding: 42px 0 52px;
   }
 
-  .memorabilia-grid {
+  .memorabilia-grid,
+  .memorabilia-preview-grid {
     grid-template-columns: 1fr;
   }
 

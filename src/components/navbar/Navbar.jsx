@@ -120,10 +120,27 @@ function Navbar() {
               </ul>
             </li>
 
-            <li role="none">
-              <Link to="/PartnersAndResources" className="nav-link" aria-label="partners and resources opens in new tab" role="menuitem">
-                Partners/Resources
+            {/* Partners/Resources */}
+            <li
+              className={`nav-item dropdown ${activeMenu === 'partners' ? 'active' : ''}`}
+              onMouseEnter={() => setActiveMenu('partners')}
+              onMouseLeave={() => setActiveMenu(null)}
+              role="none"
+            >
+              <Link
+                to="#"
+                className="nav-link"
+                onClick={() => toggleDropdown('partners')}
+                aria-haspopup="true"
+                aria-expanded={activeMenu === 'partners'}
+                role="menuitem"
+              >
+                Partners/Resources <FaAngleDown className={`inline ml-1 dropdown-arrow ${activeMenu === 'partners' ? 'rotate' : ''}`} />
               </Link>
+              <ul className={`dropdown-menu ${activeMenu === 'partners' ? 'show' : ''}`} role="menu">
+                <li role="menuitem"><Link to="/PartnersAndResources" className="dropdown-link">Partners/Resources</Link></li>
+                <li role="menuitem"><Link to="/PartnersSpotlight" className="dropdown-link">Partners Spotlight</Link></li>
+              </ul>
             </li>
 
             <li role="none">

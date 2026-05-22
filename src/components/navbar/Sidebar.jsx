@@ -33,6 +33,14 @@ function Sidebar({ isOpen, onClose }) {
         { label: 'Become a Board Member', path: '/BecomeBoardMember' },
       ],
     },
+    {
+      label: 'Partners/Resources',
+      path: '',
+      submenu: [
+        { label: 'Partners/Resources', path: '/PartnersAndResources' },
+        { label: 'Partners Spotlight', path: '/PartnersSpotlight' },
+      ],
+    },
   ];
 
 
@@ -97,12 +105,6 @@ function Sidebar({ isOpen, onClose }) {
               )}
             </li>
           ))}
-
-          <li className="sidebar-item">
-            <Link to="/PartnersAndResources" onClick={onClose} className="sidebar-link" aria-label="Partners and Resources">
-              <span>Partners/Resources</span>
-            </Link>
-          </li>
 
           <li className="sidebar-item">
             <Link to="/memorabilia" onClick={onClose} className="sidebar-link" aria-label="Memorabilia">

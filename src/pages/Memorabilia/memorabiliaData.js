@@ -1,11 +1,4 @@
-import basketballImage from '../../assets/images/home-page-photos/placeHolder.png';
-import jerseyImage from '../../assets/images/home-page-photos/hero_photo2.jpg';
-import championshipImage from '../../assets/images/home-page-photos/angelo-garcia-davistenon-foundation.webp';
-import posterImage from '../../assets/images/what-we-fund-photos/empowering-women.jpg';
-import pinImage from '../../assets/images/logo-photos/repeated-logo-clear-background.png';
-import plaqueImage from '../../assets/images/logo-photos/background-for-page.jpg';
-import bundleImage from '../../assets/images/what-we-fund-photos/student-opportunities.jpg';
-import sneakersImage from '../../assets/images/home-page-photos/housing-stability.jpg';
+import placeHolderImage from '../../assets/images/home-page-photos/placeHolder.png';
 
 export const memorabiliaItems = [
   {
@@ -15,7 +8,7 @@ export const memorabiliaItems = [
     currentBid: 225,
     buyNowPrice: 500,
     remainingTime: '6 days remaining',
-    image: basketballImage,
+    image: placeHolderImage,
   },
   {
     id: 'vintage-team-jersey',
@@ -24,7 +17,7 @@ export const memorabiliaItems = [
     currentBid: 180,
     buyNowPrice: 425,
     remainingTime: '4 days remaining',
-    image: jerseyImage,
+    image: placeHolderImage,
   },
   {
     id: 'championship-photo',
@@ -33,7 +26,7 @@ export const memorabiliaItems = [
     currentBid: 150,
     buyNowPrice: 350,
     remainingTime: '3 days remaining',
-    image: championshipImage,
+    image: placeHolderImage,
   },
   {
     id: 'autographed-poster',
@@ -42,7 +35,7 @@ export const memorabiliaItems = [
     currentBid: 120,
     buyNowPrice: 275,
     remainingTime: '5 days remaining',
-    image: posterImage,
+    image: placeHolderImage,
   },
   {
     id: 'collector-pin-set',
@@ -51,7 +44,7 @@ export const memorabiliaItems = [
     currentBid: 75,
     buyNowPrice: 175,
     remainingTime: '2 days remaining',
-    image: pinImage,
+    image: placeHolderImage,
   },
   {
     id: 'limited-edition-plaque',
@@ -60,7 +53,7 @@ export const memorabiliaItems = [
     currentBid: 200,
     buyNowPrice: 450,
     remainingTime: '7 days remaining',
-    image: plaqueImage,
+    image: placeHolderImage,
   },
   {
     id: 'team-memorabilia-bundle',
@@ -69,7 +62,7 @@ export const memorabiliaItems = [
     currentBid: 260,
     buyNowPrice: 600,
     remainingTime: '8 days remaining',
-    image: bundleImage,
+    image: placeHolderImage,
   },
   {
     id: 'signed-sneakers',
@@ -78,6 +71,6 @@ export const memorabiliaItems = [
     currentBid: 325,
     buyNowPrice: 750,
     remainingTime: '5 days remaining',
-    image: sneakersImage,
+    image: placeHolderImage,
   },
 ];

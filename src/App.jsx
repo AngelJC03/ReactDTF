@@ -13,6 +13,7 @@ import BecomeBoardMember from './pages/OurTeam/BecomeBoardMember/BecomeBoardMemb
 import PartnersAndResources from './pages/PartnersAndResources/PartnersAndResources.jsx';
 import FoundationStaff from './pages/OurTeam/FoundationStaff/FoundationStaff.jsx';
 import MemorabiliaPage from './pages/Memorabilia/MemorabiliaPage.jsx';
+import PartnersSpotlight from './pages/PartnersSpotlight/PartnersSpotlight.jsx';
 import Popup from './components/pop-up/Popup.jsx';
 
 function App() {
@@ -33,6 +34,8 @@ function App() {
           <Route path="/PartnersAndResources" element={<PartnersAndResources />} />
           <Route path="/FoundationStaff" element={<FoundationStaff />} />
           <Route path="/memorabilia" element={<MemorabiliaPage />} />
+          <Route path="/PartnersSpotlight" element={<PartnersSpotlight />} />
+          <Route path="/partners-spotlight" element={<PartnersSpotlight />} />
         </Routes>
       </Router>
       <Popup />
