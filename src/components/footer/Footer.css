@@ -105,6 +105,7 @@
         /* Newsletter Subscription Section */
         .newsletter-container {
             background-color: rgb(255, 204, 138);
+            color: black;
             padding: 20px;
             margin: 20px auto 0;
             width: 70%;

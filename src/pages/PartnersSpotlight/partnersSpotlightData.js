@@ -1,9 +1,36 @@
 import ricadvLogo from '../../assets/images/partner-photos/ricadv.png';
-import bigsLogo from '../../assets/images/partner-photos/BIGSRI.svg';
 import shriLogo from '../../assets/images/partner-photos/SHRI.webp';
-import learningCommunityLogo from '../../assets/images/partner-photos/LCSCHOOL.webp';
 import nonviolenceLogo from '../../assets/images/partner-photos/NONVIOLENCE_INSTITUTE.avif';
 import projectGoalLogo from '../../assets/images/partner-photos/PGATHLETES.avif';
+import threeRootsLogo from '../../assets/images/partner-photos/3roots-logo.svg';
+import gcriLogo from '../../assets/images/partner-photos/GCRI-logo.svg';
+import rifLogo from '../../assets/images/partner-photos/rif.png';
+import csgfLogo from '../../assets/images/partner-photos/csgf.png';
+
+export const featuredPartnerSpotlights = [
+  {
+    id: 'featured-community-health',
+    name: 'Community Health Access Partner',
+    image: rifLogo,
+    description:
+      'A placeholder featured partner supporting family wellness, resource navigation, and access to essential community services.',
+    website: 'https://rifoundation.org/',
+    contact: 'Contact placeholder: partnerships@example.org',
+    highlight:
+      'Custom highlight placeholder: Use this space for announcements, impact statements, sponsor messaging, partnership updates, upcoming events, or longer promotional content selected by the foundation team.',
+  },
+  {
+    id: 'featured-youth-opportunity',
+    name: 'Youth Opportunity Collaborative',
+    image: csgfLogo,
+    description:
+      'A placeholder featured partner focused on youth opportunity, enrichment, mentoring, and supportive pathways for students and families.',
+    website: 'https://chartergrowthfund.org/',
+    contact: 'Contact placeholder: info@example.org',
+    highlight:
+      'Custom highlight placeholder: Add a longer featured note here about program milestones, partner needs, community wins, event promotion, or a special campaign message.',
+  },
+];
 
 export const partnerSpotlights = [
   {
@@ -14,11 +41,11 @@ export const partnerSpotlights = [
     focus: 'Safety, advocacy, and survivor-centered services',
   },
   {
-    id: 'bigsri-mentoring',
-    name: 'Big Brothers Big Sisters of Rhode Island',
-    image: bigsLogo,
-    outcome: 'Expanded mentoring opportunities for 180 young people across Rhode Island.',
-    focus: 'Youth mentoring and long-term supportive relationships',
+    id: 'three-roots-community',
+    name: 'Three Roots Community Partner',
+    image: threeRootsLogo,
+    outcome: 'Placeholder outcome for a community-centered partner supporting local families.',
+    focus: 'Community resources and neighborhood support',
   },
   {
     id: 'shri-access',
@@ -28,11 +55,11 @@ export const partnerSpotlights = [
     focus: 'Food access, wellness, and community healing',
   },
   {
-    id: 'learning-community-literacy',
-    name: 'The Learning Community',
-    image: learningCommunityLogo,
-    outcome: 'Supported literacy growth for 320 students through extended learning programs.',
-    focus: 'Education, literacy, and student opportunity',
+    id: 'gcri-family-support',
+    name: 'Greater Community Resource Initiative',
+    image: gcriLogo,
+    outcome: 'Placeholder outcome for family support, outreach, and service connection work.',
+    focus: 'Family stability and community connection',
   },
   {
     id: 'nonviolence-peace',

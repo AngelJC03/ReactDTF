@@ -1,6 +1,45 @@
 import FadeIn from '../../components/fadeinsection/FadeIn.jsx';
-import { partnerSpotlights } from './partnersSpotlightData.js';
+import { featuredPartnerSpotlights, partnerSpotlights } from './partnersSpotlightData.js';
 import './PartnersSpotlightContent.css';
+
+function FeaturedPartnerCard({ partner }) {
+  return (
+    <article className="partners-spotlight-featured-card">
+      <div className="partners-spotlight-featured-logo-wrap">
+        <img src={partner.image} alt={`${partner.name} logo placeholder`} loading="lazy" />
+      </div>
+      <div className="partners-spotlight-featured-body">
+        <p className="partners-spotlight-focus">Featured Partner</p>
+        <h2>{partner.name}</h2>
+        <p>{partner.description}</p>
+        <div className="partners-spotlight-highlight">
+          <p>{partner.highlight}</p>
+        </div>
+        <p className="partners-spotlight-contact">{partner.contact}</p>
+        <div className="partners-spotlight-actions">
+          <a href={partner.website} target="_blank" rel="noreferrer">
+            Learn More
+          </a>
+        </div>
+      </div>
+    </article>
+  );
+}
+
+function PartnerCard({ partner }) {
+  return (
+    <article className="partners-spotlight-card">
+      <div className="partners-spotlight-logo-wrap">
+        <img src={partner.image} alt={`${partner.name} logo`} loading="lazy" />
+      </div>
+      <div className="partners-spotlight-card-body">
+        <p className="partners-spotlight-focus">{partner.focus}</p>
+        <h2>{partner.name}</h2>
+        <p>{partner.outcome}</p>
+      </div>
+    </article>
+  );
+}
 
 function PartnersSpotlightContent() {
   return (
@@ -28,18 +67,15 @@ function PartnersSpotlightContent() {
           </p>
         </section>
 
+        <section className="partners-spotlight-featured-grid" aria-label="Featured partner spotlights">
+          {featuredPartnerSpotlights.map((partner) => (
+            <FeaturedPartnerCard partner={partner} key={partner.id} />
+          ))}
+        </section>
+
         <section className="partners-spotlight-grid" aria-label="Partner organization spotlights">
           {partnerSpotlights.map((partner) => (
-            <article className="partners-spotlight-card" key={partner.id}>
-              <div className="partners-spotlight-logo-wrap">
-                <img src={partner.image} alt={`${partner.name} logo`} />
-              </div>
-              <div className="partners-spotlight-card-body">
-                <p className="partners-spotlight-focus">{partner.focus}</p>
-                <h2>{partner.name}</h2>
-                <p>{partner.outcome}</p>
-              </div>
-            </article>
+            <PartnerCard partner={partner} key={partner.id} />
           ))}
         </section>
 
