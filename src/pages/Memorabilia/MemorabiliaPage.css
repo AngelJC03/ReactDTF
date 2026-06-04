@@ -289,7 +289,46 @@
 }
 
 .memorabilia-card-actions .memorabilia-button {
+  display: inline-flex;
+  align-items: center;
   flex: 1;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.memorabilia-preview-card-body .memorabilia-card-actions {
+  margin-top: auto;
+}
+
+.memorabilia-preview-card-skeleton {
+  pointer-events: none;
+}
+
+.memorabilia-skeleton-block {
+  display: block;
+  border-radius: 4px;
+  background: rgba(76, 122, 47, 0.16);
+}
+
+.memorabilia-skeleton-image {
+  width: 100%;
+  height: 100%;
+}
+
+.memorabilia-skeleton-eyebrow {
+  width: 46%;
+  height: 13px;
+}
+
+.memorabilia-skeleton-title {
+  width: 82%;
+  height: 24px;
+}
+
+.memorabilia-skeleton-copy {
+  width: 62%;
+  height: 18px;
 }
 
 .memorabilia-integration-note {

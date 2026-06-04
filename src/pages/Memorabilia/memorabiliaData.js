@@ -1,5 +1,7 @@
 import placeHolderImage from '../../assets/images/home-page-photos/placeHolder.png';
 
+export const memorabiliaPlaceholderImage = placeHolderImage;
+
 export const memorabiliaItems = [
   {
     id: 'signed-basketball',

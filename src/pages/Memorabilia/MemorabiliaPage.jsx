@@ -1,9 +1,74 @@
 import Navbar from '../../components/navbar/Navbar.jsx';
 import Footer from '../../components/footer/Footer.jsx';
-import { memorabiliaItems } from './memorabiliaData.js';
+import useEbayListings from '../../hooks/useEbayListings.js';
+import { memorabiliaItems, memorabiliaPlaceholderImage } from './memorabiliaData.js';
 import './MemorabiliaPage.css';
 
+const skeletonCards = Array.from({ length: 4 }, (_, index) => `ebay-loading-${index}`);
+
+function formatListingPrice(item) {
+  const numericPrice = Number(item.price);
+
+  if (!item.price || Number.isNaN(numericPrice)) {
+    return 'Price unavailable';
+  }
+
+  return new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: item.currency || 'USD',
+  }).format(numericPrice);
+}
+
+function EbayListingCard({ item }) {
+  return (
+    <article className="memorabilia-preview-card" aria-labelledby={`${item.id}-title`}>
+      <div className="memorabilia-card-image-wrap">
+        <img
+          src={item.image || memorabiliaPlaceholderImage}
+          alt=""
+          className="memorabilia-card-image"
+          loading="lazy"
+        />
+      </div>
+      <div className="memorabilia-preview-card-body">
+        <p className="memorabilia-card-time">eBay Sandbox Listing</p>
+        <h3 id={`${item.id}-title`}>{item.title}</h3>
+        <p>{formatListingPrice(item)}</p>
+        {item.itemWebUrl && (
+          <div className="memorabilia-card-actions">
+            <a
+              className="memorabilia-button memorabilia-button-primary"
+              href={item.itemWebUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Listing
+            </a>
+          </div>
+        )}
+      </div>
+    </article>
+  );
+}
+
+function EbayListingSkeleton({ id }) {
+  return (
+    <article className="memorabilia-preview-card memorabilia-preview-card-skeleton" aria-hidden="true" key={id}>
+      <div className="memorabilia-card-image-wrap">
+        <span className="memorabilia-skeleton-block memorabilia-skeleton-image" />
+      </div>
+      <div className="memorabilia-preview-card-body">
+        <span className="memorabilia-skeleton-block memorabilia-skeleton-eyebrow" />
+        <span className="memorabilia-skeleton-block memorabilia-skeleton-title" />
+        <span className="memorabilia-skeleton-block memorabilia-skeleton-copy" />
+      </div>
+    </article>
+  );
+}
+
 function MemorabiliaPage() {
+  const { items: ebayItems, loading: ebayLoading, error: ebayError } = useEbayListings();
+
   return (
     <>
       <Navbar />
@@ -39,7 +104,21 @@ function MemorabiliaPage() {
               </p>
             </div>
 
+            {ebayError && (
+              <p className="memorabilia-notice" role="status">
+                eBay listings are temporarily unavailable. Please check back soon.
+              </p>
+            )}
+
             <div className="memorabilia-preview-grid">
+              {ebayLoading && skeletonCards.map((id) => (
+                <EbayListingSkeleton id={id} key={id} />
+              ))}
+
+              {!ebayLoading && ebayItems.map((item) => (
+                <EbayListingCard item={item} key={item.id} />
+              ))}
+
               {memorabiliaItems.map((item) => (
                 <article className="memorabilia-preview-card" key={item.id}>
                   <div className="memorabilia-card-image-wrap">
