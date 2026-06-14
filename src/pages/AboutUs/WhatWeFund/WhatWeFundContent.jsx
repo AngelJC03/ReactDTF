@@ -1,4 +1,3 @@
-import React from "react";
 import "./WhatWeFundContent.css"; 
 import empoweringWomen from '../../../assets/images/what-we-fund-photos/empowering-women.jpg';
 import dvRibbon from '../../../assets/images/what-we-fund-photos/dv-ribbon.jpg';

@@ -1,11 +1,22 @@
 const GIVEBUTTER_AUCTION_ITEMS_FUNCTION = '/.netlify/functions/givebutter-auction-items';
 
+function decodeHtmlEntities(text) {
+  const textarea = document.createElement('textarea');
+  textarea.innerHTML = text;
+  return textarea.value;
+}
+
 function stripHtml(value) {
   if (!value) {
     return '';
   }
 
-  return String(value).replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+  const stripped = String(value)
+    .replace(/<[^>]*>/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  return decodeHtmlEntities(stripped);
 }
 
 function getFirstArray(payload) {
@@ -27,6 +38,32 @@ function getFirstArray(payload) {
 
 function getFirstValue(...values) {
   return values.find((value) => value !== undefined && value !== null && value !== '') || '';
+}
+
+function getImages(item) {
+  const imageSources = [];
+
+  if (Array.isArray(item.pictures)) {
+    imageSources.push(
+      ...item.pictures.map((picture) => (
+        typeof picture === 'string'
+          ? picture
+          : getFirstValue(picture?.url, picture?.src)
+      ))
+    );
+  }
+
+  if (Array.isArray(item.images)) {
+    imageSources.push(
+      ...item.images.map((image) => (
+        typeof image === 'string'
+          ? image
+          : getFirstValue(image?.url, image?.src)
+      ))
+    );
+  }
+
+  return [...new Set(imageSources.filter(Boolean))];
 }
 
 function getImageUrl(item) {
@@ -89,33 +126,86 @@ function normalizePrice(value) {
 function normalizeAuctionItem(item, index) {
   const id = getFirstValue(item.id, item.item_id, item.itemId, item.uuid, item.slug, `givebutter-item-${index}`);
 
-  console.log('RAW ITEM', item);
-  console.log('IMAGE URL', getImageUrl(item));
+  const images = getImages(item);
+  const rawCategoryId = item.category_id ?? item.categoryId;
+  const numericCategoryId = Number(rawCategoryId);
+  const categoryId = Number.isNaN(numericCategoryId) ? rawCategoryId : numericCategoryId;
+
+  console.log('[givebutterService] Normalizing auction item images.', {
+    id,
+    title: getFirstValue(item.title, item.name, item.item_name, item.itemName),
+    categoryId,
+    rawPicturesCount: Array.isArray(item.pictures) ? item.pictures.length : 0,
+    normalizedImagesCount: images.length,
+    images,
+  });
 
   return {
     id: String(id),
-    title: getFirstValue(item.title, item.name, item.item_name, item.itemName, 'Untitled auction item'),
-    description: stripHtml(getFirstValue(item.description, item.short_description, item.shortDescription, item.details)),
-    currentBid: normalizePrice(getFirstValue(
-      item.current_bid,
-      item.currentBid,
-      item.highest_bid,
-      item.highestBid,
-      item.bid?.amount,
-      item.bid?.value,
-    )),
-    buyNowPrice: normalizePrice(getFirstValue(
-      item.buy_now_price,
-      item.buyNowPrice,
-      item.buy_now?.price,
-      item.buyNow?.price,
-      item.price,
-    )),
-    currency: getFirstValue(item.currency, item.currency_code, item.currencyCode, 'USD'),
+    title: getFirstValue(
+      item.title,
+      item.name,
+      item.item_name,
+      item.itemName,
+      'Untitled auction item'
+    ),
+    description: stripHtml(
+      getFirstValue(
+        item.description,
+        item.short_description,
+        item.shortDescription,
+        item.details
+      )
+    ),
+    currentBid: normalizePrice(
+      getFirstValue(
+        item.current_bid,
+        item.currentBid,
+        item.highest_bid,
+        item.highestBid,
+        item.bid?.amount,
+        item.bid?.value,
+      )
+    ),
+    buyNowPrice: normalizePrice(
+      getFirstValue(
+        item.buy_now_price,
+        item.buyNowPrice,
+        item.buy_now?.price,
+        item.buyNow?.price,
+        item.price,
+      )
+    ),
+    currency: getFirstValue(
+      item.currency,
+      item.currency_code,
+      item.currencyCode,
+      'USD'
+    ),
+
     image: getImageUrl(item),
+
+    // NEW
+    images,
+
+    categoryId,
+
     itemWebUrl: findGivebutterUrl(item),
-    endDate: getFirstValue(item.ends_at, item.endsAt, item.end_date, item.endDate, item.auction_end_date),
-    category: getFirstValue(item.category?.name, item.category_name, item.categoryName, item.category),
+
+    endDate: getFirstValue(
+      item.ends_at,
+      item.endsAt,
+      item.end_date,
+      item.endDate,
+      item.auction_end_date
+    ),
+
+    category: getFirstValue(
+      item.category?.name,
+      item.category_name,
+      item.categoryName,
+      item.category
+    ),
   };
 }
 

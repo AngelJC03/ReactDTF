@@ -1,4 +1,3 @@
-import React from 'react';
 import FadeIn from '../../components/fadeinsection/FadeIn.jsx';
 import './Hero.css';
 import heroImage from '../../assets/images/home-page-photos/hero_photo2.jpg';
@@ -12,7 +11,12 @@ function Home() {
         <div className="hero-content">
             <div className="hero-image">
                 <img src={heroImage} alt="Hero" className="hero-img" />
-                <img src={logo} alt="Logo" className="hero-logo" />
+                <div className="hero-copy">
+                  <img src={logo} alt="Davis-Tennon Foundation" className="hero-copy-logo" />
+                  <p>Community-powered philanthropy</p>
+                  <h1>Opening pathways to dignity, opportunity, and lasting support.</h1>
+                  <a href="/WhatWeFund">Explore Our Work</a>
+                </div>
             </div>
         </div>
       </FadeIn>

@@ -1,98 +1,125 @@
 .wwf-container {
-  width: 85%;
-  padding: 40px 20px;
-  text-align: center;
-  background: #d1f3ae;
-}
-
-.wwf-container p {
-    font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-/* GRID: 2 columns on desktop, 1 column on smaller screens */
-.wwf-grid {
-  width: 100%;
-  max-width: 1100px;
+  width: min(100%, 1200px);
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  align-items: stretch;
+  text-align: center;
 }
 
-/* each item is a clickable card */
+.wwf-title {
+  margin: 0 0 16px;
+  color: #213321;
+  font-size: clamp(2.3rem, 4vw, 4rem);
+  line-height: 1;
+}
+
+.wwf-description {
+  max-width: 880px;
+  margin: 0 auto 28px;
+  color: rgba(33, 51, 33, 0.82);
+  font-size: clamp(1.08rem, 1.6vw, 1.28rem);
+  line-height: 1.75;
+}
+
+.home-impact-stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 820px;
+  margin: 0 auto 34px;
+}
+
+.home-impact-stats div {
+  border: 1px solid rgba(76, 122, 47, 0.18);
+  border-radius: 16px;
+  background: rgba(255, 247, 238, 0.88);
+  padding: 18px;
+  box-shadow: 0 14px 30px rgba(31, 52, 24, 0.08);
+}
+
+.home-impact-stats strong {
+  display: block;
+  color: #4c7a2f;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1;
+}
+
+.home-impact-stats span {
+  display: block;
+  margin-top: 7px;
+  color: rgba(33, 51, 33, 0.76);
+}
+
+.wwf-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
 .wwf-item {
   position: relative;
   display: block;
+  min-height: 320px;
   overflow: hidden;
-  border-radius: 8px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-  aspect-ratio: 1 / 1; /* keeps each cell square without stretching the image */
+  border-radius: 18px;
   background: #eee;
+  box-shadow: 0 18px 42px rgba(31, 52, 24, 0.13);
   text-decoration: none;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-/* image fills card and keeps aspect ratio */
 .wwf-item img {
   width: 100%;
   height: 100%;
+  min-height: 320px;
   object-fit: cover;
   display: block;
-  transition: transform 0.4s ease;
+  transition: transform 0.45s ease;
 }
 
-/* subtle hover */
-.wwf-item:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 14px 30px rgba(0,0,0,0.18);
-  z-index: 5;
+.wwf-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(33, 51, 33, 0.02), rgba(33, 51, 33, 0.72));
 }
-.wwf-item:hover img {
+
+.wwf-item:hover,
+.wwf-item:focus-visible {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 54px rgba(31, 52, 24, 0.2);
+}
+
+.wwf-item:hover img,
+.wwf-item:focus-visible img {
   transform: scale(1.06);
 }
 
-/* caption bar */
 .wwf-caption {
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 12px 10px;
-  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 30%);
-  color: #fff;
-  font-weight: 600;
-  text-align: center;
-  z-index: 10;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  z-index: 1;
+  color: #fff7ee;
+  font-size: 1.28rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: left;
 }
 
-@media (max-width: 1000px) {
-  .wwf-container p {
-    font-size: 1.2rem; /* Adjust font size for smaller screens */
+@media (max-width: 1050px) {
+  .wwf-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
-/* responsive: collapse to single column on small screens */
-@media (max-width: 720px) {
+@media (max-width: 640px) {
+  .home-impact-stats,
   .wwf-grid {
     grid-template-columns: 1fr;
-    gap: 14px;
   }
 
-  .wwf-title {
-    font-size: 22px;
-  }
-
-  .wwf-caption {
-    padding: 10px;
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 500px) {
-  .wwf-container p {
-    font-size: 0.9rem; /* Further adjust font size for very small screens */
+  .wwf-item,
+  .wwf-item img {
+    min-height: 250px;
   }
 }

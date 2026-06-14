@@ -11,7 +11,7 @@
     linear-gradient(90deg, rgba(33, 51, 33, 0.86), rgba(76, 122, 47, 0.7)),
     url('../../assets/images/logo-photos/repeated-logo.jpg') center/420px repeat;
   color: #fff7ee;
-  padding: 74px 20px;
+  padding: clamp(68px, 9vw, 110px) 20px;
 }
 
 .memorabilia-hero-inner,
@@ -38,7 +38,7 @@
 
 .memorabilia-hero h1 {
   margin: 12px 0 16px;
-  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-size: clamp(2.8rem, 5vw, 4.6rem);
   line-height: 1;
 }
 
@@ -60,6 +60,7 @@
   align-items: center;
   margin: 0 auto 34px;
   border: 1px solid rgba(33, 51, 33, 0.14);
+  border-radius: 20px;
   background: rgba(255, 204, 138, 0.48);
   padding: 30px;
   box-shadow: 0 14px 32px rgba(31, 52, 24, 0.1);
@@ -109,6 +110,7 @@
   margin: 0 auto 28px;
   padding: 14px 18px;
   border: 1px solid rgba(76, 122, 47, 0.22);
+  border-radius: 16px;
   background: rgba(255, 247, 238, 0.82);
   color: #213321;
   text-align: center;
@@ -184,6 +186,11 @@
   border-radius: 14px 14px 0 0;
 }
 
+.memorabilia-card-image-wrap-multiple {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
 .memorabilia-card-image {
   width: 100%;
   height: 100%;
@@ -195,6 +202,10 @@
 .memorabilia-preview-card:hover .memorabilia-card-image,
 .memorabilia-preview-card:focus-within .memorabilia-card-image {
   transform: scale(1.045);
+}
+
+.memorabilia-card-image-wrap-multiple .memorabilia-card-image {
+  min-width: 0;
 }
 
 .memorabilia-card-body {
@@ -461,6 +472,7 @@
   max-height: min(90vh, 780px);
   overflow-y: auto;
   background: #fff7ee;
+  border-radius: 20px;
   color: #213321;
   padding: 26px;
   box-shadow: 0 22px 60px rgba(0, 0, 0, 0.26);
@@ -514,6 +526,24 @@
   margin: 0 0 18px;
   overflow: hidden;
   background: #ffcc8a;
+}
+
+.memorabilia-modal-image-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.memorabilia-modal-image-gallery .memorabilia-modal-image-wrap {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.memorabilia-modal-image-gallery .memorabilia-card-image {
+  width: 100%;
+  display: block;
+  border-radius: 12px;
 }
 
 .memorabilia-modal-prices {

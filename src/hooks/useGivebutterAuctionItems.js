@@ -20,6 +20,18 @@ function useGivebutterAuctionItems() {
         setError(null);
 
         const auctionItems = await getAuctionItems({ signal: controller.signal });
+        console.log('[useGivebutterAuctionItems] Loaded normalized auction items.', {
+          count: auctionItems.length,
+          bookItems: auctionItems
+            .filter((item) => item.categoryId === 89848)
+            .map((item) => ({
+              id: item.id,
+              title: item.title,
+              categoryId: item.categoryId,
+              imagesCount: item.images?.length || 0,
+              images: item.images,
+            })),
+        });
         setItems(auctionItems);
       } catch (caughtError) {
         if (caughtError.name === 'AbortError') {

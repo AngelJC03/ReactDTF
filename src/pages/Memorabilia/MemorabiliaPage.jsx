@@ -6,6 +6,7 @@ import placeholderImage from '../../assets/images/home-page-photos/placeHolder.p
 import './MemorabiliaPage.css';
 
 const skeletonCards = Array.from({ length: 4 }, (_, index) => `givebutter-loading-${index}`);
+const BOOK_CATEGORY_ID = 89848;
 
 function formatPrice(value, currency = 'USD') {
   if (value === undefined || value === null || value === '') {
@@ -50,20 +51,38 @@ function trimDescription(description, maxLength = 140) {
   return `${description.slice(0, maxLength).trim()}...`;
 }
 
+function isBookItem(item) {
+  return Number(item?.categoryId) === BOOK_CATEGORY_ID;
+}
+
+function getAuctionItemImages(item) {
+  const normalizedImages = Array.isArray(item?.images) ? item.images.filter(Boolean) : [];
+  const fallbackImages = item?.image ? [item.image] : [];
+  const sourceImages = normalizedImages.length > 0 ? normalizedImages : fallbackImages;
+  const displayImages = isBookItem(item) ? sourceImages.slice(0, 2) : sourceImages.slice(0, 1);
+
+  return displayImages.length > 0 ? displayImages : [placeholderImage];
+}
+
 function AuctionItemCard({ item, onSelect }) {
   const currentBid = formatPrice(item.currentBid, item.currency);
   const buyNowPrice = formatPrice(item.buyNowPrice, item.currency);
   const endDate = formatDate(item.endDate);
+  const displayImages = getAuctionItemImages(item);
+  const hasMultipleImages = displayImages.length > 1;
 
   return (
     <article className="memorabilia-preview-card" aria-labelledby={`${item.id}-title`}>
-      <div className="memorabilia-card-image-wrap">
-        <img
-          src={item.image || placeholderImage}
-          alt=""
-          className="memorabilia-card-image"
-          loading="lazy"
-        />
+      <div className={`memorabilia-card-image-wrap ${hasMultipleImages ? 'memorabilia-card-image-wrap-multiple' : ''}`}>
+        {displayImages.map((image, index) => (
+          <img
+            src={image}
+            alt=""
+            className="memorabilia-card-image"
+            loading="lazy"
+            key={`${item.id}-card-image-${index}`}
+          />
+        ))}
       </div>
       <div className="memorabilia-preview-card-body">
         <p className="memorabilia-card-time">{item.category || 'Givebutter Auction'}</p>
@@ -88,7 +107,17 @@ function AuctionItemCard({ item, onSelect }) {
           <button
             type="button"
             className="memorabilia-button memorabilia-button-primary"
-            onClick={() => onSelect(item)}
+            onClick={() => {
+              console.log('[MemorabiliaPage] Selected auction item.', {
+                id: item.id,
+                title: item.title,
+                categoryId: item.categoryId,
+                imagesCount: item.images?.length || 0,
+                displayImagesCount: displayImages.length,
+                images: item.images,
+              });
+              onSelect(item);
+            }}
           >
             View Details
           </button>
@@ -134,6 +163,23 @@ function AuctionItemModal({ item, onClose }) {
     };
   }, [item, onClose]);
 
+  useEffect(() => {
+    if (!item) {
+      return;
+    }
+
+    const displayImages = getAuctionItemImages(item);
+
+    console.log('[MemorabiliaPage] Modal received auction item.', {
+      id: item.id,
+      title: item.title,
+      categoryId: item.categoryId,
+      rawImagesCount: item.images?.length || 0,
+      displayImagesCount: displayImages.length,
+      displayImages,
+    });
+  }, [item]);
+
   if (!item) {
     return null;
   }
@@ -141,6 +187,7 @@ function AuctionItemModal({ item, onClose }) {
   const currentBid = formatPrice(item.currentBid, item.currency);
   const buyNowPrice = formatPrice(item.buyNowPrice, item.currency);
   const endDate = formatDate(item.endDate);
+  const displayImages = getAuctionItemImages(item);
 
   return (
     <div className="memorabilia-modal-backdrop" onMouseDown={onClose}>
@@ -161,8 +208,19 @@ function AuctionItemModal({ item, onClose }) {
           </button>
         </div>
 
-        <div className="memorabilia-modal-image-wrap">
-          <img src={item.image || placeholderImage} alt="" className="memorabilia-card-image" />
+        <div className="memorabilia-modal-image-gallery">
+          {displayImages.map((image, index) => (
+            <div
+              key={`${image}-${index}`}
+              className="memorabilia-modal-image-wrap"
+            >
+              <img
+                src={image || placeholderImage}
+                alt={`${item.title} image ${index + 1}`}
+                className="memorabilia-card-image"
+              />
+            </div>
+          ))}
         </div>
 
         {item.description && <p className="memorabilia-modal-copy">{item.description}</p>}

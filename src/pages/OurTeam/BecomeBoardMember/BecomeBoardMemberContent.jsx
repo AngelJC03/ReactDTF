@@ -1,4 +1,4 @@
-import react, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './BecomeBoardMemberContent.css';
 import FadeInSection from '../../../components/fadeinsection/FadeIn.jsx';
 import BecomeBoardMemberImage from '../../../assets/images/home-page-photos/angelo-garcia-davistenon-foundation.webp';
@@ -90,11 +90,9 @@ function BecomeBoardMemberContent() {
               <br />
               <p>Together, we can break down barriers, build connections, and strengthen communities. Join us in this important work!</p>
               <br />
-              <button className="bbm-apply-button">
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvbXJiOKQTISXbQi4hbM31X9YlVZB5VaNLEb8wX28n6E3gOg/viewform" target='_blank' rel='noopener noreferrer' className=" inline-block ml-5 px-3 py-3 bg-[rgba(139,93,49)] text-white font-semibold shadow rounded no-underline apply-button" aria-label="Apply to be a Board Member (opens in new tab)">
-                    Apply to be a Board Member
-                </a>
-              </button>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSfvbXJiOKQTISXbQi4hbM31X9YlVZB5VaNLEb8wX28n6E3gOg/viewform" target='_blank' rel='noopener noreferrer' className="bbm-apply-button apply-button" aria-label="Apply to be a Board Member (opens in new tab)">
+                Apply to be a Board Member
+              </a>
             </AccordionItem>
           </FadeInSection>
         </div>

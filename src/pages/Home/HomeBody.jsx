@@ -1,9 +1,7 @@
-import React from "react";
 import "./HomeBody.css";
 import FadeIn from '../../components/fadeinsection/FadeIn.jsx';
 import HomeWWF from "./HomeWWF";
 import GivebutterWidget from "./GivebutterWidget";
-import { Fade } from "react-bootstrap";
 import NewsArticles from "../../components/newsarticles/NewsArticles.jsx";
 import HomeAFF from "./HomeAFF.jsx";
 import LazyPlayVideo from "./LazyPlayVideo.jsx";
@@ -14,10 +12,6 @@ function HomeBody() {
         <FadeIn>
             <div className="video-section">
                 <LazyPlayVideo />
-            </div>
-        </FadeIn>
-        <FadeIn>
-            <div className="video-section">
             </div>
         </FadeIn>
         <FadeIn>

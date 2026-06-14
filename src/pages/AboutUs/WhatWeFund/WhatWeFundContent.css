@@ -1,196 +1,222 @@
-/* WhatWeFund.css */
+.what-we-fund-content {
+  background: linear-gradient(180deg, #eef6e7 0%, #f7fbf2 48%, #fff7ee 100%);
+  color: #213321;
+}
 
-p, li {
-  line-height: 1.6;
+.what-we-fund-content p,
+.what-we-fund-content li {
+  line-height: 1.72;
 }
 
 .WWF-title {
-  text-align: center;
-  max-width: 1000px;
-  padding: 20px;
+  width: min(100% - 48px, 1050px);
   margin: 0 auto;
-  padding-top: 30px;
+  padding: clamp(58px, 8vw, 96px) 0 28px;
+  text-align: center;
 }
 
 .WWF-title h1 {
-  font-size: 2.5rem;
-  margin-bottom: 15px;
-
+  margin: 0 0 18px;
+  font-size: clamp(2.8rem, 5vw, 5rem);
+  line-height: 0.98;
 }
 
 .WWF-title p {
-  font-size: 1.2rem;
-  color: #333;
+  max-width: 900px;
+  margin: 0 auto;
+  color: rgba(33, 51, 33, 0.82);
+  font-size: clamp(1.1rem, 1.7vw, 1.32rem);
 }
 
 .WWDNF-container {
-  margin: 0 auto;
-  border-radius: 8px;
-  max-width: 1000px;
-  font-size: 1.1rem;
-  padding: 20px;
+  width: min(100% - 48px, 1000px);
+  margin: 0 auto clamp(42px, 6vw, 70px);
+  border: 1px solid rgba(195, 41, 58, 0.18);
+  border-radius: 18px;
+  background: rgba(255, 247, 238, 0.92);
+  padding: clamp(22px, 4vw, 34px);
+  box-shadow: 0 16px 38px rgba(31, 52, 24, 0.08);
+}
+
+.WWDNF-container p {
+  margin: 0;
+  color: rgba(33, 51, 33, 0.82);
+  font-size: 1.08rem;
 }
 
 .WWDNF-important-text {
-  font-weight: bold;
-  font-size: 2rem;
+  display: inline;
+  color: rgb(139, 17, 4);
+  font-size: 1.22rem;
+  font-weight: 700;
 }
 
-.what-we-fund-content {
-  background-color: #d2f3ae;
-  margin: 0 auto;
-}
-
-/* Funding Priorities */
 .funding-container-container {
-  padding: 0 20px;
   width: 100%;
+  padding: clamp(34px, 6vw, 68px) 24px;
+}
 
+.funding-container-container:nth-of-type(even) {
+  background: rgba(255, 255, 255, 0.42);
 }
 
 .funding-container {
+  width: min(100%, 1200px);
   margin: 0 auto;
-  width: 80%;
-  padding: 0 20px;
+}
+
+.funding-container > h1 {
+  margin: 0 0 26px;
+  text-align: center;
+  font-size: clamp(2.2rem, 4vw, 3.8rem);
+  line-height: 1;
+}
+
+.funding-container .accordion-item {
+  border: 1px solid rgba(33, 51, 33, 0.12);
+  border-radius: 18px;
+  background: #fff7ee;
+  padding: clamp(18px, 3vw, 28px);
+  box-shadow: 0 18px 42px rgba(31, 52, 24, 0.1);
 }
 
 .funding-container ul {
-  list-style: disc;
-  margin: 20px auto;
-  width: 400px;
-}
-
-.funding-container h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 24px;
+  margin: 22px 0;
+  padding-left: 24px;
 }
 
 .impact-grid {
-  margin: 0 auto;
-  width: 80%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* exactly 2 columns */
-  grid-template-rows: repeat(2, 1fr);    /* exactly 2 rows */
-  gap: 20px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
 }
-
 
 .impact-card {
   position: relative;
-  height: 500px; /* smaller than 500px so multiple fit nicely */
-  border-radius: 15px;
+  min-height: 390px;
+  overflow: hidden;
+  border-radius: 18px;
   background-size: cover;
   background-position: center;
-  overflow: hidden;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+  box-shadow: 0 18px 42px rgba(31, 52, 24, 0.13);
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
 }
 
-.impact-card:hover {
-  transform: scale(1.02);
+.impact-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(33, 51, 33, 0.05), rgba(33, 51, 33, 0.78));
+}
+
+.impact-card:hover,
+.impact-card:focus-within {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 54px rgba(31, 52, 24, 0.2);
 }
 
 .caption-bar {
   position: absolute;
-  bottom: 0;
-  width: 100%;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.6);
-  color: #fff;
-  text-align: center;
-  font-weight: bold;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  z-index: 1;
+  color: #fff7ee;
+  font-size: 1.22rem;
+  font-weight: 700;
+  line-height: 1.1;
 }
 
-/* Overlay on hover */
 .overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.75);
-  color: #fff;
-  padding: 20px;
-  opacity: 0;
-  transition: opacity 0.4s ease;
+  z-index: 2;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  justify-content: flex-end;
+  gap: 12px;
+  background: linear-gradient(180deg, rgba(33, 51, 33, 0.2), rgba(33, 51, 33, 0.94));
+  color: #fff7ee;
+  padding: 24px;
+  opacity: 0;
+  transition: opacity 0.28s ease;
 }
 
-.impact-card:hover .overlay {
+.impact-card:hover .overlay,
+.impact-card:focus-within .overlay {
   opacity: 1;
 }
 
+.overlay h2 {
+  margin: 0;
+  text-align: left;
+  font-size: 1.55rem;
+  line-height: 1.1;
+}
+
+.overlay p {
+  margin: 0;
+  color: rgba(255, 247, 238, 0.9);
+  font-size: 1rem;
+}
+
 .apply-for-funding-container {
-  margin-top: 20px;
-  text-align: center;
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(320px, 1.1fr);
+  width: min(100% - 48px, 1200px);
+  margin: clamp(34px, 6vw, 70px) auto 0;
+  overflow: hidden;
+  border-radius: 22px;
+  background: #ffcc8a;
+  box-shadow: 0 20px 48px rgba(31, 52, 24, 0.13);
 }
 
 .firstHalf {
-  flex: 1;
-  width: 100%;
-  height: 400px;
-  display: flex;
-  background-color: rgb(255, 204, 138);
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+  min-height: 420px;
 }
 
 .secondHalf {
-  flex: 1;
-  height: 400px;
-  padding: 20px;
-  background-color: rgb(255, 204, 138);
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
-  align-items: center;
+  min-height: 420px;
+  padding: clamp(32px, 5vw, 58px);
+  background: linear-gradient(180deg, rgba(255, 204, 138, 0.94), rgba(246, 231, 171, 0.88));
 }
 
 .secondHalf p {
-  margin: 40px 0;
+  margin: 0 0 24px;
+  color: rgba(33, 51, 33, 0.82);
+  font-size: 1.16rem;
 }
 
 .button-container:hover {
-  transform: scale(1.05);
-  transition: transform 0.9s ease;
+  transform: translateY(-2px);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1100px) {
   .impact-grid {
-    grid-template-columns: 1fr; /* single column on smaller screens */
-    grid-template-rows: auto;   /* rows adjust height automatically */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
-  .impact-card {
-    height: 400px; /* slightly shorter cards for smaller screens */
-  }
-  .apply-for-funding-container {
-    flex-direction: column; /* stack content vertically */
-    height: 800px; /* height adjusts based on content */
-  }
-
-  .funding-container ul {
-    width: 200px;
-    margin: 20px auto;
-  }
-
 }
 
-@media (max-width: 600px) {
+@media (max-width: 760px) {
+  .funding-container ul,
+  .impact-grid,
+  .apply-for-funding-container {
+    grid-template-columns: 1fr;
+  }
+
   .impact-card {
-    height: 200px;
+    min-height: 300px;
   }
-  .overlay h3 {
-    font-size: 0.6rem;
-  }
-  .overlay p {
-    font-size: 0.5rem;
+
+  .firstHalf,
+  .secondHalf {
+    min-height: 300px;
   }
 }

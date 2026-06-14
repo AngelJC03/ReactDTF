@@ -1,4 +1,3 @@
-import React from "react";
 import "./HomeWWF.css";
 
 import empoweringWomen from "../../assets/images/home-page-photos/empowering-women.jpg";
@@ -13,6 +12,20 @@ function WhatWeFund() {
       <p className="wwf-description" role="heading">
         The Davis-Tennon Foundation is committed to driving meaningful change by funding initiatives that address critical needs within Rhode Island communities. Our goal is to empower individuals and families, remove barriers to opportunity, and create lasting solutions for underserved populations.
       </p>
+      <div className="home-impact-stats" aria-label="Foundation impact highlights">
+        <div>
+          <strong>4</strong>
+          <span>Funding priorities</span>
+        </div>
+        <div>
+          <strong>RI</strong>
+          <span>Community focus</span>
+        </div>
+        <div>
+          <strong>Direct</strong>
+          <span>Basic-needs support</span>
+        </div>
+      </div>
       <div className="wwf-grid">
         <a className="wwf-item" href="/WhatWeFund">
           <img src={empoweringWomen} alt="Empowering Women" />

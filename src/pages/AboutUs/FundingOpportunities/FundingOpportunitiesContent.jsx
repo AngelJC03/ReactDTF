@@ -1,5 +1,3 @@
-// FundingOpportunities.jsx
-import React from "react";
 import "./FundingOpportunitiesContent.css"; // we'll style here
 import FadeIn from "../../../components/fadeinsection/FadeIn.jsx";
 import DavisTennonLogo from "../../../assets/images/logo-photos/icononly_nobuffer.png";

@@ -16,6 +16,7 @@
   min-height: 340px;
   margin-bottom: 34px;
   border: 1px solid rgba(33, 51, 33, 0.14);
+  border-radius: 22px;
   background:
     linear-gradient(90deg, rgba(33, 51, 33, 0.9), rgba(76, 122, 47, 0.76)),
     url('../../assets/images/home-page-photos/hero_photo2.jpg') center/cover;
@@ -57,6 +58,7 @@
   align-items: center;
   margin-bottom: 34px;
   border: 1px solid rgba(33, 51, 33, 0.12);
+  border-radius: 18px;
   background: rgba(255, 204, 138, 0.46);
   padding: 28px;
 }
@@ -97,6 +99,7 @@
   flex-direction: column;
   overflow: hidden;
   border: 1px solid rgba(41, 73, 41, 0.16);
+  border-radius: 18px;
   background: rgba(255, 247, 238, 0.94);
   box-shadow: 0 18px 42px rgba(31, 52, 24, 0.14);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
@@ -149,6 +152,7 @@
 
 .partners-spotlight-highlight {
   border: 1px solid rgba(246, 231, 171, 0.34);
+  border-radius: 14px;
   background: rgba(255, 247, 238, 0.12);
   padding: 18px;
 }
@@ -177,6 +181,7 @@
   justify-content: center;
   min-height: 44px;
   border: 1px solid rgba(246, 231, 171, 0.72);
+  border-radius: 999px;
   background: #f6e7ab;
   color: #213321;
   padding: 10px 18px;
@@ -200,6 +205,7 @@
   flex-direction: column;
   overflow: hidden;
   border: 1px solid rgba(41, 73, 41, 0.16);
+  border-radius: 18px;
   background: rgba(255, 247, 238, 0.92);
   box-shadow: 0 12px 28px rgba(31, 52, 24, 0.1);
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
@@ -259,6 +265,7 @@
   width: min(100%, 860px);
   margin: 42px auto 0;
   border: 1px solid rgba(33, 51, 33, 0.14);
+  border-radius: 18px;
   background: rgba(255, 247, 238, 0.86);
   padding: 26px;
   text-align: center;

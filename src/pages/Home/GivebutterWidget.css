@@ -1,18 +1,16 @@
 .widget-container {
-    width: 80%;
-    font-size: 1.4rem;
-    padding: 10px 20px;
-    text-align: center;
+  width: min(100%, 960px);
+  margin: 0 auto;
+  border-radius: 22px;
+  background: rgba(255, 247, 238, 0.88);
+  padding: clamp(24px, 4vw, 42px);
+  text-align: center;
+  box-shadow: 0 20px 48px rgba(31, 52, 24, 0.12);
 }
 
-@media (max-width: 1000px) {
-    .widget-container {
-        font-size: 1.2rem; /* Adjust font size for smaller screens */
-    }
-}
-
-@media (max-width: 720px) {
-    .widget-container {
-        font-size: 1rem; /* Further adjust font size for very small screens */
-    }
+.widget-container h2,
+.widget-container p {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
 }
