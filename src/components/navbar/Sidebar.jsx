@@ -106,11 +106,11 @@ function Sidebar({ isOpen, onClose }) {
             </li>
           ))}
 
-          <li className="sidebar-item">
+          {/* <li className="sidebar-item">
             <Link to="/memorabilia" onClick={onClose} className="sidebar-link" aria-label="Memorabilia">
               <span>Memorabilia</span>
             </Link>
-          </li>
+          </li> */}
           
           <li className="sidebar-item">
             <Link to="https://docs.google.com/forms/d/e/1FAIpQLSeyf2L9swDTLg0CM6kyN8VamFCxlJ4w-BgiWQihqsM--hBiWA/viewform" target="_blank" rel="noreferrer" onClick={onClose} className="sidebar-link" aria-label="Apply For Funding (opens in new tab)">

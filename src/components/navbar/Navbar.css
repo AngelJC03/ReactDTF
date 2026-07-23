@@ -4,6 +4,35 @@
   font-family: "gill-sans-bold", sans-serif;
 }
 
+.navbar-inner {
+  gap: 2rem;
+}
+
+.navbar-image {
+  flex: 0 0 auto;
+}
+
+.navbar-image a,
+.navbar-image picture {
+  display: block;
+}
+
+.navbar-logo {
+  display: block;
+  width: 290px;
+  max-width: 290px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.nav-menu {
+  min-width: 0;
+}
+
+.nav-menu ul {
+  flex-wrap: nowrap;
+}
+
 .nav-link-with-icon {
   display: inline-flex; /* or flex */
   align-items: center;  /* vertically center text and arrow */
@@ -56,5 +85,22 @@
 @media (max-width: 1000px) {
   .nav-menu {
     display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar-logo {
+    width: clamp(160px, 40vw, 290px);
+  }
+}
+
+@media (max-width: 450px) {
+  .navbar-inner {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .navbar-logo {
+    width: clamp(90px, 28vw, 120px);
   }
 }

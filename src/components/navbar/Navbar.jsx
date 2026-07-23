@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { FaAngleDown } from 'react-icons/fa';
 import './Navbar.css';
@@ -25,38 +25,18 @@ function Navbar() {
     }
   };
 
-  const [currentLogo, setCurrentLogo] = useState(getInitialLogo());
-  const [currentWidth, setCurrentWidth] = useState(290);
-
-  function getInitialLogo() {
-    if (typeof window !== "undefined") {
-      return window.innerWidth <= 450 ? smallerLogo : logo;
-    }
-    return logo;
-  }
-
-  useEffect(() => {
-    const updateLogo = () => {
-      const isMobile = window.innerWidth <= 450;
-      setCurrentLogo(isMobile ? smallerLogo : logo);
-      setCurrentWidth(isMobile ? 90 : 290);
-    };
-
-    updateLogo();
-
-    window.addEventListener("resize", updateLogo);
-    return () => window.removeEventListener("resize", updateLogo);
-  }, []);
-
   return (
     <nav className="navbar-container" role="navigation" aria-label="Main Navigation">
-      <div className="w-full h-[120px] bg-[#ffcc8a] text-black px-8 py-6 flex items-center justify-between font-gill-sans-bold">
+      <div className="navbar-inner w-full h-[120px] bg-[#ffcc8a] text-black px-8 py-6 flex items-center justify-between font-gill-sans-bold">
 
         <Hamburger click={click} checkboxRef={checkboxRef} handleToggle={handleToggle} />
 
         <div className="navbar-image flex items-center gap-4">
           <Link to="/Home" aria-label="Home" role="link">
-            <img src={currentLogo} alt="Logo" style={{ width: `${currentWidth}px`, height: 'auto' }} />
+            <picture>
+              <source media="(max-width: 450px)" srcSet={smallerLogo} />
+              <img src={logo} alt="Logo" className="navbar-logo" />
+            </picture>
           </Link>
         </div>
 
@@ -143,11 +123,11 @@ function Navbar() {
               </ul>
             </li>
 
-            <li role="none">
+            {/* <li role="none">
               <Link to="/memorabilia" className="nav-link" aria-label="Memorabilia" role="menuitem">
                 Memorabilia
               </Link>
-            </li>
+            </li> */}
 
             {/* External links styled as buttons */}
             <li role="none">
