@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { FaAngleDown } from 'react-icons/fa';
 import './Navbar.css';
 import logo from '../../assets/images/logo-photos/dtf-logo.png';
@@ -118,8 +118,30 @@ function Navbar() {
                 Partners/Resources <FaAngleDown className={`inline ml-1 dropdown-arrow ${activeMenu === 'partners' ? 'rotate' : ''}`} />
               </Link>
               <ul className={`dropdown-menu ${activeMenu === 'partners' ? 'show' : ''}`} role="menu">
-                <li role="menuitem"><Link to="/PartnersAndResources" className="dropdown-link">Partners/Resources</Link></li>
-                <li role="menuitem"><Link to="/PartnersSpotlight" className="dropdown-link">Partners Spotlight</Link></li>
+                <li role="menuitem">
+                  <NavLink
+                    to="/PartnersAndResources"
+                    className={({ isActive }) => `dropdown-link${isActive ? ' active' : ''}`}
+                  >
+                    Partners/Resources
+                  </NavLink>
+                </li>
+                <li role="menuitem">
+                  <NavLink
+                    to="/PartnersSpotlight"
+                    className={({ isActive }) => `dropdown-link${isActive ? ' active' : ''}`}
+                  >
+                    Partners Spotlight
+                  </NavLink>
+                </li>
+                <li role="menuitem">
+                  <NavLink
+                    to="/parent-resource-center"
+                    className={({ isActive }) => `dropdown-link${isActive ? ' active' : ''}`}
+                  >
+                    Parent Resource Center
+                  </NavLink>
+                </li>
               </ul>
             </li>
 

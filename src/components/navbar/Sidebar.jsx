@@ -1,7 +1,7 @@
 // import React from 'react';
 import { useState } from 'react';
 import './Sidebar.css';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { FaAngleRight } from 'react-icons/fa';
 import logo from '../../assets/images/logo-photos/200x200_logo.png';
 
@@ -39,6 +39,7 @@ function Sidebar({ isOpen, onClose }) {
       submenu: [
         { label: 'Partners/Resources', path: '/PartnersAndResources' },
         { label: 'Partners Spotlight', path: '/PartnersSpotlight' },
+        { label: 'Parent Resource Center', path: '/parent-resource-center' },
       ],
     },
   ];
@@ -95,9 +96,13 @@ function Sidebar({ isOpen, onClose }) {
                         </button>
                       </Link>
                     ) : (
-                      <Link to={item.path} onClick={onClose} className="sidebar-sublink">
+                      <NavLink
+                        to={item.path}
+                        onClick={onClose}
+                        className={({ isActive }) => `sidebar-sublink${isActive ? ' active' : ''}`}
+                      >
                         {item.label}
-                      </Link>
+                      </NavLink>
                     )}
                   </li>
                 ))}

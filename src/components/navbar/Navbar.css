@@ -73,6 +73,12 @@
   background-color: #f0f0f0; /* light gray background on hover */
 }
 
+.dropdown-link.active {
+  background-color: rgba(76, 122, 47, 0.12);
+  color: #213321;
+  font-weight: 700;
+}
+
 @media (max-width: 1200px) {
   .nav-link {
     display: none !important;

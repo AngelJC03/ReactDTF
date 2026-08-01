@@ -2,6 +2,7 @@ import FadeIn from '../../components/fadeinsection/FadeIn.jsx';
 import './Hero.css';
 import heroImage from '../../assets/images/home-page-photos/hero_photo2.jpg';
 import logo from '../../assets/images/logo-photos/clear-background-dtf-logo.png';
+import GrantNotice from '../../components/GrantNotice/GrantNotice.jsx';
 
 function Home() {
 
@@ -17,6 +18,7 @@ function Home() {
                   <h1>Opening pathways to dignity, opportunity, and lasting support.</h1>
                   <a href="/WhatWeFund">Explore Our Work</a>
                 </div>
+                <GrantNotice className="hero-grant-notice" />
             </div>
         </div>
       </FadeIn>

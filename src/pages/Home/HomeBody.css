@@ -17,6 +17,11 @@
   padding: clamp(40px, 7vw, 76px) 24px;
 }
 
+.grantNotice-section {
+  background: #252014;
+  padding: clamp(40px, 7vw, 76px) 24px;
+}
+
 .WWF-section {
   background: linear-gradient(180deg, #eef6e7 0%, #f7fbf2 100%);
   padding: clamp(58px, 8vw, 92px) 24px;

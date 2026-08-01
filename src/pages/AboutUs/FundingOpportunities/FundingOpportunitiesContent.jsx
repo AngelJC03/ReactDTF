@@ -2,16 +2,13 @@ import "./FundingOpportunitiesContent.css"; // we'll style here
 import FadeIn from "../../../components/fadeinsection/FadeIn.jsx";
 import DavisTennonLogo from "../../../assets/images/logo-photos/icononly_nobuffer.png";
 import FundingOppsSidebar from "./FundingOppsSideBar.jsx";
+import GrantNotice from "../../../components/GrantNotice/GrantNotice.jsx";
 
 const FundingOpportunitiesContent = () => {
   return (
     <div className="funding-opportunities">
+      <GrantNotice className="funding-opportunities-grant-notice" />
       <FadeIn>
-        <div className="funding-cycle-important-notices">
-          The Davis-Tennon Foundation’s summer funding cycle officially closed on August 28, 2025. We thank all the organizations who submitted Letters of Intent for consideration.
-          Any submissions received after that date will be reviewed as part of the fall funding cycle, which is now open and will close on November 21, 2025.
-          We encourage applicants to align their proposals with our mission of meeting basic human needs and strengthening Rhode Island communities.
-        </div>
         <h1 className="funding-title">Funding Opportunities</h1>
         <p className="funding-intro">
             The Davis-Tennon Foundation accepts Letters of Intent (LOIs) on a quarterly basis to support initiatives aligned with our mission of:
