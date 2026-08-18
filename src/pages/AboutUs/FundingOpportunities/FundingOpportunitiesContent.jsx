@@ -4,6 +4,9 @@ import DavisTennonLogo from "../../../assets/images/logo-photos/icononly_nobuffe
 import FundingOppsSidebar from "./FundingOppsSideBar.jsx";
 import GrantNotice from "../../../components/GrantNotice/GrantNotice.jsx";
 
+const SHOW_QUARTERLY_LOI_DEADLINES = false;
+const FUNDING_APPLICATIONS_PAUSED = true;
+
 const FundingOpportunitiesContent = () => {
   return (
     <div className="funding-opportunities">
@@ -45,27 +48,29 @@ const FundingOpportunitiesContent = () => {
         </p>
 
 
-        <div className="deadlines-section">
-          <h2>Quarterly LOI Deadlines</h2>
-          <ul className="deadline-list">
-            <li>
-              <img src={DavisTennonLogo} alt="bullet" className="bullet-icon" />
-              <span><strong>Fall Cycle:</strong> August 28</span>
-            </li>
-            <li>
-              <img src={DavisTennonLogo} alt="bullet" className="bullet-icon" />
-              <span><strong>Winter Cycle:</strong> November 21</span>
-            </li>
-            <li>
-              <img src={DavisTennonLogo} alt="bullet" className="bullet-icon" />
-              <span><strong>Spring Cycle:</strong> February 21</span>
-            </li>
-            <li>
-              <img src={DavisTennonLogo} alt="bullet" className="bullet-icon" />
-              <span><strong>Summer Cycle:</strong> May 21</span>
-            </li>
-          </ul>
-        </div>
+        {SHOW_QUARTERLY_LOI_DEADLINES && (
+          <div className="deadlines-section">
+            <h2>Quarterly LOI Deadlines</h2>
+            <ul className="deadline-list">
+              <li>
+                <img src={DavisTennonLogo} alt="bullet" className="bullet-icon" />
+                <span><strong>Fall Cycle:</strong> August 28</span>
+              </li>
+              <li>
+                <img src={DavisTennonLogo} alt="bullet" className="bullet-icon" />
+                <span><strong>Winter Cycle:</strong> November 21</span>
+              </li>
+              <li>
+                <img src={DavisTennonLogo} alt="bullet" className="bullet-icon" />
+                <span><strong>Spring Cycle:</strong> February 21</span>
+              </li>
+              <li>
+                <img src={DavisTennonLogo} alt="bullet" className="bullet-icon" />
+                <span><strong>Summer Cycle:</strong> May 21</span>
+              </li>
+            </ul>
+          </div>
+        )}
 
 
         <p className="funding-closing">
@@ -77,7 +82,7 @@ const FundingOpportunitiesContent = () => {
       </FadeIn>
       <FadeIn>
         <div className="funding-opps-sidebar">
-            <FundingOppsSidebar />
+            <FundingOppsSidebar applicationsPaused={FUNDING_APPLICATIONS_PAUSED} />
         </div>
       </FadeIn>
 
