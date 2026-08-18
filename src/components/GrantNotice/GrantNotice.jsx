@@ -7,12 +7,12 @@ function GrantNotice({ className = '' }) {
       aria-labelledby="grant-notice-title"
     >
       <div className="grant-notice-content">
-        <h2 id="grant-notice-title">Grant Applications Temporarily Suspended</h2>
+        <h2 id="grant-notice-title">Grant Applications Temporarily Paused</h2>
         <p>
           Thank you for your interest in applying for funding through the Davis-Tennon Foundation.
         </p>
         <p>
-          Grant applications are currently suspended as we complete our 2026 funding commitments and
+          Grant applications are currently paused as we complete our 2026 funding commitments and
           prepare for the next funding cycle.
         </p>
         <p>

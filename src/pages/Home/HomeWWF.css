@@ -19,35 +19,6 @@
   line-height: 1.75;
 }
 
-.home-impact-stats {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 16px;
-  max-width: 820px;
-  margin: 0 auto 34px;
-}
-
-.home-impact-stats div {
-  border: 1px solid rgba(76, 122, 47, 0.18);
-  border-radius: 16px;
-  background: rgba(255, 247, 238, 0.88);
-  padding: 18px;
-  box-shadow: 0 14px 30px rgba(31, 52, 24, 0.08);
-}
-
-.home-impact-stats strong {
-  display: block;
-  color: #4c7a2f;
-  font-size: clamp(1.8rem, 3vw, 2.5rem);
-  line-height: 1;
-}
-
-.home-impact-stats span {
-  display: block;
-  margin-top: 7px;
-  color: rgba(33, 51, 33, 0.76);
-}
-
 .wwf-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -113,7 +84,6 @@
 }
 
 @media (max-width: 640px) {
-  .home-impact-stats,
   .wwf-grid {
     grid-template-columns: 1fr;
   }
