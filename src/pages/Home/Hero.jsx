@@ -12,12 +12,7 @@ function Home() {
         <div className="hero-content">
             <div className="hero-image">
                 <img src={heroImage} alt="Hero" className="hero-img" />
-                <div className="hero-copy">
-                  <img src={logo} alt="Davis-Tennon Foundation" className="hero-copy-logo" />
-                  <p>Community-powered philanthropy</p>
-                  <h1>Opening pathways to dignity, opportunity, and lasting support.</h1>
-                  <a href="/WhatWeFund">Explore Our Work</a>
-                </div>
+                <img src={logo} alt="Logo" className="hero-logo" />
                 <GrantNotice className="hero-grant-notice" />
             </div>
         </div>

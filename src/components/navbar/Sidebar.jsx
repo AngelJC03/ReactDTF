@@ -38,7 +38,7 @@ function Sidebar({ isOpen, onClose }) {
       path: '',
       submenu: [
         { label: 'Partners/Resources', path: '/PartnersAndResources' },
-        { label: 'Partners Spotlight', path: '/PartnersSpotlight' },
+        // { label: 'Partners Spotlight', path: '/PartnersSpotlight' },
         { label: 'Parent Resource Center', path: '/parent-resource-center' },
       ],
     },

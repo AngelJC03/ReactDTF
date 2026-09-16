@@ -126,14 +126,14 @@ function Navbar() {
                     Partners/Resources
                   </NavLink>
                 </li>
-                <li role="menuitem">
+                {/* <li role="menuitem">
                   <NavLink
                     to="/PartnersSpotlight"
                     className={({ isActive }) => `dropdown-link${isActive ? ' active' : ''}`}
                   >
                     Partners Spotlight
                   </NavLink>
-                </li>
+                </li> */}
                 <li role="menuitem">
                   <NavLink
                     to="/parent-resource-center"

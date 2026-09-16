@@ -38,19 +38,18 @@ function FoundationStaffContent() {
   const staff = [
     {
       name: 'Angelo Garcia',
-      role: 'Chair of the Davis-Tennon Foundation',
+      role: 'Chair',
       photo: GarciaImage,
       bio: (
         <>
-          Angelo Garcia is the Founder and Executive
-          Director of the Segue Institute for Learning, a 
-          public charter school in Central Falls, Rhode Island,
-          focused on providing high-quality education to underserved
-          communities. He also serves as Chair of the Davis-Tennon Foundation,
-          which empowers local communities in Rhode Island. Garcia's commitment 
-          to education is demonstrated through initiatives like the planned opening
-          of Legacy High School to train future educators. Mr. Garcia can be reached at{' '}
-          <a href="mailto:agarcia@davis-tennonfoundation.org">agarcia@davis-tennonfoundation.org</a>.
+          Angelo grew up in Central Falls, RI, alongside Viola, and the two have been childhood friends for nearly 50 years. He holds an Associate degree in Communication from CCRI, a Bachelor of Science from Springfield College, and a Master's in Educational Leadership from Cambridge College.
+          <p></p>
+          Although his foray into philanthropic work is recent, Angelo is learning a great deal about running a foundation. He is fortunate to share a close connection with Viola and Julius and deeply appreciates their guidance and generosity.
+          <p></p>
+          Working closely with other non-profits and foundations throughout the country, Angelo looks forward to the Davis-Tennon foundation's continued growth and is thrilled to be part of this monumental effort.
+           <p></p>
+           Mr. Garcia can be reached at{' '}
+          <a href="mailto:agarcia@davis-tennonfoundation.org">agarcia@davis-tennonfoundation.org</a>
         </>
       ),
     },
@@ -60,13 +59,16 @@ function FoundationStaffContent() {
       photo: SousaImage,
       bio: (
         <>
-          Jenny Sousa, born and raised in Central Falls, graduated from Central Falls
-          High School in 2003 and pursued her passion for travel by training as a flight 
-          attendant with Delta Airlines. Of Portuguese heritage, her parents are from São Miguel,
-          Azores, where she spent memorable summers with her brother. She now shares
-          those experiences with her husband, also from the Azores, and their two sons.
+          Jenny Sousa was born and raised in Central Falls, Rhode Island, and is a proud graduate of Central Falls High School, Class of 2003. Following graduation, she pursued her passion for travel and new experiences by completing flight attendant training with Delta Air Lines.
+          <p></p>
+          Proud of her Portuguese heritage, Jenny’s family roots are in São Miguel, Azores. Growing up, she spent many memorable summers in the Azores with her Grandparents, experiences that helped shape her strong appreciation for family, culture, and community. Today, she continues those traditions with her husband, who is also from the Azores, and their two sons.
+          <p></p>
+          Professionally, Jenny has built a meaningful career in education, where she is dedicated to supporting students, families, staff, and the greater school community. She worked 20 years at an early learning center right here in the city of Central Falls.  Her work reflects her commitment to organization, collaboration, and creating a welcoming and supportive environment for everyone she serves. As someone who was raised in the community she now has the opportunity to serve, Jenny takes great pride in giving back and helping families navigate their educational journey.
+          <p></p>
+          Outside of her professional role, Jenny values spending time with her family, traveling, celebrating her Portuguese culture, and creating lasting memories with her husband and sons.
+          <p></p>
           Mrs. Sousa can be reached at{' '}
-          <a href="mailto:jsousa@davis-tennonfoundation.org">jsousa@davis-tennonfoundation.org</a>.
+          <a href="mailto:jsousa@davis-tennonfoundation.org">jsousa@davis-tennonfoundation.org</a>
         </>
       ),
     },
@@ -76,12 +78,12 @@ function FoundationStaffContent() {
       photo: TooneImage,
       bio: (
         <>
-          Jennifer Toone Corrigan is the founder and principal of In Toone Communication, 
-          a 100% women-owned public relations and marketing firm based in Providence, Rhode Island. 
-          Jennifer has been a long-time supporter of the Segue Institute for Learning, contributing 
-          to its press efforts and helping showcase community-driven initiatives in Rhode Island. 
+          Jennifer Toone Corrigan is the founder and principal of In Toone Communication, a women-owned PR and marketing firm based in Providence. For more than two decades, she’s worked in public relations, marketing strategy, media and branding — figuring out what matters, how to tell the story and how to make people pay attention.
+          <p></p>
+          Her work with the Davis-Tennon Foundation is especially close to her heart. Jennifer is deeply committed to its belief in the worth of every person and its mission to remove obstacles, expand opportunity and strengthen communities. She is proud to help tell the stories of the people, organizations and ideas the Foundation invests in — and to help more people understand why that work matters.
+          <p></p>
           Mrs. Toone Corrigan can be reached at{' '}
-          <a href="mailto:jtoone@davis-tennonfoundation.org">jtoone@davis-tennonfoundation.org</a>.
+          <a href="mailto:jtoone@intoone.com">jtoone@intoone.com</a>
         </>
       ),
     },
@@ -91,13 +93,12 @@ function FoundationStaffContent() {
       photo: CastanoImage,
       bio: (
         <>
-          A Software Engineer based out of Central
-          Falls, Rhode Island. Angel is dedicated to 
-          advocating for the community members of Central Falls and 
-          beyond. As a member of the foundation, Angel is committed to 
-          addressing critical needs within Rhode Island and providing 
-          support beyond the technical realm. Mr. Castano can be reached at{' '}
-          <a href="mailto:acastano@davis-tennonfoundation.org">acastano@davis-tennonfoundation.org</a>.
+          Angel Javier Castano is a software engineer based in Central Falls, Rhode Island, who is passionate about technology, community and creating opportunities for others. As a software engineer, he enjoys solving problems and building technology that can make people's lives easier and more connected.
+          <p/>
+          His work with the Davis-Tennon Foundation is an opportunity to bring that perspective beyond the technical world. Angel is deeply committed to the Foundation's belief in the worth of every person and its mission to remove obstacles, expand opportunity and strengthen communities. He is proud to contribute his skills, perspective and time to work that supports the people and communities of Rhode Island — and to be part of a Foundation committed to making a meaningful difference. 
+          <p/>
+          Mr. Castano can be reached at{' '}
+          <a href="mailto:acastano@davis-tennonfoundation.org">acastano@davis-tennonfoundation.org</a>
         </>
       ),
     },
