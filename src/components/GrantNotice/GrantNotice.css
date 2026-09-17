@@ -14,11 +14,12 @@
 }
 
 .grant-notice h2 {
-  margin: 0 0 14px;
+  margin: 0 0 0;
   color: var(--dtf-deep-green);
   font-size: clamp(1.55rem, 3vw, 2.35rem);
   line-height: 1.05;
   font-weight: 700;
+  padding: 15px;
 }
 
 .grant-notice p {
@@ -42,5 +43,11 @@
 
   .grant-notice-content {
     padding: 20px 18px;
+  }
+}
+
+@media (max-width: 800px) {
+  .desktop-only {
+    display: none;
   }
 }
