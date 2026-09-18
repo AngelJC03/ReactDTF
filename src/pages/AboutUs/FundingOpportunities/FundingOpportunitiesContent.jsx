@@ -3,6 +3,7 @@ import FadeIn from "../../../components/fadeinsection/FadeIn.jsx";
 import DavisTennonLogo from "../../../assets/images/logo-photos/icononly_nobuffer.png";
 import FundingOppsSidebar from "./FundingOppsSideBar.jsx";
 import GrantNotice from "../../../components/GrantNotice/GrantNotice.jsx";
+import PleaseNote from "../../../components/PleaseNote/PleaseNote.jsx";
 
 const SHOW_QUARTERLY_LOI_DEADLINES = false;
 const FUNDING_APPLICATIONS_PAUSED = true;
@@ -13,6 +14,7 @@ const FundingOpportunitiesContent = () => {
       <GrantNotice className="funding-opportunities-grant-notice" />
       <FadeIn>
         <h1 className="funding-title">Funding Opportunities</h1>
+        <PleaseNote />
         <p className="funding-intro">
             The Davis-Tennon Foundation accepts Letters of Intent (LOIs) on a quarterly basis to support initiatives aligned with our mission of:
         </p>

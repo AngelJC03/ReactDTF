@@ -6,6 +6,7 @@ import housingStability from '../../../assets/images/what-we-fund-photos/housing
 import FadeIn from '../../../components/fadeinsection/FadeIn.jsx';
 import firstHalfBackgroundPhoto from '../../../assets/images/what-we-fund-photos/whiskGenerated1.jpg';
 import AccordionItem from '../../../components/Accordion/AccordionItem.jsx';
+import PleaseNote from '../../../components/PleaseNote/PleaseNote.jsx';
 
 const WhatWeFundContent = () => {
   return (
@@ -22,6 +23,7 @@ const WhatWeFundContent = () => {
             populations.
           </p>
         </div>
+        <PleaseNote />
         <div className="WWDNF-container">
           <p> <span className="WWDNF-important-text">The Davis-Tennon Foundation does not </span>fund individual requests, fundraising events or campaigns, capital campaigns, or sponsorships. We also do not support projects that are primarily promotional in nature or that fall outside our core focus areas. Our funding is dedicated to organizations providing direct services that address basic human needs and strengthen access, dignity, and opportunity for individuals and communities. We prioritize partners whose work is collaborative, community-embedded, and aligned with our mission.</p>
         </div>

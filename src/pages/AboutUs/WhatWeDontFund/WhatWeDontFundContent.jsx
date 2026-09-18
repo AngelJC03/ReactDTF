@@ -2,6 +2,7 @@ import React from 'react';
 import './WhatWeDontFundContent.css';
 import FadeInSection from '../../../components/fadeinsection/FadeIn';
 import questionsPhoto from '../../../assets/images/what-we-dont-fund-photos/questionsPhoto.jpg';
+import PleaseNote from '../../../components/PleaseNote/PleaseNote.jsx';
 
 function WhatWeDontFundContent() {
   const dontFundItems = [
@@ -33,6 +34,8 @@ function WhatWeDontFundContent() {
               </div>
             ))}
           </div>
+
+          <PleaseNote />
 
           <p className="note">
             We prioritize nonprofit organizations that not only serve immediate community needs, 

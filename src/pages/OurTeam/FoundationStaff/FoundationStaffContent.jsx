@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import FadeInSection from '../../../components/fadeinsection/FadeIn.jsx';
 import './FoundationStaffContent.css';
-import GarciaImage from '../../../assets/images/staff-photos/garcia_headshot.jpeg';
-import SousaImage from '../../../assets/images/staff-photos/sousa_headshot.jpeg';
-import TooneImage from '../../../assets/images/staff-photos/jtoone_headshot.jpg';
-import CastanoImage from '../../../assets/images/staff-photos/angel_headshot.jpeg';
+import GarciaImage from '../../../assets/images/staff-photos/garcia_headshot.png';
+import SousaImage from '../../../assets/images/staff-photos/sousa_headshot.png';
+import TooneImage from '../../../assets/images/staff-photos/jtoone_headshot.png';
+import CastanoImage from '../../../assets/images/staff-photos/angel_headshot.png';
 
 function FoundationStaffContent() {
   const [expanded, setExpanded] = useState({});
