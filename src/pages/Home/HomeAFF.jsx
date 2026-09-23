@@ -1,4 +1,3 @@
-import React from 'react';
 import FadeIn from '../../components/fadeinsection/FadeIn.jsx';
 import './HomeAFF.css';
 

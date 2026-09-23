@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import "./AboutViolaAndJuliusContent.css";
 import { ImageSlider } from "./ImageSlider";
 import image1 from '../../../assets/images/violas-story-photos/image1.webp';
@@ -6,7 +6,7 @@ import image2 from '../../../assets/images/violas-story-photos/image2.jpg';
 import image3 from '../../../assets/images/violas-story-photos/image3.jpg';
 import image4 from '../../../assets/images/violas-story-photos/image4.jpg';
 import familyPhoto from '../../../assets/images/violas-story-photos/viola-julius-family.jpg';
-import bookPhoto from '../../../assets/images/violas-story-photos/viola-davis-book.jpg'
+import bookPhoto from '../../../assets/images/violas-story-photos/viola-davis-book.jpg';
 import FadeInSection from "../../../components/fadeinsection/FadeIn";
 import AccordionItem from "../../../components/Accordion/AccordionItem";
 

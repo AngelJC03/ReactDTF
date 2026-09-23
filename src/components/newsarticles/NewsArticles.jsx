@@ -28,12 +28,12 @@ function NewsArticles() {
     fetchData();
   }, []);
 
-  if (loading) return <div class="loading">Loading Recent News Articles...</div>;
+  if (loading) return <div className="loading">Loading Recent News Articles...</div>;
 
-  if (error) return <div class="data-container"><p>{error}</p></div>;
+  if (error) return <div className="data-container"><p>{error}</p></div>;
 
   return (
-    <div class="data-container">
+    <div className="data-container">
       <h2>Recent Articles</h2>
       {rows.map((row, idx) => {
         const rawDate = row[0];

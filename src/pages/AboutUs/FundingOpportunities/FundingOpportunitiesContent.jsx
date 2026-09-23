@@ -1,20 +1,20 @@
-// FundingOpportunities.jsx
-import React from "react";
 import "./FundingOpportunitiesContent.css"; // we'll style here
 import FadeIn from "../../../components/fadeinsection/FadeIn.jsx";
 import DavisTennonLogo from "../../../assets/images/logo-photos/icononly_nobuffer.png";
 import FundingOppsSidebar from "./FundingOppsSideBar.jsx";
+import GrantNotice from "../../../components/GrantNotice/GrantNotice.jsx";
+import PleaseNote from "../../../components/PleaseNote/PleaseNote.jsx";
+
+const SHOW_QUARTERLY_LOI_DEADLINES = false;
+const FUNDING_APPLICATIONS_PAUSED = true;
 
 const FundingOpportunitiesContent = () => {
   return (
     <div className="funding-opportunities">
+      <GrantNotice className="funding-opportunities-grant-notice" />
       <FadeIn>
-        <div className="funding-cycle-important-notices">
-          The Davis-Tennon Foundation’s summer funding cycle officially closed on August 28, 2025. We thank all the organizations who submitted Letters of Intent for consideration.
-          Any submissions received after that date will be reviewed as part of the fall funding cycle, which is now open and will close on November 21, 2025.
-          We encourage applicants to align their proposals with our mission of meeting basic human needs and strengthening Rhode Island communities.
-        </div>
         <h1 className="funding-title">Funding Opportunities</h1>
+        <PleaseNote />
         <p className="funding-intro">
             The Davis-Tennon Foundation accepts Letters of Intent (LOIs) on a quarterly basis to support initiatives aligned with our mission of:
         </p>
@@ -50,27 +50,29 @@ const FundingOpportunitiesContent = () => {
         </p>
 
 
-        <div className="deadlines-section">
-          <h2>Quarterly LOI Deadlines</h2>
-          <ul className="deadline-list">
-            <li>
-              <img src={DavisTennonLogo} alt="bullet" className="bullet-icon" />
-              <span><strong>Fall Cycle:</strong> August 28</span>
-            </li>
-            <li>
-              <img src={DavisTennonLogo} alt="bullet" className="bullet-icon" />
-              <span><strong>Winter Cycle:</strong> November 21</span>
-            </li>
-            <li>
-              <img src={DavisTennonLogo} alt="bullet" className="bullet-icon" />
-              <span><strong>Spring Cycle:</strong> February 21</span>
-            </li>
-            <li>
-              <img src={DavisTennonLogo} alt="bullet" className="bullet-icon" />
-              <span><strong>Summer Cycle:</strong> May 21</span>
-            </li>
-          </ul>
-        </div>
+        {SHOW_QUARTERLY_LOI_DEADLINES && (
+          <div className="deadlines-section">
+            <h2>Quarterly LOI Deadlines</h2>
+            <ul className="deadline-list">
+              <li>
+                <img src={DavisTennonLogo} alt="bullet" className="bullet-icon" />
+                <span><strong>Fall Cycle:</strong> August 28</span>
+              </li>
+              <li>
+                <img src={DavisTennonLogo} alt="bullet" className="bullet-icon" />
+                <span><strong>Winter Cycle:</strong> November 21</span>
+              </li>
+              <li>
+                <img src={DavisTennonLogo} alt="bullet" className="bullet-icon" />
+                <span><strong>Spring Cycle:</strong> February 21</span>
+              </li>
+              <li>
+                <img src={DavisTennonLogo} alt="bullet" className="bullet-icon" />
+                <span><strong>Summer Cycle:</strong> May 21</span>
+              </li>
+            </ul>
+          </div>
+        )}
 
 
         <p className="funding-closing">
@@ -82,7 +84,7 @@ const FundingOpportunitiesContent = () => {
       </FadeIn>
       <FadeIn>
         <div className="funding-opps-sidebar">
-            <FundingOppsSidebar />
+            <FundingOppsSidebar applicationsPaused={FUNDING_APPLICATIONS_PAUSED} />
         </div>
       </FadeIn>
 

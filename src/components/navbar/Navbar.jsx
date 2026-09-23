@@ -1,5 +1,5 @@
-import { useState, useEffect, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { useState, useRef } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import { FaAngleDown } from 'react-icons/fa';
 import './Navbar.css';
 import logo from '../../assets/images/logo-photos/dtf-logo.png';
@@ -25,38 +25,18 @@ function Navbar() {
     }
   };
 
-  const [currentLogo, setCurrentLogo] = useState(getInitialLogo());
-  const [currentWidth, setCurrentWidth] = useState(290);
-
-  function getInitialLogo() {
-    if (typeof window !== "undefined") {
-      return window.innerWidth <= 450 ? smallerLogo : logo;
-    }
-    return logo;
-  }
-
-  useEffect(() => {
-    const updateLogo = () => {
-      const isMobile = window.innerWidth <= 450;
-      setCurrentLogo(isMobile ? smallerLogo : logo);
-      setCurrentWidth(isMobile ? 90 : 290);
-    };
-
-    updateLogo();
-
-    window.addEventListener("resize", updateLogo);
-    return () => window.removeEventListener("resize", updateLogo);
-  }, []);
-
   return (
     <nav className="navbar-container" role="navigation" aria-label="Main Navigation">
-      <div className="w-full h-[120px] bg-[#ffcc8a] text-black px-8 py-6 flex items-center justify-between font-gill-sans-bold">
+      <div className="navbar-inner w-full h-[120px] bg-[#ffcc8a] text-black px-8 py-6 flex items-center justify-between font-gill-sans-bold">
 
         <Hamburger click={click} checkboxRef={checkboxRef} handleToggle={handleToggle} />
 
         <div className="navbar-image flex items-center gap-4">
           <Link to="/Home" aria-label="Home" role="link">
-            <img src={currentLogo} alt="Logo" style={{ width: `${currentWidth}px`, height: 'auto' }} />
+            <picture>
+              <source media="(max-width: 450px)" srcSet={smallerLogo} />
+              <img src={logo} alt="Logo" className="navbar-logo" />
+            </picture>
           </Link>
         </div>
 
@@ -120,11 +100,56 @@ function Navbar() {
               </ul>
             </li>
 
-            <li role="none">
-              <Link to="/PartnersAndResources" className="nav-link" aria-label="partners and resources opens in new tab" role="menuitem">
-                Partners/Resources
+            {/* Partners/Resources */}
+            <li
+              className={`nav-item dropdown ${activeMenu === 'partners' ? 'active' : ''}`}
+              onMouseEnter={() => setActiveMenu('partners')}
+              onMouseLeave={() => setActiveMenu(null)}
+              role="none"
+            >
+              <Link
+                to="#"
+                className="nav-link"
+                onClick={() => toggleDropdown('partners')}
+                aria-haspopup="true"
+                aria-expanded={activeMenu === 'partners'}
+                role="menuitem"
+              >
+                Partners/Resources <FaAngleDown className={`inline ml-1 dropdown-arrow ${activeMenu === 'partners' ? 'rotate' : ''}`} />
               </Link>
+              <ul className={`dropdown-menu ${activeMenu === 'partners' ? 'show' : ''}`} role="menu">
+                <li role="menuitem">
+                  <NavLink
+                    to="/PartnersAndResources"
+                    className={({ isActive }) => `dropdown-link${isActive ? ' active' : ''}`}
+                  >
+                    Partners/Resources
+                  </NavLink>
+                </li>
+                {/* <li role="menuitem">
+                  <NavLink
+                    to="/PartnersSpotlight"
+                    className={({ isActive }) => `dropdown-link${isActive ? ' active' : ''}`}
+                  >
+                    Partners Spotlight
+                  </NavLink>
+                </li> */}
+                <li role="menuitem">
+                  <NavLink
+                    to="/parent-resource-center"
+                    className={({ isActive }) => `dropdown-link${isActive ? ' active' : ''}`}
+                  >
+                    Parent Resource Center
+                  </NavLink>
+                </li>
+              </ul>
             </li>
+
+            {/* <li role="none">
+              <Link to="/memorabilia" className="nav-link" aria-label="Memorabilia" role="menuitem">
+                Memorabilia
+              </Link>
+            </li> */}
 
             {/* External links styled as buttons */}
             <li role="none">

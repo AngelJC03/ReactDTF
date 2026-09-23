@@ -1,18 +1,19 @@
 /* === Container Setup === */
 
 .partners-and-resources-page-container {
-    background-color: rgb(255, 181, 181);
+  background: linear-gradient(180deg, #fff7ee 0%, #eef6e7 48%, #f7fbf2 100%);
   width: 100%;
   margin: 0 auto;
-  padding: 30px 0;
+  padding: clamp(46px, 7vw, 82px) 0;
   line-height: 1.6;
 }
 
 .community-partners-feature {
   display: grid;
   grid-template-columns: minmax(260px, 0.9fr) minmax(320px, 1.35fr);
-  margin: 36px 0 42px;
+  margin: clamp(36px, 6vw, 64px) 0;
   border: 1px solid rgba(111, 63, 24, 0.12);
+  border-radius: 22px;
   background: linear-gradient(135deg, rgba(255, 232, 206, 0.88), rgba(255, 214, 214, 0.82));
   box-shadow: 0 22px 50px rgba(92, 47, 23, 0.1);
   overflow: hidden;
@@ -106,6 +107,7 @@
   min-height: 100%;
   padding: 0.9rem 0.95rem;
   border: 1px solid rgba(255, 247, 238, 0.18);
+  border-radius: 14px;
   background: rgba(255, 255, 255, 0.08);
   color: #fff7ee;
   text-decoration: none;
@@ -135,6 +137,7 @@
   justify-content: stretch;
   margin: 0 1.4rem 1.4rem 1.4rem;
   overflow: hidden;
+  border-radius: 16px;
   border: 1px solid rgba(255, 247, 238, 0.18);
   background: rgba(255, 255, 255, 0.08);
 }
@@ -149,9 +152,9 @@
 }
 
 .par-page-content {
-  width: 80%;
+  width: min(100% - 48px, 1200px);
   margin: 0 auto;
-  color: #333;
+  color: #213321;
 }
 
 .par-page-content h1,
@@ -163,18 +166,23 @@
 /* === Hero Image Section === */
 .page-image {
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .page-image h1 {
-  font-size: 2rem;
+  max-width: 920px;
+  font-size: clamp(2.4rem, 4.5vw, 4.4rem);
+  line-height: 1;
   text-align: center;
-  margin: 20px auto;
+  margin: 0 auto 24px;
 }
 
 .page-image img {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 20px 48px rgba(31, 52, 24, 0.13);
 }
 
 .photo-credit {
@@ -212,7 +220,11 @@
 
 /* === Outer Partners Container === */
 .outer-partners-container {
-  margin: 40px 0;
+  margin: clamp(42px, 6vw, 70px) 0;
+  border-radius: 22px;
+  background: rgba(255, 247, 238, 0.9);
+  padding: clamp(22px, 4vw, 38px);
+  box-shadow: 0 18px 42px rgba(31, 52, 24, 0.1);
 }
 
 .outer-partners-container h2 {
@@ -228,9 +240,11 @@
 .partner-logo-banner {
   position: relative;
   width: 100%;
-  height: 100px;
+  height: 118px;
   overflow: hidden;
-  background: transparent;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: inset 0 0 0 1px rgba(33, 51, 33, 0.08);
 }
 
 .partner-logo-banner::before,
@@ -309,10 +323,14 @@
 
 /* === Contact Section === */
 .contact-us-partners-page {
-  margin: 50px 0;
-  padding: 20px;
+  margin: clamp(42px, 6vw, 70px) auto 0;
+  max-width: 900px;
+  border-radius: 22px;
+  background: #fff7ee;
+  padding: clamp(26px, 4vw, 42px);
   text-align: center;
   font-size: 1.2rem;
+  box-shadow: 0 18px 42px rgba(31, 52, 24, 0.1);
 }
 
 .contact-us-partners-page h2 {
