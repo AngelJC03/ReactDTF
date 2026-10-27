@@ -235,18 +235,16 @@ function Footer() {
                     The Davis-Tennon Foundation, founded by Viola Davis and Julius Tennon, is committed to driving meaningful change by funding initiatives that address critical needs in Rhode Island. Focused on empowering women, preventing domestic violence, supporting students, and tackling housing challenges, the Foundation works to remove barriers and create lasting opportunities for underserved communities.
                 </p>
                 <p>
-                    <a
-                        href="https://www.davis-tennonfoundation.org/privacypolicy"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Privacy Policy (opens in new tab)"
+                    <Link
+                        to="/privacypolicy"
+                        aria-label="Privacy Policy"
                         style={{
                             color: '#666666',
                             textDecoration: 'underline'
                         }}
                     >
                         Privacy Policy
-                    </a>
+                    </Link>
                 </p>
             </div>
 

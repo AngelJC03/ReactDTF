@@ -16,6 +16,7 @@ import FoundationStaff from './pages/OurTeam/FoundationStaff/FoundationStaff.jsx
 // import PartnersSpotlight from './pages/PartnersSpotlight/PartnersSpotlight.jsx';
 import ParentResourceCenter from './pages/ParentResourceCenter/ParentResourceCenter.jsx';
 import Popup from './components/pop-up/Popup.jsx';
+import PrivacyPolicy from './pages/PrivacyPolicy.jsx';
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
           {/* <Route path="/memorabilia" element={<MemorabiliaPage />} /> */}
           {/* <Route path="/PartnersSpotlight" element={<PartnersSpotlight />} /> */}
           <Route path="/parent-resource-center" element={<ParentResourceCenter />} />
+          <Route path="/privacypolicy" element={<PrivacyPolicy />} />
         </Routes>
       </Router>
       <Popup />
